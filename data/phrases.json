@@ -1,0 +1,652 @@
+[
+  {
+    "id": "trans-01",
+    "scenario": "transport",
+    "kn": "ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ತೀರಾ?",
+    "translit": "Majestic-ge hogthira?",
+    "en": "Will you go to Majestic?",
+    "example": {
+      "kn": "ಅಣ್ಣಾ, ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ತೀರಾ?",
+      "translit": "Anna, Majestic-ge hogthira?",
+      "en": "Brother, will you go to Majestic?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "trans-02",
+    "scenario": "transport",
+    "kn": "ಮೀಟರ್ ಹಾಕಿ, ಪ್ಲೀಸ್.",
+    "translit": "Meter haaki, please.",
+    "en": "Please turn on the meter.",
+    "example": {
+      "kn": "ಮೀಟರ್ ಹಾಕಿ ಹೋಗಿ ಅಣ್ಣಾ.",
+      "translit": "Meter haaki hogi anna.",
+      "en": "Please put the meter and drive, brother."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "trans-03",
+    "scenario": "transport",
+    "kn": "ಎಷ್ಟು ಆಗುತ್ತೆ?",
+    "translit": "Eshtu aaguththe?",
+    "en": "How much will it cost?",
+    "example": {
+      "kn": "ಇಂದಿರಾನಗರಕ್ಕೆ ಎಷ್ಟು ಆಗುತ್ತೆ?",
+      "translit": "Indiranagar-akke eshtu aaguththe?",
+      "en": "How much will it be to Indiranagar?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "trans-04",
+    "scenario": "transport",
+    "kn": "ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ.",
+    "translit": "Illi nillisi.",
+    "en": "Stop here.",
+    "example": {
+      "kn": "ಮುಂದೆ ಲೆಫ್ಟ್‌ನಲ್ಲಿ ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ.",
+      "translit": "Munde left-nalli illi nillisi.",
+      "en": "Stop here ahead on the left."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "trans-05",
+    "scenario": "transport",
+    "kn": "ಲೆಫ್ಟ್ ತಗೊಳ್ಳಿ / ರೈಟ್ ತಗೊಳ್ಳಿ.",
+    "translit": "Left thagoli / Right thagoli.",
+    "en": "Take left / Take right.",
+    "example": {
+      "kn": "ಮುಂದಿನ ಸಿಗ್ನಲ್ ಹತ್ರ ರೈಟ್ ತಗೊಳ್ಳಿ.",
+      "translit": "Mundhina signal hathra right thagoli.",
+      "en": "Take right near the next signal."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "trans-06",
+    "scenario": "transport",
+    "kn": "ಮುಂದಿನ ಸ್ಟಾಪ್ ಯಾವುದು?",
+    "translit": "Mundhina stop yaavudu?",
+    "en": "Which is the next stop?",
+    "example": {
+      "kn": "ಕಂಡಕ್ಟರ್ ಸರ್, ಮುಂದಿನ ಸ್ಟಾಪ್ ಯಾವುದು?",
+      "translit": "Conductor sir, mundhina stop yaavudu?",
+      "en": "Conductor sir, which is the next stop?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "trans-07",
+    "scenario": "transport",
+    "kn": "ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.",
+    "translit": "Ondhu ticket kodi.",
+    "en": "Give one ticket.",
+    "example": {
+      "kn": "ಸಿಲ್ಕ್ ಬೋರ್ಡ್‌ಗೆ ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.",
+      "translit": "Silk Board-ge ondhu ticket kodi.",
+      "en": "Give one ticket to Silk Board."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "trans-08",
+    "scenario": "transport",
+    "kn": "ಆನ್‌ಲೈನ್ ಪೇಮೆಂಟ್ / UPI ಇದ್ಯಾ?",
+    "translit": "Online payment / UPI idhya?",
+    "en": "Do you have online payment / UPI?",
+    "example": {
+      "kn": "ಕ್ಯಾಶ್ ಇಲ್ಲ, ಫೋನ್ ಪೇ ಸ್ಕ್ಯಾನರ್ ಇದ್ಯಾ?",
+      "translit": "Cash illa, PhonePe scanner idhya?",
+      "en": "I have no cash, do you have PhonePe scanner?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "trans-09",
+    "scenario": "transport",
+    "kn": "ಸ್ವಲ್ಪ ಬೇಗ ಹೋಗ್ಬಹುದಾ?",
+    "translit": "Swalpa bega hogbahudha?",
+    "en": "Can you please go a little faster?",
+    "example": {
+      "kn": "ಟ್ರೈನ್ ಮಿಸ್ ಆಗುತ್ತೆ, ಸ್ವಲ್ಪ ಬೇಗ ಹೋಗ್ಬಹುದಾ?",
+      "translit": "Train miss aaguththe, swalpa bega hogbahudha?",
+      "en": "I might miss the train, can you go a little faster?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "trans-10",
+    "scenario": "transport",
+    "kn": "ಇಳಿಯೋಕೆ ಜಾಗ ಕೊಡಿ.",
+    "translit": "Iliyoke jaaga kodi.",
+    "en": "Please make way to get down.",
+    "example": {
+      "kn": "ಸ್ಟಾಪ್ ಬಂತು, ಇಳಿಯೋಕೆ ಸ್ವಲ್ಪ ಜಾಗ ಕೊಡಿ.",
+      "translit": "Stop banthu, iliyoke swalpa jaaga kodi.",
+      "en": "The stop has arrived, please give some way to get off."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-01",
+    "scenario": "shopping",
+    "kn": "ಇದು ಎಷ್ಟು ಬೆಲೆ?",
+    "translit": "Idhu eshtu bele?",
+    "en": "How much is this?",
+    "example": {
+      "kn": "ಅಣ್ಣಾ, ಈ ಶರ್ಟ್ ಎಷ್ಟು ಬೆಲೆ?",
+      "translit": "Anna, ee shirt eshtu bele?",
+      "en": "Brother, how much is this shirt?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-02",
+    "scenario": "shopping",
+    "kn": "ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ.",
+    "translit": "Swalpa kammi maadi.",
+    "en": "Reduce the price a bit.",
+    "example": {
+      "kn": "ಬೆಲೆ ತುಂಬಾ ಜಾಸ್ತಿ ಆಯ್ತು, ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ.",
+      "translit": "Bele thumba jaasthi aaythu, swalpa kammi maadi.",
+      "en": "The price is too high, reduce it a bit."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-03",
+    "scenario": "shopping",
+    "kn": "ಬೇರೆ ಕಲರ್ ಅಥವಾ ಸೈಜ್ ಇದ್ಯಾ?",
+    "translit": "Bere color athava size idhya?",
+    "en": "Do you have another color or size?",
+    "example": {
+      "kn": "ಇದರಲ್ಲಿ ಬ್ಲೂ ಕಲರ್ ಮೀಡಿಯಂ ಸೈಜ್ ಇದ್ಯಾ?",
+      "translit": "Idharalli blue color medium size idhya?",
+      "en": "Do you have blue color in medium size for this?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-04",
+    "scenario": "shopping",
+    "kn": "ಇದು ಫ್ರೆಶ್ ಆಗಿದ್ಯಾ?",
+    "translit": "Idhu fresh aagidhya?",
+    "en": "Is this fresh?",
+    "example": {
+      "kn": "ಈ ತರಕಾರಿ ಇವತ್ತಿಂದಾ, ಫ್ರೆಶ್ ಆಗಿದ್ಯಾ?",
+      "translit": "Ee tharakaari ivathindhaa, fresh aagidhya?",
+      "en": "Are these vegetables from today, are they fresh?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-05",
+    "scenario": "shopping",
+    "kn": "ಒಂದು ಕಿಲೋ ಕೊಡಿ.",
+    "translit": "Ondhu kilo kodi.",
+    "en": "Give one kilogram.",
+    "example": {
+      "kn": "ಒಳ್ಳೆ ಈರುಳ್ಳಿ ಒಂದು ಕಿಲೋ ಕೊಡಿ.",
+      "translit": "Olle eerulli ondhu kilo kodi.",
+      "en": "Give one kilo of good onions."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-06",
+    "scenario": "shopping",
+    "kn": "ಕವರ್ ಕೊಡಿ.",
+    "translit": "Cover kodi.",
+    "en": "Give a carry bag.",
+    "example": {
+      "kn": "ಸಾಮಾನು ತಗೊಂಡು ಹೋಗೋಕೆ ಒಂದು ಕವರ್ ಕೊಡಿ.",
+      "translit": "Saamaanu thagond hogoke ondhu cover kodi.",
+      "en": "Please give a bag to carry the items."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-07",
+    "scenario": "shopping",
+    "kn": "ಕಾರ್ಡ್ ಅಥವಾ ಸ್ಕ್ಯಾನರ್ ತಗೋತೀರಾ?",
+    "translit": "Card athava scanner thagothira?",
+    "en": "Do you accept card or UPI scanner?",
+    "example": {
+      "kn": "ಕ್ಯಾಶ್ ಮುಗಿದಿದೆ, ಕಾರ್ಡ್ ತಗೋತೀರಾ?",
+      "translit": "Cash mugidhidhe, card thagothira?",
+      "en": "I'm out of cash, do you take cards?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-08",
+    "scenario": "shopping",
+    "kn": "ಬಿಲ್ ಕೊಡಿ.",
+    "translit": "Bill kodi.",
+    "en": "Give the bill.",
+    "example": {
+      "kn": "ಎಲ್ಲಾ ಪ್ಯಾಕ್ ಮಾಡಿ ಬಿಲ್ ಕೊಡಿ.",
+      "translit": "Ella pack maadi bill kodi.",
+      "en": "Please pack everything and give the bill."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-09",
+    "scenario": "shopping",
+    "kn": "ಇದು ಬೇಡ, ಬೇರೆ ತೋರ್ಸಿ.",
+    "translit": "Idhu beda, bere thorsi.",
+    "en": "Not this one, show another.",
+    "example": {
+      "kn": "ಇದರ ಕ್ವಾಲಿಟಿ ಸರಿ ಇಲ್ಲ, ಬೇರೆ ತೋರ್ಸಿ.",
+      "translit": "Idhara quality sari illa, bere thorsi.",
+      "en": "Quality of this isn't good, show another one."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "shop-10",
+    "scenario": "shopping",
+    "kn": "ಚೇಂಜ್ ಕೊಡಿ.",
+    "translit": "Change kodi.",
+    "en": "Please give the change.",
+    "example": {
+      "kn": "ಐನೂರು ರೂಪಾಯಿ ಕೊಟ್ಟಿದ್ದೀನಿ, ಚಿಲ್ಲರೆ ಕೊಡಿ.",
+      "translit": "Ainooru roopaayi kottidhini, chillare kodi.",
+      "en": "I gave 500 rupees, please give the balance change."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-01",
+    "scenario": "healthcare",
+    "kn": "ನನಗೆ ತಲೆ ನೋವು ಇದೆ.",
+    "translit": "Nanage thale novu idhe.",
+    "en": "I have a headache.",
+    "example": {
+      "kn": "ಬೆಳಗ್ಗಿಂದ ತುಂಬಾ ತಲೆ ನೋವು ಇದೆ.",
+      "translit": "Belaggindha thumba thale novu idhe.",
+      "en": "I have severe headache since morning."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-02",
+    "scenario": "healthcare",
+    "kn": "ಎರಡು ದಿನದಿಂದ ಜ್ವರ ಬಂದಿದೆ.",
+    "translit": "Eradu dhinadhinda jvara bandhidhe.",
+    "en": "I have had a fever for two days.",
+    "example": {
+      "kn": "ಚಳಿ ಜೊತೆ ಎರಡು ದಿನದಿಂದ ಜ್ವರ ಬಂದಿದೆ.",
+      "translit": "Chali jothe eradu dhinadhinda jvara bandhidhe.",
+      "en": "I have a fever with chills for two days."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-03",
+    "scenario": "healthcare",
+    "kn": "ಹೊಟ್ಟೆ ನೋವು ಇದೆ.",
+    "translit": "Hotte novu idhe.",
+    "en": "I have a stomach ache.",
+    "example": {
+      "kn": "ಊಟ ಮಾಡಿದ ಮೇಲೆ ಹೊಟ್ಟೆ ನೋವು ಬರ್ತಾ ಇದೆ.",
+      "translit": "Oota maadidha mele hotte novu barthaa idhe.",
+      "en": "Stomach is aching after having food."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-04",
+    "scenario": "healthcare",
+    "kn": "ಡಾಕ್ಟರ್ ಯಾವಾಗ ಬರ್ತಾರೆ?",
+    "translit": "Doctor yaavaaga barthaare?",
+    "en": "When will the doctor come?",
+    "example": {
+      "kn": "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಇತ್ತು, ಡಾಕ್ಟರ್ ಯಾವಾಗ ಬರ್ತಾರೆ?",
+      "translit": "Appointment ithu, doctor yaavaaga barthaare?",
+      "en": "I had an appointment, when will the doctor arrive?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-05",
+    "scenario": "healthcare",
+    "kn": "ಈ ಮಾತ್ರೆ ಯಾವಾಗ ತಗೋಬೇಕು?",
+    "translit": "Ee maathre yaavaaga thagobeku?",
+    "en": "When should I take this tablet?",
+    "example": {
+      "kn": "ದಿನಕ್ಕೆ ಎಷ್ಟು ಸಾರಿ ಈ ಮಾತ್ರೆ ತಗೋಬೇಕು?",
+      "translit": "Dhinakke eshtu saari ee maathre thagobeku?",
+      "en": "How many times a day should I take this tablet?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-06",
+    "scenario": "healthcare",
+    "kn": "ಊಟ ಆದ್ಮೇಲೆ ತಗೋಬೇಕಾ?",
+    "translit": "Oota aadhmele thagobekaa?",
+    "en": "Should I take it after food?",
+    "example": {
+      "kn": "ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ತಗೋಬೇಕಾ ಅಥವಾ ಊಟ ಆದ್ಮೇಲೆ ತಗೋಬೇಕಾ?",
+      "translit": "Khaali hotteyalli thagobekaa athava oota aadhmele thagobekaa?",
+      "en": "Should I take it empty stomach or after food?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-07",
+    "scenario": "healthcare",
+    "kn": "ಕೆಮ್ಮು ಮತ್ತು ಗಂಟಲು ನೋವು ಇದೆ.",
+    "translit": "Kemmu mathu gantalu novu idhe.",
+    "en": "I have a cough and throat pain.",
+    "example": {
+      "kn": "ರಾತ್ರಿ ತುಂಬಾ ಕೆಮ್ಮು ಬರ್ತಾ ಇದೆ.",
+      "translit": "Raathri thumba kemmu barthaa idhe.",
+      "en": "Coughing a lot during the night."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-08",
+    "scenario": "healthcare",
+    "kn": "ನನಗೆ ಈ ಮೆಡಿಸಿನ್ ಅಲರ್ಜಿ ಇದೆ.",
+    "translit": "Nanage ee medicine allergy idhe.",
+    "en": "I am allergic to this medicine.",
+    "example": {
+      "kn": "ಪೆನ್ಸಿಲಿನ್ ತಗೊಂಡ್ರೆ ನನಗೆ ಅಲರ್ಜಿ ಆಗುತ್ತೆ.",
+      "translit": "Penicillin thagondre nanage allergy aaguththe.",
+      "en": "I get an allergic reaction if I take penicillin."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-09",
+    "scenario": "healthcare",
+    "kn": "ಬಿಪಿ ಮತ್ತು ಶುಗರ್ ಚೆಕ್ ಮಾಡಿ.",
+    "translit": "BP mathu sugar check maadi.",
+    "en": "Please check blood pressure and blood sugar.",
+    "example": {
+      "kn": "ಸ್ವಲ್ಪ ತಲೆ ಸುತ್ತು ಬರ್ತಿದೆ, ಬಿಪಿ ಚೆಕ್ ಮಾಡಿ.",
+      "translit": "Swalpa thale suthu barthidhe, BP check maadi.",
+      "en": "Feeling dizzy, please check my blood pressure."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "health-10",
+    "scenario": "healthcare",
+    "kn": "ಟೆಸ್ಟ್ ರಿಪೋರ್ಟ್ ಯಾವಾಗ ಸಿಗುತ್ತೆ?",
+    "translit": "Test report yaavaaga siguththe?",
+    "en": "When will the test report be ready?",
+    "example": {
+      "kn": "ಬ್ಲಡ್ ಟೆಸ್ಟ್ ರಿಪೋರ್ಟ್ ಇವತ್ತು ಸಂಜೆ ಸಿಗುತ್ತಾ?",
+      "translit": "Blood test report ivathu saanje siguthaa?",
+      "en": "Will the blood test report be ready this evening?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-01",
+    "scenario": "workplace",
+    "kn": "ಈ ಫೈಲ್ ಕಳಿಸಿ.",
+    "translit": "Ee file kalisi.",
+    "en": "Please send this file.",
+    "example": {
+      "kn": "ನನ್ನ ಈಮೇಲ್‌ಗೆ ಆ ಪ್ರಾಜೆಕ್ಟ್ ಫೈಲ್ ಕಳಿಸಿ.",
+      "translit": "Nanna email-ge aa project file kalisi.",
+      "en": "Please send that project file to my email."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-02",
+    "scenario": "workplace",
+    "kn": "ಮೀಟಿಂಗ್ ಯಾವಾಗ ಇದೆ?",
+    "translit": "Meeting yaavaaga idhe?",
+    "en": "When is the meeting?",
+    "example": {
+      "kn": "ಕ್ಲೈಂಟ್ ಮೀಟಿಂಗ್ ಯಾವಾಗ ಶುರು ಆಗುತ್ತೆ?",
+      "translit": "Client meeting yaavaaga shuru aaguththe?",
+      "en": "When does the client meeting start?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-03",
+    "scenario": "workplace",
+    "kn": "ನನಗೆ ಸ್ವಲ್ಪ ಹೆಲ್ಪ್ ಬೇಕಿತ್ತು.",
+    "translit": "Nanage swalpa help bekithu.",
+    "en": "I needed a little help.",
+    "example": {
+      "kn": "ಈ ಟಾಸ್ಕ್ ಮುಗಿಸೋಕೆ ನನಗೆ ಸ್ವಲ್ಪ ಹೆಲ್ಪ್ ಬೇಕಿತ್ತು.",
+      "translit": "Ee task mugisoke nanage swalpa help bekithu.",
+      "en": "I needed a little help to finish this task."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-04",
+    "scenario": "workplace",
+    "kn": "ನಾಳೆ ರಜೆ / ಲೀವ್ ಬೇಕಾಗಿತ್ತು.",
+    "translit": "Naale raje / leave bekaagithu.",
+    "en": "I need leave tomorrow.",
+    "example": {
+      "kn": "ಮನೆ ಕೆಲಸ ಇದೆ, ನಾಳೆ ರಜೆ ಬೇಕಾಗಿತ್ತು.",
+      "translit": "Mane kelasa idhe, naale raje bekaagithu.",
+      "en": "I have personal work at home, I need leave tomorrow."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-05",
+    "scenario": "workplace",
+    "kn": "ಈ ಕೆಲಸ ಮುಗಿದಿದೆ.",
+    "translit": "Ee kelasa mugidhidhe.",
+    "en": "This work is completed.",
+    "example": {
+      "kn": "ನೀವು ಹೇಳಿದ ರಿಪೋರ್ಟ್ ಕೆಲಸ ಮುಗಿದಿದೆ.",
+      "translit": "Neevu helidha report kelasa mugidhidhe.",
+      "en": "The report work you asked for is completed."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-06",
+    "scenario": "workplace",
+    "kn": "ಚಹಾ / ಕಾಫಿ ಕುಡಿಯೋಣ್ವಾ?",
+    "translit": "Chaha / coffee kudiyonwaa?",
+    "en": "Shall we go for tea / coffee?",
+    "example": {
+      "kn": "ಐದು ನಿಮಿಷ ಬ್ರೇಕ್ ತಗೊಂಡು ಕಾಫಿ ಕುಡಿಯೋಣ್ವಾ?",
+      "translit": "Aidhu nimisha break thagondu coffee kudiyonwaa?",
+      "en": "Shall we take a five minute break and have coffee?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-07",
+    "scenario": "workplace",
+    "kn": "ಸ್ವಲ್ಪ ವೇಟ್ ಮಾಡಿ.",
+    "translit": "Swalpa wait maadi.",
+    "en": "Please wait a moment.",
+    "example": {
+      "kn": "ನಾನು ಕಾಲ್‌ನಲ್ಲಿ ಇದ್ದೀನಿ, ಸ್ವಲ್ಪ ವೇಟ್ ಮಾಡಿ.",
+      "translit": "Naanu call-nalli iddhini, swalpa wait maadi.",
+      "en": "I am on a call, please wait a moment."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-08",
+    "scenario": "workplace",
+    "kn": "ಕಾಲ್ ಕನೆಕ್ಟ್ ಆಗ್ತಿಲ್ಲ.",
+    "translit": "Call connect aagthilla.",
+    "en": "The call is not connecting.",
+    "example": {
+      "kn": "ನೆಟ್‌ವರ್ಕ್ ಪ್ರಾಬ್ಲಮ್ ಇದೆ, ಕಾಲ್ ಕನೆಕ್ಟ್ ಆಗ್ತಿಲ್ಲ.",
+      "translit": "Network problem idhe, call connect aagthilla.",
+      "en": "There is a network issue, the call is not connecting."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-09",
+    "scenario": "workplace",
+    "kn": "ಮೇಲ್ ಚೆಕ್ ಮಾಡಿ ರಿಪ್ಲೈ ಮಾಡ್ತೀನಿ.",
+    "translit": "Mail check maadi reply maadthini.",
+    "en": "I will check the email and reply.",
+    "example": {
+      "kn": "ಈಗಲೇ ಮೇಲ್ ಚೆಕ್ ಮಾಡಿ ಅಪ್‌ಡೇಟ್ ಕೊಡ್ತೀನಿ.",
+      "translit": "Eegale mail check maadi update kodthini.",
+      "en": "I will check the mail right away and give an update."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "work-10",
+    "scenario": "workplace",
+    "kn": "ತುಂಬಾ ಧನ್ಯವಾದಗಳು.",
+    "translit": "Thumba dhanyavaadhagalu.",
+    "en": "Thank you very much.",
+    "example": {
+      "kn": "ಸಹಾಯ ಮಾಡಿದ್ದಕ್ಕೆ ತುಂಬಾ ಧನ್ಯವಾದಗಳು.",
+      "translit": "Sahaaya maadiddhakke thumba dhanyavaadhagalu.",
+      "en": "Thank you very much for your help."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-01",
+    "scenario": "restaurant",
+    "kn": "ಮೆನು ಕಾರ್ಡ್ ಕೊಡಿ.",
+    "translit": "Menu card kodi.",
+    "en": "Please give the menu card.",
+    "example": {
+      "kn": "ಸರ್, ಒಂದು ನಿಮಿಷ ಮೆನು ಕಾರ್ಡ್ ಕೊಡಿ.",
+      "translit": "Sir, ondhu nimisha menu card kodi.",
+      "en": "Sir, please give the menu card for a minute."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-02",
+    "scenario": "restaurant",
+    "kn": "ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಕೊಡಿ.",
+    "translit": "Ondhu masaale dose kodi.",
+    "en": "Give one masala dosa.",
+    "example": {
+      "kn": "ಕ್ರಿಸ್ಪಿಯಾಗಿ ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಕೊಡಿ.",
+      "translit": "Crispy aagi ondhu masaale dose kodi.",
+      "en": "Give one crispy masala dosa."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-03",
+    "scenario": "restaurant",
+    "kn": "ಕುಡಿಯೋಕೆ ನೀರು ಕೊಡಿ.",
+    "translit": "Kudiyoke neeru kodi.",
+    "en": "Please give drinking water.",
+    "example": {
+      "kn": "ಬಿಸಿ ನೀರು ಇದ್ಯಾ? ಕುಡಿಯೋಕೆ ನೀರು ಕೊಡಿ.",
+      "translit": "Bisi neeru idhya? Kudiyoke neeru kodi.",
+      "en": "Do you have warm water? Please bring drinking water."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-04",
+    "scenario": "restaurant",
+    "kn": "ಖಾರ ಕಮ್ಮಿ ಮಾಡಿ.",
+    "translit": "Khaara kammi maadi.",
+    "en": "Make it less spicy.",
+    "example": {
+      "kn": "ಮಕ್ಕಳಿಗೆ ಬೇಕು, ಖಾರ ಕಮ್ಮಿ ಮಾಡಿ.",
+      "translit": "Makkalige beku, khaara kammi maadi.",
+      "en": "It is for kids, make it less spicy."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-05",
+    "scenario": "restaurant",
+    "kn": "ಫಿಲ್ಟರ್ ಕಾಫಿ ಇದ್ಯಾ?",
+    "translit": "Filter coffee idhya?",
+    "en": "Do you have filter coffee?",
+    "example": {
+      "kn": "ಊಟ ಆದಮೇಲೆ ಒಂದು ಸ್ಟ್ರಾಂಗ್ ಫಿಲ್ಟರ್ ಕಾಫಿ ಕೊಡಿ.",
+      "translit": "Oota aadha mele ondhu strong filter coffee kodi.",
+      "en": "After food, please give one strong filter coffee."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-06",
+    "scenario": "restaurant",
+    "kn": "ಪಾರ್ಸಲ್ ಕಟ್ಟಿ ಕೊಡಿ.",
+    "translit": "Parcel katti kodi.",
+    "en": "Please pack it for takeaway.",
+    "example": {
+      "kn": "ಎರಡು ಇಡ್ಲಿ ವಡೆ ಪಾರ್ಸಲ್ ಕಟ್ಟಿ ಕೊಡಿ.",
+      "translit": "Eradu idli vade parcel katti kodi.",
+      "en": "Please pack two idli-vada for parcel."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-07",
+    "scenario": "restaurant",
+    "kn": "ಬಿಲ್ ತನ್ನಿ.",
+    "translit": "Bill thanni.",
+    "en": "Bring the bill.",
+    "example": {
+      "kn": "ಊಟ ಮುಗೀತು, ಬಿಲ್ ತನ್ನಿ ಸರ್.",
+      "translit": "Oota mugeethu, bill thanni sir.",
+      "en": "Food is done, bring the bill please sir."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-08",
+    "scenario": "restaurant",
+    "kn": "ಇವತ್ತು ಯಾವ ಸ್ವೀಟ್ ಇದೆ?",
+    "translit": "Ivathu yaava sweet idhe?",
+    "en": "Which sweet is available today?",
+    "example": {
+      "kn": "ಬಿಸಿ ಜಾಮೂನ್ ಇದ್ಯಾ? ಇವತ್ತು ಯಾವ ಸ್ವೀಟ್ ಇದೆ?",
+      "translit": "Bisi jamun idhya? Ivathu yaava sweet idhe?",
+      "en": "Is hot gulab jamun available? Which sweet do you have today?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-09",
+    "scenario": "restaurant",
+    "kn": "ಆರ್ಡರ್ ಸ್ವಲ್ಪ ಬೇಗ ಕೊಡ್ತೀರಾ?",
+    "translit": "Order swalpa bega kodthira?",
+    "en": "Can you serve the order a little quickly?",
+    "example": {
+      "kn": "ಅರ್ಜೆಂಟ್ ಇದೆ, ಆರ್ಡರ್ ಸ್ವಲ್ಪ ಬೇಗ ಕೊಡ್ತೀರಾ?",
+      "translit": "Urgent idhe, order swalpa bega kodthira?",
+      "en": "I am in a hurry, could you bring the order quickly?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rest-10",
+    "scenario": "restaurant",
+    "kn": "ಊಟ ತುಂಬಾ ಚೆನ್ನಾಗಿತ್ತು.",
+    "translit": "Oota thumba chennaagithu.",
+    "en": "The food was very good.",
+    "example": {
+      "kn": "ಸಾಂಬಾರ್ ಮತ್ತು ದೋಸೆ ತುಂಬಾ ಚೆನ್ನಾಗಿತ್ತು.",
+      "translit": "Sambar mathu dose thumba chennaagithu.",
+      "en": "The sambar and dosa were very good."
+    },
+    "reviewed": false
+  }
+]

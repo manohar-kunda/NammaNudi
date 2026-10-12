@@ -1,0 +1,312 @@
+{
+  "transport": [
+    {
+      "id": "quiz-trans-01",
+      "prompt": "How do you ask an auto driver if they will go to Majestic in spoken Kannada?",
+      "options": [
+        "ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ತೀರಾ? (Majestic-ge hogthira?)",
+        "ಮೆಜೆಸ್ಟಿಕ್ ಎಲ್ಲಿ ಇದೆ? (Majestic elli idhe?)",
+        "ನನಗೆ ಮೆಜೆಸ್ಟಿಕ್ ಇಷ್ಟ ಇಲ್ಲ (Nanage Majestic ishta illa)",
+        "ಮೆಜೆಸ್ಟಿಕ್‌ನಲ್ಲಿ ನಿಲ್ಲಿ (Majestic-nalli nilli)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ತೀರಾ?' (Majestic-ge hogthira?) is the natural and respectful spoken way to ask if the driver is heading there."
+    },
+    {
+      "id": "quiz-trans-02",
+      "prompt": "Which phrase asks the driver to turn on the fare meter?",
+      "options": [
+        "ಬೆಲೆ ಎಷ್ಟು? (Bele eshtu?)",
+        "ಮೀಟರ್ ಹಾಕಿ, ಪ್ಲೀಸ್. (Meter haaki, please.)",
+        "ಮೀಟರ್ ಬೇಡ (Meter beda)",
+        "ಸ್ವಲ್ಪ ನಿಲ್ಲಿಸಿ (Swalpa nillisi)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ಮೀಟರ್ ಹಾಕಿ' (Meter haaki) directly requests turning on the auto meter."
+    },
+    {
+      "id": "quiz-trans-03",
+      "prompt": "How do you tell the driver to stop here?",
+      "options": [
+        "ಬೇಗ ಹೋಗಿ (Bega hogi)",
+        "ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ (Illi nillisi)",
+        "ರೈಟ್ ತಗೊಳ್ಳಿ (Right thagoli)",
+        "ಟಿಕೆಟ್ ಕೊಡಿ (Ticket kodi)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ' (Illi nillisi) means 'stop here'."
+    },
+    {
+      "id": "quiz-trans-04",
+      "prompt": "How do you ask a bus conductor for the next bus stop?",
+      "options": [
+        "ಮುಂದಿನ ಸ್ಟಾಪ್ ಯಾವುದು? (Mundhina stop yaavudu?)",
+        "ಬಸ್ ಯಾವಾಗ ಬರುತ್ತೆ? (Bus yaavaaga baruththe?)",
+        "ಇಲ್ಲಿ ಇಳಿಯಿರಿ (Illi iliyiri)",
+        "ಎಷ್ಟು ಗಂಟೆ ಆಯ್ತು? (Eshtu gante aaythu?)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಮುಂದಿನ ಸ್ಟಾಪ್ ಯಾವುದು?' (Mundhina stop yaavudu?) asks 'Which is the next stop?'."
+    },
+    {
+      "id": "quiz-trans-05",
+      "prompt": "What do you say when you have no cash and want to pay via UPI?",
+      "options": [
+        "ಕ್ಯಾಶ್ ಮಾತ್ರ ತಗೊಳ್ಳಿ (Cash maathra thagoli)",
+        "ಆನ್‌ಲೈನ್ ಪೇಮೆಂಟ್ / UPI ಇದ್ಯಾ? (Online payment / UPI idhya?)",
+        "ಚಿಲ್ಲರೆ ಕೊಡಿ (Chillare kodi)",
+        "ಕಾರ್ಡ್ ಬೇಡ (Card beda)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'UPI ಇದ್ಯಾ?' (UPI idhya?) is widely used across Karnataka to ask for digital payment QR code."
+    }
+  ],
+  "shopping": [
+    {
+      "id": "quiz-shop-01",
+      "prompt": "How do you ask 'How much is this?' in a shop?",
+      "options": [
+        "ಇದು ಎಷ್ಟು ಬೆಲೆ? (Idhu eshtu bele?)",
+        "ಇದು ಎಲ್ಲಿಂದ ಬಂತು? (Idhu ellindha banthu?)",
+        "ಇದು ಬೇಡ (Idhu beda)",
+        "ಇದು ಹೊಸದಾ? (Idhu hosadhaa?)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಇದು ಎಷ್ಟು ಬೆಲೆ?' or simply 'ಇದು ಎಷ್ಟು?' means 'How much is this?'."
+    },
+    {
+      "id": "quiz-shop-02",
+      "prompt": "What do you say to politely ask the shopkeeper to reduce the price?",
+      "options": [
+        "ತುಂಬಾ ಕಮ್ಮಿ ಇದೆ (Thumba kammi idhe)",
+        "ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ (Swalpa kammi maadi)",
+        "ಜಾಸ್ತಿ ಮಾಡಿ (Jaasthi maadi)",
+        "ದುಡ್ಡು ಕೊಡಲ್ಲ (Duddu kodalla)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ' (Swalpa kammi maadi) is standard, polite bargaining in Kannada."
+    },
+    {
+      "id": "quiz-shop-03",
+      "prompt": "How do you request a carry bag at the counter?",
+      "options": [
+        "ಕವರ್ ಕೊಡಿ (Cover kodi)",
+        "ಪೆನ್ ಕೊಡಿ (Pen kodi)",
+        "ಬಾಕ್ಸ್ ಬೇಡ (Box beda)",
+        "ನೀರು ಕೊಡಿ (Neeru kodi)"
+      ],
+      "answerIndex": 0,
+      "explanation": "In everyday spoken Kannada, 'ಕವರ್ ಕೊಡಿ' (Cover kodi) is the ubiquitous way to ask for a bag."
+    },
+    {
+      "id": "quiz-shop-04",
+      "prompt": "How do you ask 'Give one kilogram'?",
+      "options": [
+        "ಅರ್ಧ ಕಿಲೋ ಕೊಡಿ (Ardha kilo kodi)",
+        "ಒಂದು ಕಿಲೋ ಕೊಡಿ (Ondhu kilo kodi)",
+        "ಎರಡು ಕಿಲೋ ಬೇಡ (Eradu kilo beda)",
+        "ಹತ್ತು ಕಿಲೋ ಕೊಡಿ (Haththu kilo kodi)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ಒಂದು ಕಿಲೋ ಕೊಡಿ' (Ondhu kilo kodi) means 'Give one kilogram'."
+    },
+    {
+      "id": "quiz-shop-05",
+      "prompt": "How do you say 'Not this one, show another'?",
+      "options": [
+        "ಇದು ಬೇಡ, ಬೇರೆ ತೋರ್ಸಿ (Idhu beda, bere thorsi)",
+        "ಇದೇ ಕೊಡಿ (Idhe kodi)",
+        "ಇದು ಚೆನ್ನಾಗಿದೆ (Idhu chennaagidhe)",
+        "ಎಲ್ಲಾ ಕೊಡಿ (Ella kodi)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಇದು ಬೇಡ, ಬೇರೆ ತೋರ್ಸಿ' means 'I don't want this, show another one'."
+    }
+  ],
+  "healthcare": [
+    {
+      "id": "quiz-health-01",
+      "prompt": "How do you tell the doctor that you have a headache?",
+      "options": [
+        "ನನಗೆ ತಲೆ ನೋವು ಇದೆ (Nanage thale novu idhe)",
+        "ನನಗೆ ಹೊಟ್ಟೆ ಹಸಿವಿದೆ (Nanage hotte hasividhe)",
+        "ನನಗೆ ನಿದ್ದೆ ಬರ್ತಿದೆ (Nanage nidhdhe barthidhe)",
+        "ನನಗೆ ಕಾಲು ನೋವು ಇಲ್ಲ (Nanage kaalu novu illa)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ತಲೆ ನೋವು' (thale novu) means headache, and 'ಇದೆ' (idhe) means is there / I have."
+    },
+    {
+      "id": "quiz-health-02",
+      "prompt": "What do you say to indicate fever for the past two days?",
+      "options": [
+        "ಎರಡು ದಿನದಿಂದ ಜ್ವರ ಬಂದಿದೆ (Eradu dhinadhinda jvara bandhidhe)",
+        "ಜ್ವರ ಕಡಿಮೆ ಆಗಿದೆ (Jvara kadime aagidhe)",
+        "ನಾಳೆ ಜ್ವರ ಬರುತ್ತೆ (Naale jvara baruththe)",
+        "ಜ್ವರ ಇಲ್ಲ (Jvara illa)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಎರಡು ದಿನದಿಂದ ಜ್ವರ ಬಂದಿದೆ' means fever has come since two days."
+    },
+    {
+      "id": "quiz-health-03",
+      "prompt": "How do you ask whether a tablet should be taken after food?",
+      "options": [
+        "ಊಟಕ್ಕಿಂತ ಮುಂಚೆ ತಗೋಬೇಕಾ? (Ootakkinta munche thagobekaa?)",
+        "ಊಟ ಆದ್ಮೇಲೆ ತಗೋಬೇಕಾ? (Oota aadhmele thagobekaa?)",
+        "ಊಟ ಬೇಡವಾ? (Oota bedavaa?)",
+        "ಮಾತ್ರೆ ತಗೋಬಾರದಾ? (Maathre thagobaaradhaa?)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ಊಟ ಆದ್ಮೇಲೆ ತಗೋಬೇಕಾ?' translates to 'Should I take it after meals?'."
+    },
+    {
+      "id": "quiz-health-04",
+      "prompt": "How do you tell medical staff that you are allergic to a medicine?",
+      "options": [
+        "ನನಗೆ ಈ ಮೆಡಿಸಿನ್ ಇಷ್ಟ (Nanage ee medicine ishta)",
+        "ನನಗೆ ಈ ಮೆಡಿಸಿನ್ ಅಲರ್ಜಿ ಇದೆ (Nanage ee medicine allergy idhe)",
+        "ಮೆಡಿಸಿನ್ ತಗೊಳ್ಳಲ್ಲ (Medicine thagollalla)",
+        "ಡಾಕ್ಟರ್ ಬೇಡ (Doctor beda)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ನನಗೆ ಈ ಮೆಡಿಸಿನ್ ಅಲರ್ಜಿ ಇದೆ' clearly communicates a medical drug allergy."
+    },
+    {
+      "id": "quiz-health-05",
+      "prompt": "How do you ask when the doctor will arrive?",
+      "options": [
+        "ಡಾಕ್ಟರ್ ಯಾವಾಗ ಬರ್ತಾರೆ? (Doctor yaavaaga barthaare?)",
+        "ಡಾಕ್ಟರ್ ಎಲ್ಲಿ ಹೋಗಿದ್ದಾರೆ? (Doctor elli hogidhaare?)",
+        "ಡಾಕ್ಟರ್ ಬಂದಿಲ್ಲ (Doctor bandhilla)",
+        "ಡಾಕ್ಟರ್ ಯಾರು? (Doctor yaaru?)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಡಾಕ್ಟರ್ ಯಾವಾಗ ಬರ್ತಾರೆ?' is the polite inquiry for doctor arrival time."
+    }
+  ],
+  "workplace": [
+    {
+      "id": "quiz-work-01",
+      "prompt": "How do you politely ask a coworker to send a file?",
+      "options": [
+        "ಈ ಫೈಲ್ ಕಳಿಸಿ (Ee file kalisi)",
+        "ಫೈಲ್ ಡಿಲೀಟ್ ಮಾಡಿ (File delete maadi)",
+        "ಫೈಲ್ ಬೇಡ (File beda)",
+        "ಇದು ನನ್ನ ಫೈಲ್ (Idhu nanna file)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಕಳಿಸಿ' (kalisi) means 'please send'."
+    },
+    {
+      "id": "quiz-work-02",
+      "prompt": "How do you ask 'When is the meeting?'",
+      "options": [
+        "ಮೀಟಿಂಗ್ ಮುಗೀತಾ? (Meeting mugeethaa?)",
+        "ಮೀಟಿಂಗ್ ಯಾವಾಗ ಇದೆ? (Meeting yaavaaga idhe?)",
+        "ಮೀಟಿಂಗ್ ಕ್ಯಾನ್ಸಲ್ ಆಯ್ತಾ? (Meeting cancel aaythaa?)",
+        "ಮೀಟಿಂಗ್ ರೂಮ್ ಎಲ್ಲಿದೆ? (Meeting room ellidhe?)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ಯಾವಾಗ ಇದೆ?' (yaavaaga idhe?) means 'when is it?'."
+    },
+    {
+      "id": "quiz-work-03",
+      "prompt": "How do you tell your lead that you need leave tomorrow?",
+      "options": [
+        "ನಾಳೆ ರಜೆ / ಲೀವ್ ಬೇಕಾಗಿತ್ತು (Naale raje / leave bekaagithu)",
+        "ಇವತ್ತು ಕೆಲಸ ಮಾಡ್ತೀನಿ (Ivathu kelasa maadthini)",
+        "ನಾಳೆ ಮೀಟಿಂಗ್ ಇದೆ (Naale meeting idhe)",
+        "ರಜೆ ಬೇಡ (Raje beda)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ನಾಳೆ ರಜೆ ಬೇಕಾಗಿತ್ತು' expresses a polite need for leave tomorrow."
+    },
+    {
+      "id": "quiz-work-04",
+      "prompt": "How do you announce that a task/work is completed?",
+      "options": [
+        "ಈ ಕೆಲಸ ಶುರು ಮಾಡಿಲ್ಲ (Ee kelasa shuru maadilla)",
+        "ಈ ಕೆಲಸ ಮುಗಿದಿದೆ (Ee kelasa mugidhidhe)",
+        "ಕೆಲಸ ಕಷ್ಟ ಇದೆ (Kelasa kashta idhe)",
+        "ನಾಳೆ ಮಾಡ್ತೀನಿ (Naale maadthini)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ಮುಗಿದಿದೆ' (mugidhidhe) means completed / finished."
+    },
+    {
+      "id": "quiz-work-05",
+      "prompt": "How do you invite a colleague for a tea/coffee break?",
+      "options": [
+        "ಚಹಾ / ಕಾಫಿ ಕುಡಿಯೋಣ್ವಾ? (Chaha / coffee kudiyonwaa?)",
+        "ಕಾಫಿ ಚೆನ್ನಾಗಿಲ್ಲ (Coffee chennaagilla)",
+        "ಚಹಾ ಬೇಡ (Chaha beda)",
+        "ಕೆಲಸ ನಿಲ್ಲಿಸಿ (Kelasa nillisi)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಕುಡಿಯೋಣ್ವಾ?' (kudiyonwaa?) is the friendly spoken invitation 'shall we drink?'."
+    }
+  ],
+  "restaurant": [
+    {
+      "id": "quiz-rest-01",
+      "prompt": "How do you order one Masala Dosa?",
+      "options": [
+        "ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಕೊಡಿ (Ondhu masaale dose kodi)",
+        "ದೋಸೆ ಬೇಡ (Dose beda)",
+        "ದೋಸೆ ತಿಂದೆ (Dose thinde)",
+        "ದೋಸೆ ಸುಟ್ಟುಹೋಗಿದೆ (Dose suthuhogidhe)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಕೊಡಿ' is the standard way to order one masala dosa."
+    },
+    {
+      "id": "quiz-rest-02",
+      "prompt": "How do you request food to be less spicy?",
+      "options": [
+        "ತುಂಬಾ ಖಾರ ಹಾಕಿ (Thumba khaara haaki)",
+        "ಖಾರ ಕಮ್ಮಿ ಮಾಡಿ (Khaara kammi maadi)",
+        "ಉಪ್ಪು ಜಾಸ್ತಿ ಮಾಡಿ (Uppu jaasthi maadi)",
+        "ಖಾರವೇ ಬೇಡ (Khaarave beda)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ಖಾರ ಕಮ್ಮಿ ಮಾಡಿ' (Khaara kammi maadi) tells the kitchen to reduce spice/heat."
+    },
+    {
+      "id": "quiz-rest-03",
+      "prompt": "How do you ask for drinking water?",
+      "options": [
+        "ಕುಡಿಯೋಕೆ ನೀರು ಕೊಡಿ (Kudiyoke neeru kodi)",
+        "ಹಾಲು ಕೊಡಿ (Haalu kodi)",
+        "ಜ್ಯೂಸ್ ಬೇಡ (Juice beda)",
+        "ನೀರು ಚೆಲ್ಲಿತು (Neeru chellithu)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಕುಡಿಯೋಕೆ ನೀರು ಕೊಡಿ' means 'Please bring drinking water'."
+    },
+    {
+      "id": "quiz-rest-04",
+      "prompt": "How do you ask to pack food for takeaway?",
+      "options": [
+        "ಇಲ್ಲೇ ತಿಂತೀನಿ (Ille thinthini)",
+        "ಪಾರ್ಸಲ್ ಕಟ್ಟಿ ಕೊಡಿ (Parcel katti kodi)",
+        "ಪ್ಲೇಟ್ ತನ್ನಿ (Plate thanni)",
+        "ತಿಂಡಿ ಬೇಡ (Thindi beda)"
+      ],
+      "answerIndex": 1,
+      "explanation": "'ಪಾರ್ಸಲ್ ಕಟ್ಟಿ ಕೊಡಿ' is the standard phrase for food packaging/takeaway."
+    },
+    {
+      "id": "quiz-rest-05",
+      "prompt": "How do you compliment the food saying 'The food was very good'?",
+      "options": [
+        "ಊಟ ತುಂಬಾ ಚೆನ್ನಾಗಿತ್ತು (Oota thumba chennaagithu)",
+        "ಊಟ ಸರಿ ಇಲ್ಲ (Oota sari illa)",
+        "ಊಟ ತಣ್ಣಗಾಗಿದೆ (Oota thannagaagidhe)",
+        "ಊಟ ಬಂದಿಲ್ಲ (Oota bandhilla)"
+      ],
+      "answerIndex": 0,
+      "explanation": "'ಊಟ ತುಂಬಾ ಚೆನ್ನಾಗಿತ್ತು' (Oota thumba chennaagithu) is a warm, authentic compliment to the chef/server."
+    }
+  ]
+}

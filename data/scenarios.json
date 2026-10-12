@@ -1,0 +1,37 @@
+[
+  {
+    "id": "transport",
+    "slug": "transport",
+    "title": "Transport",
+    "icon": "bus",
+    "phraseCount": 10
+  },
+  {
+    "id": "shopping",
+    "slug": "shopping",
+    "title": "Shopping",
+    "icon": "shopping-bag",
+    "phraseCount": 10
+  },
+  {
+    "id": "healthcare",
+    "slug": "healthcare",
+    "title": "Healthcare",
+    "icon": "heart-pulse",
+    "phraseCount": 10
+  },
+  {
+    "id": "workplace",
+    "slug": "workplace",
+    "title": "Workplace",
+    "icon": "briefcase",
+    "phraseCount": 10
+  },
+  {
+    "id": "restaurant",
+    "slug": "restaurant",
+    "title": "Restaurant",
+    "icon": "utensils",
+    "phraseCount": 10
+  }
+]

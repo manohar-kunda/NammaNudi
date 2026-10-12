@@ -1,0 +1,704 @@
+{
+  "transport": {
+    "title": "Hiring an Auto in Bengaluru",
+    "start": "trans_node_1",
+    "nodes": {
+      "trans_node_1": {
+        "speaker": "Auto Driver",
+        "kn": "ಎಲ್ಲಿಗೆ ಹೋಗ್ಬೇಕು ಸಾರ್?",
+        "translit": "Ellige hogbeku saar?",
+        "en": "Where do you want to go, sir?",
+        "options": [
+          {
+            "kn": "ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ತೀರಾ? ಮೀಟರ್ ಹಾಕಿ.",
+            "translit": "Majestic-ge hogthira? Meter haaki.",
+            "en": "Will you go to Majestic? Please put the meter.",
+            "feedback": "Perfect! Clear destination and polite meter request.",
+            "quality": "good",
+            "next": "trans_node_2"
+          },
+          {
+            "kn": "ಮೆಜೆಸ್ಟಿಕ್ ಎಷ್ಟು?",
+            "translit": "Majestic eshtu?",
+            "en": "How much for Majestic?",
+            "feedback": "Acceptable, but asking for flat fare encourages off-meter quotes.",
+            "quality": "ok",
+            "next": "trans_node_2_flat"
+          },
+          {
+            "kn": "ಹೋಗಿ ಹೋಗಿ, ನನಗೆ ಬೇಗ ಆಗ್ಬೇಕು.",
+            "translit": "Hogi hogi, nanage bega aagbeku.",
+            "en": "Go go, I am in a hurry.",
+            "feedback": "Unclear destination and sounds impolite.",
+            "quality": "poor",
+            "next": "trans_node_2"
+          }
+        ]
+      },
+      "trans_node_2": {
+        "speaker": "Auto Driver",
+        "kn": "ಮೆಜೆಸ್ಟಿಕ್ ತುಂಬಾ ಟ್ರಾಫಿಕ್ ಇದೆ. ಮೀಟರ್ ಮೇಲೆ ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಎಕ್ಸ್ಟ್ರಾ ಕೊಡಿ.",
+        "translit": "Majestic thumba traffic idhe. Meter mele ippathu roopaayi extra kodi.",
+        "en": "There is heavy traffic towards Majestic. Give 20 rupees extra above the meter.",
+        "options": [
+          {
+            "kn": "ಸರಿ ಅಣ್ಣಾ, ಮೀಟರ್ ಹಾಕಿ, ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಎಕ್ಸ್ಟ್ರಾ ಕೊಡ್ತೀನಿ.",
+            "translit": "Sari anna, meter haaki, ippathu roopaayi extra kodthini.",
+            "en": "Okay brother, put the meter, I'll pay 20 rupees extra.",
+            "feedback": "Very pragmatic and polite agreement in Bengaluru traffic.",
+            "quality": "good",
+            "next": "trans_node_3"
+          },
+          {
+            "kn": "ಇಲ್ಲ, ಮೀಟರ್ ಮಾತ್ರ ಕೊಡ್ತೀನಿ.",
+            "translit": "Illa, meter maathra kodthini.",
+            "en": "No, I will only pay the meter charge.",
+            "feedback": "Fair demand, though driver might decline during peak hours.",
+            "quality": "ok",
+            "next": "trans_node_3"
+          },
+          {
+            "kn": "ಎಕ್ಸ್ಟ್ರಾ ಕೊಡಲ್ಲ, ನೀವು ಸುಳ್ಳು ಹೇಳ್ತಿದ್ದೀರಾ.",
+            "translit": "Extra kodalla, neevu sullu helthiddhira.",
+            "en": "I won't give extra, you are lying.",
+            "feedback": "Aggressive phrasing; likely to cause conflict.",
+            "quality": "poor",
+            "next": "trans_node_3"
+          }
+        ]
+      },
+      "trans_node_2_flat": {
+        "speaker": "Auto Driver",
+        "kn": "ನೂರೈವತ್ತು ರೂಪಾಯಿ ಆಗುತ್ತೆ, ಬನ್ನಿ.",
+        "translit": "Nooraivathu roopaayi aaguththe, banni.",
+        "en": "It will be 150 rupees, come.",
+        "options": [
+          {
+            "kn": "ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ ಅಣ್ಣಾ, ನೂರಕ್ಕೆ ಬನ್ನಿ ಅಥವಾ ಮೀಟರ್ ಹಾಕಿ.",
+            "translit": "Swalpa kammi maadi anna, noorakke banni athava meter haaki.",
+            "en": "Reduce a little brother, come for 100 or put meter.",
+            "feedback": "Smart negotiation back to fair rate or meter.",
+            "quality": "good",
+            "next": "trans_node_3"
+          },
+          {
+            "kn": "ಸರಿ, ನೂರೈವತ್ತು ಕೊಡ್ತೀನಿ.",
+            "translit": "Sari, nooraivathu kodthini.",
+            "en": "Okay, I'll give 150.",
+            "feedback": "Directly accepted, slightly higher than standard fare.",
+            "quality": "ok",
+            "next": "trans_node_3"
+          },
+          {
+            "kn": "ತುಂಬಾ ಜಾಸ್ತಿ, ಬೇಡ.",
+            "translit": "Thumba jaasthi, beda.",
+            "en": "Too high, no.",
+            "feedback": "Abrupt refusal without counter-offer.",
+            "quality": "poor",
+            "next": "trans_node_3"
+          }
+        ]
+      },
+      "trans_node_3": {
+        "speaker": "Auto Driver",
+        "kn": "ಮೆಜೆಸ್ಟಿಕ್ ಬಂತು. ಎಲ್ಲಿ ನಿಲ್ಲಿಸಬೇಕು?",
+        "translit": "Majestic banthu. Elli nillisabeku?",
+        "en": "Majestic has arrived. Where should I stop?",
+        "options": [
+          {
+            "kn": "ಮುಂದೆ ಮೆಟ್ರೋ ಸ್ಟೇಷನ್ ಹತ್ರ ಲೆಫ್ಟ್‌ನಲ್ಲಿ ನಿಲ್ಲಿಸಿ.",
+            "translit": "Munde metro station hathra left-nalli nillisi.",
+            "en": "Please stop ahead on the left near the metro station.",
+            "feedback": "Precise and helpful landmark direction.",
+            "quality": "good",
+            "next": "trans_node_4"
+          },
+          {
+            "kn": "ಇಲ್ಲೇ ನಿಲ್ಲಿಸಿ.",
+            "translit": "Ille nillisi.",
+            "en": "Stop right here.",
+            "feedback": "Clear, though doesn't specify safe kerb side.",
+            "quality": "ok",
+            "next": "trans_node_4"
+          },
+          {
+            "kn": "ನಿಲ್ಲು ನಿಲ್ಲು!",
+            "translit": "Nillu nillu!",
+            "en": "Stop stop!",
+            "feedback": "Too sudden and lacks respect.",
+            "quality": "poor",
+            "next": "trans_node_4"
+          }
+        ]
+      },
+      "trans_node_4": {
+        "speaker": "Auto Driver",
+        "kn": "ಮೀಟರ್ ನೂರೈವತ್ತು ಆಗಿದೆ. ಕ್ಯಾಶ್ ಕೊಡ್ತೀರಾ?",
+        "translit": "Meter nooraivathu aagidhe. Cash kodthira?",
+        "en": "Meter is 150. Will you pay cash?",
+        "options": [
+          {
+            "kn": "ಕ್ಯಾಶ್ ಇಲ್ಲ ಅಣ್ಣಾ, ಸ್ಕ್ಯಾನರ್ ಇದ್ಯಾ? UPI ಮಾಡ್ತೀನಿ.",
+            "translit": "Cash illa anna, scanner idhya? UPI maadthini.",
+            "en": "No cash brother, do you have a scanner? I will do UPI.",
+            "feedback": "Standard practical payment query in Bengaluru.",
+            "quality": "good",
+            "next": null
+          },
+          {
+            "kn": "ಹೂಂ, ಇಲ್ನೋಡಿ ನೂರೈವತ್ತು ರೂಪಾಯಿ.",
+            "translit": "Hoom, ilnodi nooraivathu roopaayi.",
+            "en": "Yes, look here, 150 rupees.",
+            "feedback": "Direct cash payment.",
+            "quality": "ok",
+            "next": null
+          },
+          {
+            "kn": "ಚೇಂಜ್ ಇಲ್ಲ, ಎರಡು ಸಾವಿರ ನೋಟ್ ತಗೊಳ್ಳಿ.",
+            "translit": "Change illa, eradu saavira note thagoli.",
+            "en": "No change, take a 2000 note.",
+            "feedback": "Tough for auto drivers to break high-denomination notes.",
+            "quality": "poor",
+            "next": null
+          }
+        ]
+      }
+    }
+  },
+  "shopping": {
+    "title": "Buying Vegetables at the Market",
+    "start": "shop_node_1",
+    "nodes": {
+      "shop_node_1": {
+        "speaker": "Vendor",
+        "kn": "ಬನ್ನಿ ಸಾರ್, ತಾಜಾ ತರಕಾರಿ ಇದೆ. ಏನು ಬೇಕು?",
+        "translit": "Banni saar, thaaja tharakaari idhe. Enu beku?",
+        "en": "Come sir, fresh vegetables are here. What do you need?",
+        "options": [
+          {
+            "kn": "ಈರುಳ್ಳಿ ಮತ್ತು ಟೊಮ್ಯಾಟೋ ಎಷ್ಟು ಬೆಲೆ?",
+            "translit": "Eerulli mathu tomato eshtu bele?",
+            "en": "How much for onions and tomatoes?",
+            "feedback": "Clear, direct item inquiry.",
+            "quality": "good",
+            "next": "shop_node_2"
+          },
+          {
+            "kn": "ತರಕಾರಿ ರೇಟ್ ಹೇಳಿ.",
+            "translit": "Tharakaari rate heli.",
+            "en": "Tell the vegetable rates.",
+            "feedback": "A bit broad, but understandable.",
+            "quality": "ok",
+            "next": "shop_node_2"
+          },
+          {
+            "kn": "ಇದು ಫ್ರೆಶ್ ಇಲ್ಲ ಅನ್ನಿಸುತ್ತೆ.",
+            "translit": "Idhu fresh illa annisuththe.",
+            "en": "Looks like this isn't fresh.",
+            "feedback": "Skeptical opening without even checking prices.",
+            "quality": "poor",
+            "next": "shop_node_2"
+          }
+        ]
+      },
+      "shop_node_2": {
+        "speaker": "Vendor",
+        "kn": "ಈರುಳ್ಳಿ ಕಿಲೋಗೆ ನಲವತ್ತು ರೂಪಾಯಿ, ಟೊಮ್ಯಾಟೋ ಮೂವತ್ತು ರೂಪಾಯಿ.",
+        "translit": "Eerulli kiloge nalavathu roopaayi, tomato moovathu roopaayi.",
+        "en": "Onions are forty rupees a kilo, tomatoes thirty rupees.",
+        "options": [
+          {
+            "kn": "ಎರಡು ಕಿಲೋ ಈರುಳ್ಳಿ ತಗೊಂಡ್ರೆ ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡ್ತೀರಾ?",
+            "translit": "Eradu kilo eerulli thagondre swalpa kammi maadthira?",
+            "en": "If I take two kilos of onions, will you reduce the price a bit?",
+            "feedback": "Polite bulk bargaining.",
+            "quality": "good",
+            "next": "shop_node_3"
+          },
+          {
+            "kn": "ಒಂದು ಕಿಲೋ ಈರುಳ್ಳಿ, ಅರ್ಧ ಕಿಲೋ ಟೊಮ್ಯಾಟೋ ಕೊಡಿ.",
+            "translit": "Ondhu kilo eerulli, ardha kilo tomato kodi.",
+            "en": "Give one kilo onion, half kilo tomato.",
+            "feedback": "Direct purchase without bargaining.",
+            "quality": "ok",
+            "next": "shop_node_3"
+          },
+          {
+            "kn": "ಬೇರೆ ಅಂಗಡಿಯಲ್ಲಿ ತುಂಬಾ ಕಮ್ಮಿ ಇದೆ!",
+            "translit": "Bere angadiyalli thumba kammi idhe!",
+            "en": "It is much cheaper in other shops!",
+            "feedback": "A bit confrontational.",
+            "quality": "poor",
+            "next": "shop_node_3"
+          }
+        ]
+      },
+      "shop_node_3": {
+        "speaker": "Vendor",
+        "kn": "ಸರಿ ಸಾರ್, ಎರಡು ಕಿಲೋ ಈರುಳ್ಳಿ ಎಪ್ಪತ್ತು ರೂಪಾಯಿಗೆ ಕೊಡ್ತೀನಿ. ಕವರ್ ಬೇಕಾ?",
+        "translit": "Sari saar, eradu kilo eerulli eppathu roopaayige kodthini. Cover bekaa?",
+        "en": "Okay sir, I'll give 2 kilos onions for seventy rupees. Do you need a bag?",
+        "options": [
+          {
+            "kn": "ಹೌದು, ಒಂದು ಕವರ್ ಕೊಡಿ. ಜೊತೆಗೆ ಸ್ವಲ್ಪ ಕೊತ್ತಂಬರಿ ಸೊಪ್ಪು ಹಾಕಿ.",
+            "translit": "Haudhu, ondhu cover kodi. Jothege swalpa kothambari soppu haaki.",
+            "en": "Yes, give a bag please. Also add a little coriander greens.",
+            "feedback": "Quintessential market interaction in Karnataka!",
+            "quality": "good",
+            "next": "shop_node_4"
+          },
+          {
+            "kn": "ನನ್ನ ಹತ್ರ ಬ್ಯಾಗ್ ಇದೆ, ಕವರ್ ಬೇಡ.",
+            "translit": "Nanna hathra bag idhe, cover beda.",
+            "en": "I have my own bag, no carry bag needed.",
+            "feedback": "Eco-friendly and clear.",
+            "quality": "good",
+            "next": "shop_node_4"
+          },
+          {
+            "kn": "ಕವರ್ ಕೊಡಿ ಬೇಗ.",
+            "translit": "Cover kodi bega.",
+            "en": "Give bag fast.",
+            "feedback": "Rushed and blunt.",
+            "quality": "poor",
+            "next": "shop_node_4"
+          }
+        ]
+      },
+      "shop_node_4": {
+        "speaker": "Vendor",
+        "kn": "ಒಟ್ಟು ಎಪ್ಪತ್ತು ರೂಪಾಯಿ ಆಯ್ತು ಸಾರ್.",
+        "translit": "Ottu eppathu roopaayi aaythu saar.",
+        "en": "Total is seventy rupees sir.",
+        "options": [
+          {
+            "kn": "PhonePe ಸ್ಕ್ಯಾನರ್ ಇದ್ಯಾ? ಸ್ಕ್ಯಾನ್ ಮಾಡ್ತೀನಿ.",
+            "translit": "PhonePe scanner idhya? Scan maadthini.",
+            "en": "Do you have PhonePe scanner? I will scan.",
+            "feedback": "Polite digital payment request.",
+            "quality": "good",
+            "next": null
+          },
+          {
+            "kn": "ನೂರು ರೂಪಾಯಿ ಇದೆ, ಚೇಂಜ್ ಕೊಡಿ.",
+            "translit": "Nooru roopaayi idhe, change kodi.",
+            "en": "Here is 100 rupees, please give change.",
+            "feedback": "Simple cash handover.",
+            "quality": "ok",
+            "next": null
+          },
+          {
+            "kn": "ಐನೂರು ನೋಟು ಮಾತ್ರ ಇರೋದು.",
+            "translit": "Ainooru notu maathra irodhu.",
+            "en": "I only have a 500 note.",
+            "feedback": "Inconvenient for a small 70-rupee purchase.",
+            "quality": "poor",
+            "next": null
+          }
+        ]
+      }
+    }
+  },
+  "healthcare": {
+    "title": "Visiting a Clinic Doctor",
+    "start": "health_node_1",
+    "nodes": {
+      "health_node_1": {
+        "speaker": "Doctor",
+        "kn": "ನಮಸ್ಕಾರ, ಏನು ತೊಂದರೆ ಆಗಿದೆ?",
+        "translit": "Namaskaara, enu thondhare aagidhe?",
+        "en": "Hello, what seems to be the problem?",
+        "options": [
+          {
+            "kn": "ನಮಸ್ಕಾರ ಡಾಕ್ಟರ್, ಎರಡು ದಿನದಿಂದ ಜ್ವರ ಮತ್ತು ತಲೆ ನೋವು ಇದೆ.",
+            "translit": "Namaskaara doctor, eradu dhinadhinda jvara mathu thale novu idhe.",
+            "en": "Hello doctor, I have fever and headache for two days.",
+            "feedback": "Clear symptom description and timeframe.",
+            "quality": "good",
+            "next": "health_node_2"
+          },
+          {
+            "kn": "ನನಗೆ ಆರಾಮ ಇಲ್ಲ, ಔಷಧಿ ಕೊಡಿ.",
+            "translit": "Nanage aaraama illa, aushadhi kodi.",
+            "en": "I am not feeling well, give medicine.",
+            "feedback": "Vague about specific symptoms.",
+            "quality": "ok",
+            "next": "health_node_2"
+          },
+          {
+            "kn": "ತುಂಬಾ ಸಿಕ್ ಇದ್ದೀನಿ, ಬೇಗ ನೋಡಿ.",
+            "translit": "Thumba sick iddhini, bega nodi.",
+            "en": "I'm very sick, check quickly.",
+            "feedback": "Impatient and gives no medical details.",
+            "quality": "poor",
+            "next": "health_node_2"
+          }
+        ]
+      },
+      "health_node_2": {
+        "speaker": "Doctor",
+        "kn": "ಚಳಿ ಬರ್ತಾ ಇದ್ಯಾ? ಕೆಮ್ಮು ಅಥವಾ ಗಂಟಲು ನೋವು ಇದ್ಯಾ?",
+        "translit": "Chali barthaa idhya? Kemmu athava gantalu novu idhya?",
+        "en": "Are you getting chills? Do you have cough or sore throat?",
+        "options": [
+          {
+            "kn": "ಹೌದು ಡಾಕ್ಟರ್, ರಾತ್ರಿ ಚಳಿ ಬರುತ್ತೆ ಮತ್ತು ಗಂಟಲು ನೋವು ಇದೆ.",
+            "translit": "Haudhu doctor, raathri chali baruththe mathu gantalu novu idhe.",
+            "en": "Yes doctor, chills at night and throat pain is there.",
+            "feedback": "Direct, informative response helping diagnosis.",
+            "quality": "good",
+            "next": "health_node_3"
+          },
+          {
+            "kn": "ಕೆಮ್ಮು ಸ್ವಲ್ಪ ಇದೆ.",
+            "translit": "Kemmu swalpa idhe.",
+            "en": "A little cough is there.",
+            "feedback": "Answers partially.",
+            "quality": "ok",
+            "next": "health_node_3"
+          },
+          {
+            "kn": "ಗೊತ್ತಿಲ್ಲ, ನೀವೇ ಚೆಕ್ ಮಾಡಿ.",
+            "translit": "Gotthilla, neeve check maadi.",
+            "en": "Don't know, you check yourself.",
+            "feedback": "Unhelpful for the clinician.",
+            "quality": "poor",
+            "next": "health_node_3"
+          }
+        ]
+      },
+      "health_node_3": {
+        "speaker": "Doctor",
+        "kn": "ವೈರಲ್ ಫೀವರ್ ಇರಬಹುದು. ಮೂರು ದಿನಕ್ಕೆ ಮಾತ್ರೆ ಬರೆದಿದ್ದೀನಿ.",
+        "translit": "Viral fever irabahudu. Mooru dhinakke maathre baredhiddhini.",
+        "en": "Likely viral fever. I have prescribed tablets for three days.",
+        "options": [
+          {
+            "kn": "ಈ ಮಾತ್ರೆ ಊಟ ಆದ್ಮೇಲೆ ತಗೋಬೇಕಾ ಡಾಕ್ಟರ್?",
+            "translit": "Ee maathre oota aadhmele thagobekaa doctor?",
+            "en": "Should I take these tablets after food doctor?",
+            "feedback": "Essential question for safe medication intake.",
+            "quality": "good",
+            "next": "health_node_4"
+          },
+          {
+            "kn": "ದಿನಕ್ಕೆ ಎಷ್ಟು ಸಾರಿ ತಗೋಬೇಕು?",
+            "translit": "Dhinakke eshtu saari thagobeku?",
+            "en": "How many times a day should I take them?",
+            "feedback": "Good practical dosage inquiry.",
+            "quality": "good",
+            "next": "health_node_4"
+          },
+          {
+            "kn": "ಇಂಜೆಕ್ಷನ್ ಬೇಡ, ಬರೀ ಮಾತ್ರೆ ಸಾಕು.",
+            "translit": "Injection beda, baree maathre saaku.",
+            "en": "No injection, only tablets are enough.",
+            "feedback": "Preemptive assumption before the doctor suggested injection.",
+            "quality": "ok",
+            "next": "health_node_4"
+          }
+        ]
+      },
+      "health_node_4": {
+        "speaker": "Doctor",
+        "kn": "ಹೌದು, ಬೆಳಗ್ಗೆ ಮತ್ತು ರಾತ್ರಿ ಊಟ ಆದ್ಮೇಲೆ ತಗೊಳ್ಳಿ. ಬಿಸಿ ನೀರು ಕುಡಿಯಿರಿ.",
+        "translit": "Haudhu, belagge mathu raathri oota aadhmele thagoli. Bisi neeru kudiyiri.",
+        "en": "Yes, take morning and night after food. Drink warm water.",
+        "options": [
+          {
+            "kn": "ಧನ್ಯವಾದಗಳು ಡಾಕ್ಟರ್, ಹಾಗೇ ಮಾಡ್ತೀನಿ.",
+            "translit": "Dhanyavaadhagalu doctor, haage maadthini.",
+            "en": "Thank you doctor, will do so.",
+            "feedback": "Courteous and cooperative conclusion.",
+            "quality": "good",
+            "next": null
+          },
+          {
+            "kn": "ಟೆಸ್ಟ್ ಏನೂ ಬೇಡ್ವಾ?",
+            "translit": "Test enoo bedwaa?",
+            "en": "No tests needed?",
+            "feedback": "Valid clarifying check.",
+            "quality": "ok",
+            "next": null
+          },
+          {
+            "kn": "ಸರಿ ಸರಿ, ಹೋಗ್ತೀನಿ.",
+            "translit": "Sari sari, hogthini.",
+            "en": "Okay okay, I am leaving.",
+            "feedback": "Too casual for a clinical consultation.",
+            "quality": "poor",
+            "next": null
+          }
+        ]
+      }
+    }
+  },
+  "workplace": {
+    "title": "Discussing a Task with a Colleague",
+    "start": "work_node_1",
+    "nodes": {
+      "work_node_1": {
+        "speaker": "Colleague",
+        "kn": "ಹಾಯ್, ನಿನ್ನೆ ಹೇಳಿದ ರಿಪೋರ್ಟ್ ರೆಡಿ ಆಯ್ತಾ?",
+        "translit": "Hi, ninne helidha report ready aaythaa?",
+        "en": "Hi, is the report mentioned yesterday ready?",
+        "options": [
+          {
+            "kn": "ಹಾಯ್, ಕೆಲಸ ಮುಗಿದಿದೆ. ಈಗಲೇ ಮೇಲ್ ಕಳಿಸ್ತೀನಿ.",
+            "translit": "Hi, kelasa mugidhidhe. Eegale mail kalisthini.",
+            "en": "Hi, work is finished. I will send the email right away.",
+            "feedback": "Prompt, professional, and reliable response.",
+            "quality": "good",
+            "next": "work_node_2"
+          },
+          {
+            "kn": "ಇನ್ನೊಂದು ಅರ್ಧ ಗಂಟೆಯಲ್ಲಿ ಕಳಿಸ್ತೀನಿ.",
+            "translit": "Innondu ardha ganteyalli kalisthini.",
+            "en": "I will send it in half an hour.",
+            "feedback": "Realistic timeframe commitment.",
+            "quality": "ok",
+            "next": "work_node_2"
+          },
+          {
+            "kn": "ಇನ್ನು ಶುರು ಮಾಡಿಲ್ಲ, ತುಂಬಾ ಕೆಲಸ ಇತ್ತು.",
+            "translit": "Innu shuru maadilla, thumba kelasa ithu.",
+            "en": "Haven't started yet, had too much work.",
+            "feedback": "Could communicate delays earlier with better context.",
+            "quality": "poor",
+            "next": "work_node_2"
+          }
+        ]
+      },
+      "work_node_2": {
+        "speaker": "Colleague",
+        "kn": "ಸೂಪರ್! ಮೂರು ಗಂಟೆಗೆ ಕ್ಲೈಂಟ್ ಮೀಟಿಂಗ್ ಇದೆ, ನೀವು ಜಾಯಿನ್ ಆಗ್ತೀರಾ?",
+        "translit": "Super! Mooru gantege client meeting idhe, neevu join aagthira?",
+        "en": "Super! There's a client meeting at 3 PM, will you join?",
+        "options": [
+          {
+            "kn": "ಹೌದು ಖಂಡಿತ, ಮೀಟಿಂಗ್ ಲಿಂಕ್ ಕಳಿಸಿ ಜಾಯಿನ್ ಆಗ್ತೀನಿ.",
+            "translit": "Haudhu khanditha, meeting link kalisi join aagthini.",
+            "en": "Yes definitely, send the meeting link and I will join.",
+            "feedback": "Enthusiastic and clear participation.",
+            "quality": "good",
+            "next": "work_node_3"
+          },
+          {
+            "kn": "ಕ್ಯಾಲೆಂಡರ್ ಇನ್ವೈಟ್ ಇದ್ಯಾ? ನೋಡಿ ಹೇಳ್ತೀನಿ.",
+            "translit": "Calendar invite idhya? Nodi helthini.",
+            "en": "Is there a calendar invite? I will check and say.",
+            "feedback": "Professional schedule checking.",
+            "quality": "ok",
+            "next": "work_node_3"
+          },
+          {
+            "kn": "ನನಗೆ ಮೀಟಿಂಗ್ ಇಷ್ಟ ಇಲ್ಲ.",
+            "translit": "Nanage meeting ishta illa.",
+            "en": "I don't like meetings.",
+            "feedback": "Unprofessional workplace statement.",
+            "quality": "poor",
+            "next": "work_node_3"
+          }
+        ]
+      },
+      "work_node_3": {
+        "speaker": "Colleague",
+        "kn": "ಸರಿ, ಲಿಂಕ್ ಕಳಿಸಿದ್ದೀನಿ. ಮೀಟಿಂಗ್ ಮುಂಚೆ ಒಂದು ಕಾಫಿ ಕುಡಿಯೋಣ್ವಾ?",
+        "translit": "Sari, link kalisiddhini. Meeting munche ondhu coffee kudiyonwaa?",
+        "en": "Okay, sent the link. Shall we grab a coffee before the meeting?",
+        "options": [
+          {
+            "kn": "ಖಂಡಿತ, ಐದು ನಿಮಿಷದಲ್ಲಿ ಕೆಫೆಟೇರಿಯಾ ಹತ್ರ ಸಿಗೋಣ.",
+            "translit": "Khanditha, aidhu nimishadhalli cafeteria hathra sigona.",
+            "en": "Definitely, let's meet near the cafeteria in five minutes.",
+            "feedback": "Friendly, collaborative team rapport.",
+            "quality": "good",
+            "next": null
+          },
+          {
+            "kn": "ಈಗ ಸ್ವಲ್ಪ ಕೆಲಸ ಇದೆ, ಆಮೇಲೆ ಕುಡಿಯೋಣ.",
+            "translit": "Eega swalpa kelasa idhe, aamele kudiyona.",
+            "en": "I have some work now, let's drink later.",
+            "feedback": "Polite raincheck.",
+            "quality": "ok",
+            "next": null
+          },
+          {
+            "kn": "ಕಾಫಿ ಬೇಡ, ಟೈಮ್ ಇಲ್ಲ.",
+            "translit": "Coffee beda, time illa.",
+            "en": "No coffee, no time.",
+            "feedback": "A bit curt with a teammate.",
+            "quality": "poor",
+            "next": null
+          }
+        ]
+      }
+    }
+  },
+  "restaurant": {
+    "title": "Ordering Food at a Darshini",
+    "start": "rest_node_1",
+    "nodes": {
+      "rest_node_1": {
+        "speaker": "Waiter",
+        "kn": "ನಮಸ್ಕಾರ ಸಾರ್, ತಿಂಡಿಗೆ ಏನು ತರಲಿ?",
+        "translit": "Namaskaara saar, thindige enu tharali?",
+        "en": "Hello sir, what should I bring for breakfast/snacks?",
+        "options": [
+          {
+            "kn": "ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಮತ್ತು ಒಂದು ಫಿಲ್ಟರ್ ಕಾಫಿ ಕೊಡಿ.",
+            "translit": "Ondhu masaale dose mathu ondhu filter coffee kodi.",
+            "en": "Give one masala dosa and one filter coffee.",
+            "feedback": "Classic, clear Bengaluru breakfast order.",
+            "quality": "good",
+            "next": "rest_node_2"
+          },
+          {
+            "kn": "ಇವತ್ತು ಸ್ಪೆಷಲ್ ಏನು ಇದೆ?",
+            "translit": "Ivathu special enu idhe?",
+            "en": "What is the special today?",
+            "feedback": "Great inquiry to discover daily menu items.",
+            "quality": "good",
+            "next": "rest_node_2_special"
+          },
+          {
+            "kn": "ಬೇಗ ಏನು ಸಿಗುತ್ತೆ ಅದನ್ನೇ ತನ್ನಿ.",
+            "translit": "Bega enu siguththe adhanne thanni.",
+            "en": "Bring whatever is available quickly.",
+            "feedback": "A bit too informal, though common when in a rush.",
+            "quality": "ok",
+            "next": "rest_node_2"
+          }
+        ]
+      },
+      "rest_node_2": {
+        "speaker": "Waiter",
+        "kn": "ದೋಸೆ ಕ್ರಿಸ್ಪಿಯಾಗಿ ಮಾಡ್ಲಾ? ಕಾಫಿ ಊಟ ಆದ್ಮೇಲೆ ತರಲಾ ಅಥವಾ ಈಗಲೇನಾ?",
+        "translit": "Dose crispy aagi maadlaa? Coffee oota aadhmele tharalaa athava eegalenaa?",
+        "en": "Shall I make the dosa crispy? Bring coffee after food or right now?",
+        "options": [
+          {
+            "kn": "ದೋಸೆ ಕ್ರಿಸ್ಪಿ ಮಾಡಿ, ಕಾಫಿ ಊಟ ಆದ್ಮೇಲೆ ಕೊಡಿ.",
+            "translit": "Dose crispy maadi, coffee oota aadhmele kodi.",
+            "en": "Make the dosa crispy, and give coffee after food.",
+            "feedback": "Clear preferences communicated courteously.",
+            "quality": "good",
+            "next": "rest_node_3"
+          },
+          {
+            "kn": "ಎಲ್ಲಾ ಒಟ್ಟಿಗೆ ತನ್ನಿ.",
+            "translit": "Ella ottige thanni.",
+            "en": "Bring everything together.",
+            "feedback": "Simple and straightforward.",
+            "quality": "ok",
+            "next": "rest_node_3"
+          },
+          {
+            "kn": "ಹೆಂಗೆ ಬೇಕಾದ್ರೂ ತನ್ನಿ.",
+            "translit": "Henge bekaadhroo thanni.",
+            "en": "Bring however you like.",
+            "feedback": "Indifferent tone.",
+            "quality": "poor",
+            "next": "rest_node_3"
+          }
+        ]
+      },
+      "rest_node_2_special": {
+        "speaker": "Waiter",
+        "kn": "ಇವತ್ತು ರವೆ ಇಡ್ಲಿ ಮತ್ತು ಮೈಸೂರು ಪಾಕ್ ಸ್ಪೆಷಲ್ ಇದೆ ಸಾರ್.",
+        "translit": "Ivathu rave idli mathu Mysore pak special idhe saar.",
+        "en": "Today rave idli and Mysore pak are specials, sir.",
+        "options": [
+          {
+            "kn": "ಹಾಗಾದ್ರೆ ಒಂದು ರವೆ ಇಡ್ಲಿ ಮತ್ತು ಕಾಫಿ ಕೊಡಿ.",
+            "translit": "Haagaadhre ondhu rave idli mathu coffee kodi.",
+            "en": "Then please give one rave idli and coffee.",
+            "feedback": "Decisive choice following the recommendation.",
+            "quality": "good",
+            "next": "rest_node_3"
+          },
+          {
+            "kn": "ಬೇಡ, ಮಾಮೂಲಿ ಮಸಾಲೆ ದೋಸೆಯೇ ಕೊಡಿ.",
+            "translit": "Beda, maamooli masaale doseyee kodi.",
+            "en": "No, give regular masala dosa itself.",
+            "feedback": "Clear fallback preference.",
+            "quality": "ok",
+            "next": "rest_node_3"
+          },
+          {
+            "kn": "ರೇಟ್ ಎಷ್ಟು? ತುಂಬಾ ಕಾಸ್ಟ್ಲಿನಾ?",
+            "translit": "Rate eshtu? Thumba costly-naa?",
+            "en": "What is the rate? Is it too costly?",
+            "feedback": "Can be asked more naturally like 'eshtu aaguththe?'.",
+            "quality": "ok",
+            "next": "rest_node_3"
+          }
+        ]
+      },
+      "rest_node_3": {
+        "speaker": "Waiter",
+        "kn": "ಆರ್ಡರ್ ಬಂತು ಸಾರ್. ಕುಡಿಯೋಕೆ ಬಿಸಿ ನೀರು ಬೇಕಾ?",
+        "translit": "Order banthu saar. Kudiyoke bisi neeru bekaa?",
+        "en": "Here is your order sir. Do you want warm water to drink?",
+        "options": [
+          {
+            "kn": "ಹೌದು, ಕುಡಿಯೋಕೆ ಬಿಸಿ ನೀರು ಕೊಡಿ. ಧನ್ಯವಾದಗಳು.",
+            "translit": "Haudhu, kudiyoke bisi neeru kodi. Dhanyavaadhagalu.",
+            "en": "Yes, please give warm drinking water. Thank you.",
+            "feedback": "Pleasant and polite dining etiquette.",
+            "quality": "good",
+            "next": "rest_node_4"
+          },
+          {
+            "kn": "ಮಾಮೂಲಿ ನೀರು ಕೊಡಿ.",
+            "translit": "Maamooli neeru kodi.",
+            "en": "Give regular water.",
+            "feedback": "Direct preference.",
+            "quality": "ok",
+            "next": "rest_node_4"
+          },
+          {
+            "kn": "ನೀರು ಬೇಡ.",
+            "translit": "Neeru beda.",
+            "en": "No water.",
+            "feedback": "Short and blunt.",
+            "quality": "poor",
+            "next": "rest_node_4"
+          }
+        ]
+      },
+      "rest_node_4": {
+        "speaker": "Waiter",
+        "kn": "ತಿಂಡಿ ಮುಗೀತಾ ಸಾರ್? ಬಿಲ್ ತರಲಾ?",
+        "translit": "Thindi mugeethaa saar? Bill tharalaa?",
+        "en": "Finished snacks sir? Shall I bring the bill?",
+        "options": [
+          {
+            "kn": "ಹೌದು, ಬಿಲ್ ತನ್ನಿ. ಊಟ ತುಂಬಾ ಚೆನ್ನಾಗಿತ್ತು!",
+            "translit": "Haudhu, bill thanni. Oota thumba chennaagithu!",
+            "en": "Yes, bring the bill. Food was very delicious!",
+            "feedback": "Warm appreciation and prompt bill request.",
+            "quality": "good",
+            "next": null
+          },
+          {
+            "kn": "ಬಿಲ್ ಕೊಡಿ, UPI ಸ್ಕ್ಯಾನ್ ಮಾಡ್ತೀನಿ.",
+            "translit": "Bill kodi, UPI scan maadthini.",
+            "en": "Give bill, I will scan UPI.",
+            "feedback": "Clear payment intent.",
+            "quality": "ok",
+            "next": null
+          },
+          {
+            "kn": "ಬಿಲ್ ತನ್ನಿ ಬೇಗ.",
+            "translit": "Bill thanni bega.",
+            "en": "Bring the bill quickly.",
+            "feedback": "Unnecessarily demanding.",
+            "quality": "poor",
+            "next": null
+          }
+        ]
+      }
+    }
+  }
+}

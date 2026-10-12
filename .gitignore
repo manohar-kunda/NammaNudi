@@ -1,0 +1,29 @@
+# Build artifacts
+backend/target/
+frontend/node_modules/
+frontend/dist/
+
+# Environment and secrets
+.env
+!.env.example
+*.local
+
+# IDE and editors
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Temporary / Scratch artifacts
+scratch/
+.system_generated/
+*.log
