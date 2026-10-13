@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchScenarioPhrases } from '../api';
 import { PhraseCard } from '../components/PhraseCard';
-import { ErrorState } from '../components/ErrorState';
+import { ErrorState, LoadingState } from '../components/ErrorState';
 import { ArrowLeftIcon } from '../components/Icons';
 
 export function ScenarioScreen({
@@ -70,10 +70,10 @@ export function ScenarioScreen({
       {error && <ErrorState message={error} onRetry={loadPhrases} />}
 
       {loading && (
-        <div className="loading-spinner">
-          <div className="spinner-circle" />
-          <span>Loading {scenario.title.toLowerCase()} phrases...</span>
-        </div>
+        <LoadingState
+          label={`Loading ${scenario.title.toLowerCase()} phrases...`}
+          onRetry={loadPhrases}
+        />
       )}
 
       {!loading && !error && phrases.length === 0 && (

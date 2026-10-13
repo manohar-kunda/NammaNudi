@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchScenarios } from '../api';
 import { ScenarioCard } from '../components/ScenarioCard';
-import { ErrorState } from '../components/ErrorState';
+import { ErrorState, LoadingState } from '../components/ErrorState';
 
 export function HomeScreen({
   onSelectScenario,
@@ -140,10 +140,10 @@ export function HomeScreen({
       {error && <ErrorState message={error} onRetry={loadData} />}
 
       {loading && (
-        <div className="loading-spinner">
-          <div className="spinner-circle" />
-          <span>Loading everyday scenarios...</span>
-        </div>
+        <LoadingState
+          label="Loading everyday scenarios..."
+          onRetry={loadData}
+        />
       )}
 
       {!loading && !error && (

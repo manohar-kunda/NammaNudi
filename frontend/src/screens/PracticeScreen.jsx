@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchScenarios } from '../api';
-import { ErrorState } from '../components/ErrorState';
+import { ErrorState, LoadingState } from '../components/ErrorState';
 import { RoleplayView } from '../components/RoleplayView';
 import { QuizView } from '../components/QuizView';
 import {
@@ -168,10 +168,10 @@ export function PracticeScreen({
       {error && <ErrorState message={error} onRetry={loadScenarios} />}
 
       {loading && (
-        <div className="loading-spinner">
-          <div className="spinner-circle" />
-          <span>Loading practice scenarios...</span>
-        </div>
+        <LoadingState
+          label="Loading practice scenarios..."
+          onRetry={loadScenarios}
+        />
       )}
 
       {!loading && !error && (

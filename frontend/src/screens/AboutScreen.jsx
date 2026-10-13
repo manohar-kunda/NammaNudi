@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchScenarios, fetchScenarioPhrases } from '../api';
-import { ErrorState } from '../components/ErrorState';
+import { ErrorState, LoadingState } from '../components/ErrorState';
 import { ArrowLeftIcon } from '../components/Icons';
 
 export function AboutScreen({ onBack }) {
@@ -62,10 +62,10 @@ export function AboutScreen({ onBack }) {
         </p>
 
         {loading && (
-          <div className="loading-spinner" style={{ padding: '20px 0' }}>
-            <div className="spinner-circle" />
-            <span>Computing review status...</span>
-          </div>
+          <LoadingState
+            label="Computing review status..."
+            onRetry={loadPhrases}
+          />
         )}
 
         {error && <ErrorState message={error} onRetry={loadPhrases} />}
