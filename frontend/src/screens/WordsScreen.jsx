@@ -94,7 +94,7 @@ export function WordsScreen({ onBack, hasVoice, onSpeak, speakingId }) {
       {/* Screen Header */}
       <div style={{ marginBottom: '16px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-          <span className="badge" style={{ backgroundColor: '#be123c', color: '#ffffff', fontWeight: 800 }}>
+          <span className="badge" style={{ backgroundColor: 'var(--primary-red)', color: 'var(--card-bg)', fontWeight: 800 }}>
             30 Core Words
           </span>
           <span style={{ fontSize: '0.825rem', color: 'var(--text-muted)', fontWeight: 600 }}>
@@ -212,7 +212,7 @@ export function WordsScreen({ onBack, hasVoice, onSpeak, speakingId }) {
           style={{
             textAlign: 'center',
             padding: '36px 20px',
-            backgroundColor: '#ffffff',
+            backgroundColor: 'var(--card-bg)',
           }}
           data-testid="words-empty-state"
         >
@@ -221,8 +221,8 @@ export function WordsScreen({ onBack, hasVoice, onSpeak, speakingId }) {
               width: '48px',
               height: '48px',
               borderRadius: '50%',
-              backgroundColor: '#fee2e2',
-              color: '#dc2626',
+              backgroundColor: 'var(--accent-gold-light)',
+              color: 'var(--accent-gold)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',

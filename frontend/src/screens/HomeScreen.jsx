@@ -119,7 +119,7 @@ export function HomeScreen({
                 </div>
               </div>
               <div style={{ background: '#fdf2f8', padding: '6px', borderRadius: '8px' }}>
-                <div style={{ fontSize: '1rem', fontWeight: 800, color: '#881337' }}>
+                <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--primary-red)' }}>
                   {totalBestQuizPoints}
                 </div>
                 <div style={{ fontSize: '0.675rem', fontWeight: 600, color: '#70102d' }}>
@@ -185,8 +185,8 @@ export function HomeScreen({
         style={{
           cursor: 'pointer',
           marginBottom: '16px',
-          background: 'linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%)',
-          borderColor: '#fecdd3',
+          backgroundColor: 'var(--card-bg)',
+          borderColor: 'var(--border-warm)',
           padding: '16px 18px',
           display: 'flex',
           alignItems: 'center',
@@ -196,21 +196,21 @@ export function HomeScreen({
       >
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-            <span className="badge" style={{ backgroundColor: '#be123c', color: '#ffffff', fontWeight: 800 }}>
+            <span className="badge" style={{ backgroundColor: 'var(--primary-red)', color: 'var(--card-bg)', fontWeight: 800 }}>
               New • 30 Words
             </span>
-            <span style={{ fontSize: '0.825rem', fontWeight: 700, color: '#9f1239' }}>
+            <span style={{ fontSize: '0.825rem', fontWeight: 700, color: 'var(--accent-gold)' }}>
               ಪದಗಳು • Spoken Core
             </span>
           </div>
           <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#881337', margin: '4px 0' }}>
             Essential Everyday Words
           </h3>
-          <p style={{ fontSize: '0.825rem', color: '#9f1239', margin: 0 }}>
+          <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)', margin: 0 }}>
             Master 30 high-frequency words with usage context, politeness notes, common mistakes, and realistic 2-turn conversations.
           </p>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#be123c', fontWeight: 700, fontSize: '0.875rem', flexShrink: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--primary-red)', fontWeight: 700, fontSize: '0.875rem', flexShrink: 0 }}>
           <span>Explore</span>
           <ChevronRightIcon size={20} />
         </div>

@@ -107,16 +107,12 @@ export function WordCard({
                 marginBottom: '4px',
                 backgroundColor:
                   word.register === 'polite'
-                    ? '#ecfdf5'
-                    : word.register === 'casual'
-                    ? '#eff6ff'
-                    : '#fef3c7',
+                    ? 'var(--badge-bg)'
+                    : 'var(--accent-gold-light)',
                 color:
                   word.register === 'polite'
-                    ? '#047857'
-                    : word.register === 'casual'
-                    ? '#1d4ed8'
-                    : '#92400e',
+                    ? 'var(--primary-red)'
+                    : 'var(--accent-gold)',
                 fontWeight: 700,
                 textTransform: 'capitalize',
               }}
