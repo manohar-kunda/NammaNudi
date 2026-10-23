@@ -39,7 +39,7 @@ export function SavedScreen({
           </button>
         </div>
       ) : (
-        <div>
+        <div className="phrases-grid">
           {savedPhrases.map((phrase) => (
             <PhraseCard
               key={phrase.id}
