@@ -301,13 +301,128 @@ if (!fs.existsSync(REVIEW_DIR)) {
   fs.mkdirSync(REVIEW_DIR, { recursive: true });
 }
 
+function hasFilledReviewerStatus(filePath) {
+  if (!fs.existsSync(filePath)) return false;
+  const raw = fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, '');
+  const lines = raw.split(/\r?\n/);
+  if (lines.length < 2) return false;
+
+  const parseLine = (line) => {
+    const fields = [];
+    let cur = '';
+    let inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (inQuotes) {
+        if (ch === '"' && line[i + 1] === '"') {
+          cur += '"';
+          i++;
+        } else if (ch === '"') {
+          inQuotes = false;
+        } else {
+          cur += ch;
+        }
+      } else {
+        if (ch === '"') {
+          inQuotes = true;
+        } else if (ch === ',') {
+          fields.push(cur);
+          cur = '';
+        } else {
+          cur += ch;
+        }
+      }
+    }
+    fields.push(cur);
+    return fields;
+  };
+
+  const headers = parseLine(lines[0]);
+  const statusIdx = headers.indexOf('reviewer_status');
+  if (statusIdx === -1) return false;
+
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+    const fields = parseLine(line);
+    const val = (fields[statusIdx] || '').trim();
+    if (val !== '') {
+      return true;
+    }
+  }
+  return false;
+}
+
+// 1. Export content_review_pack.csv safely
 const csvContent =
   '\uFEFF' + csvRows.map((row) => row.map(escapeCsvCell).join(',')).join('\r\n') + '\r\n';
-const csvPath = path.join(REVIEW_DIR, 'content_review_pack.csv');
-fs.writeFileSync(csvPath, csvContent, 'utf8');
+const mainCsvPath = path.join(REVIEW_DIR, 'content_review_pack.csv');
+let targetMainCsvPath = mainCsvPath;
+
+if (hasFilledReviewerStatus(mainCsvPath)) {
+  const ts = new Date().toISOString().replace(/[:.]/g, '-');
+  targetMainCsvPath = path.join(REVIEW_DIR, `content_review_pack_${ts}.csv`);
+  console.warn(
+    `WARNING: ${mainCsvPath} contains filled reviewer_status! ` +
+      `Preserving existing reviewer work; new review pack exported to: ${targetMainCsvPath}`
+  );
+} else {
+  console.log(`Writing full review pack to: ${mainCsvPath}`);
+}
+fs.writeFileSync(targetMainCsvPath, csvContent, 'utf8');
+
+// 2. Export dedicated v3_review_pack.csv with priority column
+// Priority:
+// 1 = new phrases and word headwords
+// 2 = word dialogue lines
+// 3 = usage claims (register, tip, mistake)
+function getV3Priority(type) {
+  if (type === 'phrase' || type === 'word' || type === 'scenario_title' || type === 'phrase_example') {
+    return 1;
+  }
+  if (type === 'word_dialogue') {
+    return 2;
+  }
+  if (type === 'word_politeness_claim') {
+    return 3;
+  }
+  return 1;
+}
+
+const v3Headers = ['priority', ...CSV_HEADERS];
+const v3Rows = [v3Headers];
+
+for (let r = 1; r < csvRows.length; r++) {
+  const row = csvRows[r];
+  if (row[1] === 'v3') {
+    const type = row[2];
+    const priority = getV3Priority(type);
+    v3Rows.push([priority, ...row]);
+  }
+}
+
+const v3CsvContent =
+  '\uFEFF' + v3Rows.map((row) => row.map(escapeCsvCell).join(',')).join('\r\n') + '\r\n';
+const v3CsvPath = path.join(REVIEW_DIR, 'v3_review_pack.csv');
+let targetV3CsvPath = v3CsvPath;
+
+if (hasFilledReviewerStatus(v3CsvPath)) {
+  const ts = new Date().toISOString().replace(/[:.]/g, '-');
+  targetV3CsvPath = path.join(REVIEW_DIR, `v3_review_pack_${ts}.csv`);
+  console.warn(
+    `WARNING: ${v3CsvPath} contains filled reviewer_status! ` +
+      `Preserving existing reviewer work; new v3 pack exported to: ${targetV3CsvPath}`
+  );
+} else {
+  console.log(`Writing dedicated v3 review pack to: ${v3CsvPath}`);
+}
+fs.writeFileSync(targetV3CsvPath, v3CsvContent, 'utf8');
 
 const v1Count = csvRows.slice(1).filter((r) => r[1] === 'v1').length;
 const v2Count = csvRows.slice(1).filter((r) => r[1] === 'v2').length;
 const v3Count = csvRows.slice(1).filter((r) => r[1] === 'v3').length;
 
-console.log(`Exported ${csvRows.length - 1} review rows (v1=${v1Count}, v2=${v2Count}, v3=${v3Count}) to: ${csvPath}`);
+console.log(
+  `Exported full review pack (${csvRows.length - 1} rows: v1=${v1Count}, v2=${v2Count}, v3=${v3Count})`
+);
+console.log(`Exported dedicated v3 review pack (${v3Rows.length - 1} rows) to: ${targetV3CsvPath}`);

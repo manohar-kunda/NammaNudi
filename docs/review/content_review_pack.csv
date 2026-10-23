@@ -1,45 +1,5 @@
 ﻿id,batch,type,kn,translit,en,feedback_or_explanation,rating,reviewer_status,corrected_kn,corrected_translit,notes
-basic-01,v2,phrase,"ನಮಸ್ಕಾರ, ಹೇಗಿದ್ದೀರಾ?","Namaskara, hegiddhira?","Hello, how are you?",,,,,,
-basic-01:example,v2,phrase_example,"ನಮಸ್ಕಾರ ಸರ್, ಚೆನ್ನಾಗಿದ್ದೀರಾ?","Namaskara sir, chennaagiddhira?","Hello sir, are you doing well?",Example for basic-01,,,,,
-basic-02,v2,phrase,"ಹೌದು / ಇಲ್ಲ, ಬೇಡ.","Haudhu / Illa, beda.","Yes / No, I do not want it.",,,,,,
-basic-02:example,v2,phrase_example,"ಹೌದು ಅಣ್ಣಾ, ಸರಿ. ಇಲ್ಲ, ಇನ್ನೊಂದು ಬೇಡ.","Haudhu anna, sari. Illa, innondhu beda.","Yes brother, alright. No, I do not want another one.",Example for basic-02,,,,,
-basic-03,v2,phrase,ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಕೇಳಿ.,Dhayavittu swalpa keli.,"Excuse me, please listen for a moment.",,,,,,
-basic-03:example,v2,phrase_example,"ಅಣ್ಣಾ, ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಕೇಳಿ, ಈ ಅಡ್ರೆಸ್ ಎಲ್ಲಿದೆ?","Anna, dhayavittu swalpa keli, ee address ellidhe?","Brother, please listen for a moment, where is this address?",Example for basic-03,,,,,
-basic-04,v2,phrase,ತುಂಬಾ ಧನ್ಯವಾದ.,Thumba dhanyavaadha.,Thank you very much.,,,,,,
-basic-04:example,v2,phrase_example,ದಾರಿ ತೋರಿಸಿದ್ದಕ್ಕೆ ತುಂಬಾ ಧನ್ಯವಾದ ಅಣ್ಣಾ.,Dhaari thorisiddhakke thumba dhanyavaadha anna.,"Thank you very much for showing the way, brother.",Example for basic-04,,,,,
-basic-05,v2,phrase,"ಸಾರಿ, ಗೊತ್ತಾಗ್ಲಿಲ್ಲ.","Sorry, gothaaglilla.","Sorry, I did not realize.",,,,,,
-basic-05:example,v2,phrase_example,"ಸಾರಿ ಮೇಡಂ, ನನಗೆ ಗೊತ್ತಾಗ್ಲಿಲ್ಲ.","Sorry madam, nanage gothaaglilla.","Sorry madam, I did not realize.",Example for basic-05,,,,,
-basic-06,v2,phrase,ನನಗೆ ಅರ್ಥ ಆಗ್ಲಿಲ್ಲ.,Nanage artha aaglilla.,I did not understand.,,,,,,
-basic-06:example,v2,phrase_example,"ನನಗೆ ಕನ್ನಡ ಅಷ್ಟಾಗಿ ಬರಲ್ಲ, ನೀವು ಹೇಳಿದ್ದು ಅರ್ಥ ಆಗ್ಲಿಲ್ಲ.","Nanage Kannada ashtaagi baralla, neevu heliddhu artha aaglilla.","I do not know much Kannada, I did not understand what you said.",Example for basic-06,,,,,
-basic-07,v2,phrase,ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ನಿಧಾನವಾಗಿ ಹೇಳಿ.,Dhayavittu swalpa nidhaanavaagi heli.,Please speak a little slowly.,,,,,,
-basic-07:example,v2,phrase_example,"ನಾನು ಕನ್ನಡ ಕಲಿತಾ ಇದ್ದೀನಿ, ಸ್ವಲ್ಪ ನಿಧಾನವಾಗಿ ಹೇಳಿ.","Naanu Kannada kalithaa iddhini, swalpa nidhaanavaagi heli.","I am learning Kannada, please speak a little slowly.",Example for basic-07,,,,,
-basic-08,v2,phrase,ನಿಮಗೆ ಇಂಗ್ಲಿಷ್ ಬರುತ್ತಾ?,Nimage English baruthaa?,Do you speak English?,,,,,,
-basic-08:example,v2,phrase_example,"ಸರ್, ನಿಮಗೆ ಸ್ವಲ್ಪ ಇಂಗ್ಲಿಷ್ ಬರುತ್ತಾ?","Sir, nimage swalpa English baruthaa?","Sir, do you speak a little English?",Example for basic-08,,,,,
-basic-09,v2,phrase,ಬಸ್ ಸ್ಟಾಪ್ ಎಲ್ಲಿ ಇದೆ?,Bus stop elli idhe?,Where is the bus stop?,Pattern: {place} ಎಲ್ಲಿ ಇದೆ? ({place} elli idhe?),,,,,
-basic-09:example,v2,phrase_example,ಇಲ್ಲಿ ಹತ್ರ ಬಸ್ ಸ್ಟಾಪ್ ಎಲ್ಲಿ ಇದೆ?,Illi hathra bus stop elli idhe?,Where is the nearest bus stop here?,Example for basic-09,,,,,
-basic-10,v2,phrase,ಇದು ಎಷ್ಟು?,Idhu eshtu?,How much is this?,,,,,,
-basic-10:example,v2,phrase_example,"ಅಕ್ಕಾ, ಈ ಹಣ್ಣು ಎಷ್ಟು?","Akka, ee hannu eshtu?","Sister, how much is this fruit?",Example for basic-10,,,,,
-basic-11,v2,phrase,"ಒಂದು, ಎರಡು, ಮೂರು, ನಾಲ್ಕು, ಐದು.","Ondhu, eradu, mooru, naalku, aidhu.","One, two, three, four, five.",,,,,,
-basic-11:example,v2,phrase_example,ಎರಡು ಟೀ ಮತ್ತು ಮೂರು ಇಡ್ಲಿ ಕೊಡಿ.,Eradu tea mathu mooru idli kodi.,Give two teas and three idlis.,Example for basic-11,,,,,
-basic-12,v2,phrase,"ಆರು, ಏಳು, ಎಂಟು, ಒಂಬತ್ತು, ಹತ್ತು.","Aaru, elu, entu, ombathu, hathu.","Six, seven, eight, nine, ten.",,,,,,
-basic-12:example,v2,phrase_example,ಹತ್ತು ನಿಮಿಷದಲ್ಲಿ ಅಲ್ಲಿ ಇರ್ತೀನಿ.,Hathu nimishadhalli alli irthini.,I will be there in ten minutes.,Example for basic-12,,,,,
-basic-13,v2,phrase,"ಇಪ್ಪತ್ತು, ಐವತ್ತು, ನೂರು.","Ippathu, aivathu, nooru.","Twenty, fifty, one hundred.",,,,,,
-basic-13:example,v2,phrase_example,ನೂರು ರೂಪಾಯಿಗೆ ಚಿಲ್ಲರೆ ಇದ್ಯಾ?,Nooru roopaayige chillare idhya?,Do you have change for a hundred rupees?,Example for basic-13,,,,,
-basic-14,v2,phrase,ಸ್ವಲ್ಪ ಕುಡಿಯೋಕೆ ನೀರು ಸಿಗುತ್ತಾ?,Swalpa kudiyoke neeru siguthaa?,Can I get some drinking water?,,,,,,
-basic-14:example,v2,phrase_example,"ತುಂಬಾ ಬಾಯಾರಿಕೆ ಆಗ್ತಿದೆ, ಕುಡಿಯೋಕೆ ನೀರು ಸಿಗುತ್ತಾ?","Thumba baayaarike aagthidhe, kudiyoke neeru siguthaa?","I am very thirsty, can I get some drinking water?",Example for basic-14,,,,,
-basic-15,v2,phrase,"ಸೀದಾ ಹೋಗಿ, ಆಮೇಲೆ ಲೆಫ್ಟ್ ತಗೊಳ್ಳಿ.","Seedha hogi, aamele left thagoli.","Go straight, then take a left.",,,,,,
-basic-15:example,v2,phrase_example,"ಈ ರಸ್ತೆಯಲ್ಲಿ ಸೀದಾ ಹೋಗಿ, ಸಿಗ್ನಲ್ ಹತ್ರ ಲೆಫ್ಟ್ ತಗೊಳ್ಳಿ.","Ee rastheyalli seedha hogi, signal hathra left thagoli.",Go straight on this road and take a left near the signal.,Example for basic-15,,,,,
-basic-16,v2,phrase,ಇಲ್ಲಿಂದ ಹತ್ರನಾ ಅಥವಾ ದೂರನಾ?,Illindha hathranaa athava dooranaa?,Is it near from here or far?,,,,,,
-basic-16:example,v2,phrase_example,ರೈಲ್ವೆ ಸ್ಟೇಷನ್ ಇಲ್ಲಿಂದ ಹತ್ರನಾ ಅಥವಾ ದೂರನಾ?,Railway station illindha hathranaa athava dooranaa?,Is the railway station near from here or far?,Example for basic-16,,,,,
-basic-17,v2,phrase,ಇದನ್ನ ಕನ್ನಡದಲ್ಲಿ ಏನಂತಾರೆ?,Idhanna Kannadadhalli enanthaare?,What is this called in Kannada?,,,,,,
-basic-17:example,v2,phrase_example,ಈ ತರಕಾರಿಯನ್ನ ಕನ್ನಡದಲ್ಲಿ ಏನಂತಾರೆ ಅಕ್ಕಾ?,Ee tharakaariyanna Kannadadhalli enanthaare akka?,"Sister, what do they call this vegetable in Kannada?",Example for basic-17,,,,,
-basic-18,v2,phrase,ನಾನು ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ಕನ್ನಡ ಕಲಿತಾ ಇದ್ದೀನಿ.,Naanu swalpa swalpa Kannada kalithaa iddhini.,I am learning Kannada little by little.,,,,,,
-basic-18:example,v2,phrase_example,"ನಾನು ಬೆಂಗಳೂರಿಗೆ ಹೊಸಬ, ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ಕನ್ನಡ ಕಲಿತಾ ಇದ್ದೀನಿ.","Naanu Bengalurige hosaba, swalpa swalpa Kannada kalithaa iddhini.","I am new to Bengaluru, I am learning Kannada little by little.",Example for basic-18,,,,,
-basic-19,v2,phrase,"ಸರಿ, ಆಯ್ತು.","Sari, aaythu.","Okay, alright / done.",,,,,,
-basic-19:example,v2,phrase_example,"ಸರಿ ಅಣ್ಣಾ, ಆಯ್ತು, ನಾಳೆ ಬರ್ತೀನಿ.","Sari anna, aaythu, naale barthini.","Okay brother, alright, I will come tomorrow.",Example for basic-19,,,,,
-basic-20,v2,phrase,ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಸಹಾಯ ಮಾಡಿ.,Dhayavittu swalpa sahaaya maadi.,Please help me a bit.,,,,,,
-basic-20:example,v2,phrase_example,"ನನ್ನ ಬ್ಯಾಗ್ ಕಳೆದುಹೋಗಿದೆ, ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಸಹಾಯ ಮಾಡಿ.","Nanna bag kaledhuhogidhe, dhayavittu swalpa sahaaya maadi.","My bag is lost, please help me a bit.",Example for basic-20,,,,,
-trans-01,v1,phrase,ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ತೀರಾ?,Majestic-ge hogthira?,Will you go to Majestic?,Pattern: {destination}ಗೆ ಹೋಗ್ತೀರಾ? ({destination}-ge hogthira?),,,,,
+trans-01,v1,phrase,ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ತೀರಾ?,Majestic-ge hogthira?,Will you go to Majestic?,,,,,,
 trans-01:example,v1,phrase_example,"ಅಣ್ಣಾ, ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ತೀರಾ?","Anna, Majestic-ge hogthira?","Brother, will you go to Majestic?",Example for trans-01,,,,,
 trans-02,v1,phrase,"ಮೀಟರ್ ಹಾಕಿ, ಪ್ಲೀಸ್.","Meter haaki, please.",Please turn on the meter.,,,,,,
 trans-02:example,v1,phrase_example,ಮೀಟರ್ ಹಾಕಿ ಹೋಗಿ ಅಣ್ಣಾ.,Meter haaki hogi anna.,"Please put the meter and drive, brother.",Example for trans-02,,,,,
@@ -59,26 +19,6 @@ trans-09,v1,phrase,ಸ್ವಲ್ಪ ಬೇಗ ಹೋಗ್ಬಹುದಾ?,Swa
 trans-09:example,v1,phrase_example,"ಟ್ರೈನ್ ಮಿಸ್ ಆಗುತ್ತೆ, ಸ್ವಲ್ಪ ಬೇಗ ಹೋಗ್ಬಹುದಾ?","Train miss aaguththe, swalpa bega hogbahudha?","I might miss the train, can you go a little faster?",Example for trans-09,,,,,
 trans-10,v1,phrase,ಇಳಿಯೋಕೆ ಜಾಗ ಕೊಡಿ.,Iliyoke jaaga kodi.,Please make way to get down.,,,,,,
 trans-10:example,v1,phrase_example,"ಸ್ಟಾಪ್ ಬಂತು, ಇಳಿಯೋಕೆ ಸ್ವಲ್ಪ ಜಾಗ ಕೊಡಿ.","Stop banthu, iliyoke swalpa jaaga kodi.","The stop has arrived, please give some way to get off.",Example for trans-10,,,,,
-trans-11,v2,phrase,ಯಾವ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗೆ ಮೆಟ್ರೋ ಬರುತ್ತೆ?,Yaava platform-ge metro baruththe?,Which platform does the metro arrive at?,,,,,,
-trans-11:example,v2,phrase_example,ವೈಟ್‌ಫೀಲ್ಡ್ ಮೆಟ್ರೋ ಯಾವ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗೆ ಬರುತ್ತೆ?,Whitefield metro yaava platform-ge baruththe?,Which platform does the Whitefield metro arrive at?,Example for trans-11,,,,,
-trans-12,v2,phrase,ಮೆಟ್ರೋ ಸ್ಟೇಷನ್ ಎಲ್ಲಿ ಇದೆ?,Metro station elli idhe?,Where is the metro station?,,,,,,
-trans-12:example,v2,phrase_example,ಇಲ್ಲಿ ಹತ್ರ ಮೆಟ್ರೋ ಸ್ಟೇಷನ್ ಎಲ್ಲಿ ಇದೆ ಅಣ್ಣಾ?,Illi hathra metro station elli idhe anna?,"Brother, where is the nearest metro station here?",Example for trans-12,,,,,
-trans-13,v2,phrase,ಈ ಬಸ್ ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗುತ್ತಾ?,Ee bus Majestic-ge hoguthaa?,Does this bus go to Majestic?,,,,,,
-trans-13:example,v2,phrase_example,"ಕಂಡಕ್ಟರ್ ಸರ್, ಈ ಬಸ್ ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗುತ್ತಾ?","Conductor sir, ee bus Majestic-ge hoguthaa?","Conductor sir, does this bus go to Majestic?",Example for trans-13,,,,,
-trans-14,v2,phrase,ಸ್ಟಾಪ್ ಬಂದಾಗ ಸ್ವಲ್ಪ ಹೇಳಿ.,Stop bandhaaga swalpa heli.,Please tell me when the stop comes.,,,,,,
-trans-14:example,v2,phrase_example,"ನನಗೆ ಜಾಗ ಹೊಸದು, ಜಯನಗರ ಸ್ಟಾಪ್ ಬಂದಾಗ ಸ್ವಲ್ಪ ಹೇಳಿ.","Nanage jaaga hosadhu, Jayanagar stop bandhaaga swalpa heli.","I am new to this area, please tell me when Jayanagar stop comes.",Example for trans-14,,,,,
-trans-15,v2,phrase,ಮೈಸೂರಿಗೆ ಬಸ್ ಎಲ್ಲಿ ನಿಲ್ಲುತ್ತೆ?,Mysore-ige bus elli nilluththe?,Where does the bus to Mysuru stand?,,,,,,
-trans-15:example,v2,phrase_example,ಮೈಸೂರಿಗೆ ಹೋಗೋ ಕೆಎಸ್‌ಆರ್‌ಟಿಸಿ ಬಸ್ ಎಲ್ಲಿ ನಿಲ್ಲುತ್ತೆ?,Mysore-ige hogo KSRTC bus elli nilluththe?,Where does the KSRTC bus going to Mysuru stand?,Example for trans-15,,,,,
-trans-16,v2,phrase,ನಾನು ಲೊಕೇಶನ್ ಪಿನ್ ಕಳಿಸಿದ್ದೀನಿ.,Naanu location pin kalisiddhini.,I have sent the location pin.,,,,,,
-trans-16:example,v2,phrase_example,"ಆ್ಯಪ್‌ನಲ್ಲಿ ಲೊಕೇಶನ್ ಪಿನ್ ಕಳಿಸಿದ್ದೀನಿ, ಅಲ್ಲಿಗೆ ಬನ್ನಿ.","App-nalli location pin kalisiddhini, allige banni.","I have sent the location pin in the app, please come there.",Example for trans-16,,,,,
-trans-17,v2,phrase,ಗೇಟ್ ನಂಬರ್ ಎರಡರ ಹತ್ರ ಬನ್ನಿ.,Gate number eradara hathra banni.,Come near Gate Number 2.,,,,,,
-trans-17:example,v2,phrase_example,"ನಾನು ಗೇಟ್ ನಂಬರ್ ಎರಡರ ಹತ್ರ ನಿಂತಿದ್ದೀನಿ, ಅಲ್ಲಿಗೆ ಬನ್ನಿ.","Naanu gate number eradara hathra ninthiddhini, allige banni.","I am standing near Gate Number 2, please come there.",Example for trans-17,,,,,
-trans-18,v2,phrase,"ಸ್ವಲ್ಪ ಡಿಕ್ಕಿ ಓಪನ್ ಮಾಡಿ, ಲಗೇಜ್ ಇದೆ.","Swalpa dikki open maadi, luggage idhe.","Please open the boot, I have luggage.",,,,,,
-trans-18:example,v2,phrase_example,"ಎರಡು ದೊಡ್ಡ ಬ್ಯಾಗ್ ಇದೆ, ಸ್ವಲ್ಪ ಡಿಕ್ಕಿ ಓಪನ್ ಮಾಡಿ.","Eradu dodda bag idhe, swalpa dikki open maadi.","I have two big bags, please open the boot.",Example for trans-18,,,,,
-trans-19,v2,phrase,ಯು-ಟರ್ನ್ ತಗೊಂಡು ಅಲ್ಲೇ ನಿಲ್ಲಿಸಿ.,U-turn thagondu alle nillisi.,Take a U-turn and stop right there.,,,,,,
-trans-19:example,v2,phrase_example,ಮುಂದೆ ಯು-ಟರ್ನ್ ತಗೊಂಡು ಪಾರ್ಕ್ ಹತ್ರ ನಿಲ್ಲಿಸಿ.,Munde U-turn thagondu park hathra nillisi.,Take a U-turn ahead and stop near the park.,Example for trans-19,,,,,
-trans-20,v2,phrase,ಟೋಲ್ ಚಾರ್ಜ್ ಇದರಲ್ಲಿ ಸೇರಿದ್ಯಾ?,Toll charge idharalli seridhya?,Is the toll charge included in this?,,,,,,
-trans-20:example,v2,phrase_example,ಏರ್‌ಪೋರ್ಟ್ ಟೋಲ್ ಚಾರ್ಜ್ ಆ್ಯಪ್ ಬಿಲ್‌ನಲ್ಲಿ ಸೇರಿದ್ಯಾ?,Airport toll charge app bill-nalli seridhya?,Is the airport toll charge included in the app bill?,Example for trans-20,,,,,
 shop-01,v1,phrase,ಇದು ಎಷ್ಟು ಬೆಲೆ?,Idhu eshtu bele?,How much is this?,,,,,,
 shop-01:example,v1,phrase_example,"ಅಣ್ಣಾ, ಈ ಶರ್ಟ್ ಎಷ್ಟು ಬೆಲೆ?","Anna, ee shirt eshtu bele?","Brother, how much is this shirt?",Example for shop-01,,,,,
 shop-02,v1,phrase,ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ.,Swalpa kammi maadi.,Reduce the price a bit.,,,,,,
@@ -87,7 +27,7 @@ shop-03,v1,phrase,ಬೇರೆ ಕಲರ್ ಅಥವಾ ಸೈಜ್ ಇದ್�
 shop-03:example,v1,phrase_example,ಇದರಲ್ಲಿ ಬ್ಲೂ ಕಲರ್ ಮೀಡಿಯಂ ಸೈಜ್ ಇದ್ಯಾ?,Idharalli blue color medium size idhya?,Do you have blue color in medium size for this?,Example for shop-03,,,,,
 shop-04,v1,phrase,ಇದು ಫ್ರೆಶ್ ಆಗಿದ್ಯಾ?,Idhu fresh aagidhya?,Is this fresh?,,,,,,
 shop-04:example,v1,phrase_example,"ಈ ತರಕಾರಿ ಇವತ್ತಿಂದಾ, ಫ್ರೆಶ್ ಆಗಿದ್ಯಾ?","Ee tharakaari ivathindhaa, fresh aagidhya?","Are these vegetables from today, are they fresh?",Example for shop-04,,,,,
-shop-05,v1,phrase,ಒಂದು ಕಿಲೋ ಕೊಡಿ.,Ondhu kilo kodi.,Give one kilogram.,Pattern: ಒಂದು ಕಿಲೋ {item} ಕೊಡಿ. (Ondhu kilo {item} kodi.),,,,,
+shop-05,v1,phrase,ಒಂದು ಕಿಲೋ ಕೊಡಿ.,Ondhu kilo kodi.,Give one kilogram.,,,,,,
 shop-05:example,v1,phrase_example,ಒಳ್ಳೆ ಈರುಳ್ಳಿ ಒಂದು ಕಿಲೋ ಕೊಡಿ.,Olle eerulli ondhu kilo kodi.,Give one kilo of good onions.,Example for shop-05,,,,,
 shop-06,v1,phrase,ಕವರ್ ಕೊಡಿ.,Cover kodi.,Give a carry bag.,,,,,,
 shop-06:example,v1,phrase_example,ಸಾಮಾನು ತಗೊಂಡು ಹೋಗೋಕೆ ಒಂದು ಕವರ್ ಕೊಡಿ.,Saamaanu thagond hogoke ondhu cover kodi.,Please give a bag to carry the items.,Example for shop-06,,,,,
@@ -99,27 +39,7 @@ shop-09,v1,phrase,"ಇದು ಬೇಡ, ಬೇರೆ ತೋರ್ಸಿ.","Idhu 
 shop-09:example,v1,phrase_example,"ಇದರ ಕ್ವಾಲಿಟಿ ಸರಿ ಇಲ್ಲ, ಬೇರೆ ತೋರ್ಸಿ.","Idhara quality sari illa, bere thorsi.","Quality of this isn't good, show another one.",Example for shop-09,,,,,
 shop-10,v1,phrase,ಚೇಂಜ್ ಕೊಡಿ.,Change kodi.,Please give the change.,,,,,,
 shop-10:example,v1,phrase_example,"ಐನೂರು ರೂಪಾಯಿ ಕೊಟ್ಟಿದ್ದೀನಿ, ಚಿಲ್ಲರೆ ಕೊಡಿ.","Ainooru roopaayi kottidhini, chillare kodi.","I gave 500 rupees, please give the balance change.",Example for shop-10,,,,,
-shop-11,v2,phrase,ಅರ್ಧ ಕಿಲೋ ಸಾಕು.,Ardha kilo saaku.,Half a kilogram is enough.,,,,,,
-shop-11:example,v2,phrase_example,"ಒಂದು ಕಿಲೋ ಬೇಡ ಅಕ್ಕಾ, ಅರ್ಧ ಕಿಲೋ ಸಾಕು.","Ondhu kilo beda akka, ardha kilo saaku.","No need for one kilo sister, half a kilo is enough.",Example for shop-11,,,,,
-shop-12,v2,phrase,ಕಾಲು ಕಿಲೋ ಕೊಡಿ.,Kaalu kilo kodi.,Give a quarter kilogram (250 grams).,,,,,,
-shop-12:example,v2,phrase_example,ಹಸಿ ಮೆಣಸಿನಕಾಯಿ ಕಾಲು ಕಿಲೋ ಕೊಡಿ.,Hasi menasinakaayi kaalu kilo kodi.,Please give a quarter kilo of green chillies.,Example for shop-12,,,,,
-shop-13,v2,phrase,ಇದರ ಎಕ್ಸ್‌ಪೈರಿ ಡೇಟ್ ಯಾವಾಗ?,Idhara expiry date yaavaaga?,When is the expiry date of this?,,,,,,
-shop-13:example,v2,phrase_example,ಈ ಹಾಲಿನ ಪ್ಯಾಕೆಟ್ ಎಕ್ಸ್‌ಪೈರಿ ಡೇಟ್ ಯಾವಾಗ ಇದೆ?,Ee haalina packet expiry date yaavaaga idhe?,When is the expiry date on this milk packet?,Example for shop-13,,,,,
-shop-14,v2,phrase,ಇದನ್ನ ಟ್ರೈ ಮಾಡ್ಬಹುದಾ?,Idhanna try maadbahudha?,Can I try this on?,,,,,,
-shop-14:example,v2,phrase_example,ಈ ಕುರ್ತಾ ಸೈಜ್ ಸರಿ ಇದ್ಯಾ ಅಂತ ಟ್ರೈ ಮಾಡ್ಬಹುದಾ?,Ee kurta size sari idhya antha try maadbahudha?,Can I try on this kurta to see if the size fits?,Example for shop-14,,,,,
-shop-15,v2,phrase,ಟ್ರಯಲ್ ರೂಮ್ ಎಲ್ಲಿ ಇದೆ?,Trial room elli idhe?,Where is the trial room?,,,,,,
-shop-15:example,v2,phrase_example,"ಸರ್, ಇಲ್ಲಿ ಟ್ರಯಲ್ ರೂಮ್ ಎಲ್ಲಿ ಇದೆ?","Sir, illi trial room elli idhe?","Sir, where is the trial room here?",Example for shop-15,,,,,
-shop-16,v2,phrase,ಸೈಜ್ ಸರಿಯಿಲ್ಲ ಅಂದ್ರೆ ಎಕ್ಸ್‌ಚೇಂಜ್ ಮಾಡ್ತೀರಾ?,Size sariyilla andre exchange maadthira?,Will you exchange it if the size does not fit?,,,,,,
-shop-16:example,v2,phrase_example,ಮನೆಗೆ ತಗೊಂಡು ಹೋದ್ಮೇಲೆ ಸೈಜ್ ಸರಿಯಿಲ್ಲ ಅಂದ್ರೆ ಎಕ್ಸ್‌ಚೇಂಜ್ ಮಾಡ್ತೀರಾ?,Manege thagondu hodhmele size sariyilla andre exchange maadthira?,"If the size does not fit after taking it home, will you exchange it?",Example for shop-16,,,,,
-shop-17,v2,phrase,ಅಂಗಡಿ ಎಷ್ಟು ಗಂಟೆಗೆ ಓಪನ್ ಆಗುತ್ತೆ?,Angadi eshtu gantege open aaguththe?,What time does the shop open?,,,,,,
-shop-17:example,v2,phrase_example,ಬೆಳಗ್ಗೆ ಅಂಗಡಿ ಎಷ್ಟು ಗಂಟೆಗೆ ಓಪನ್ ಆಗುತ್ತೆ ಅಣ್ಣಾ?,Belagge angadi eshtu gantege open aaguththe anna?,"Brother, what time does the shop open in the morning?",Example for shop-17,,,,,
-shop-18,v2,phrase,ಮನೆಗೆ ಡೆಲಿವರಿ ಮಾಡ್ತೀರಾ?,Manege delivery maadthira?,Do you deliver to home?,,,,,,
-shop-18:example,v2,phrase_example,"ಅಕ್ಕಿ ಮೂಟೆ ದೊಡ್ಡದಿದೆ, ಮನೆಗೆ ಡೆಲಿವರಿ ಮಾಡ್ತೀರಾ?","Akki moote doddadhidhe, manege delivery maadthira?","The rice bag is heavy, do you deliver to home?",Example for shop-18,,,,,
-shop-19,v2,phrase,ಸ್ವಲ್ಪ ಕೊತ್ತಂಬರಿ ಸೊಪ್ಪು ಹಾಕಿ.,Swalpa kothambari soppu haaki.,Put a little coriander leaves.,,,,,,
-shop-19:example,v2,phrase_example,"ತರಕಾರಿ ತಗೊಂಡಿದ್ದೀನಿ, ಸ್ವಲ್ಪ ಕೊತ್ತಂಬರಿ ಸೊಪ್ಪು ಕರಿಬೇವು ಹಾಕಿ.","Tharakaari thagondiddhini, swalpa kothambari soppu karibevu haaki.","I bought vegetables, please add some coriander and curry leaves.",Example for shop-19,,,,,
-shop-20,v2,phrase,"ಚಿಲ್ಲರೆ ಇಲ್ಲ, ಯುಪಿಐ ಮಾಡ್ಲಾ?","Chillare illa, UPI maadlaa?","I have no small change, shall I pay by UPI?",,,,,,
-shop-20:example,v2,phrase_example,"ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಚಿಲ್ಲರೆ ಇಲ್ಲ ಅಣ್ಣಾ, ಯುಪಿಐ ಮಾಡ್ಲಾ?","Ippathu roopaayi chillare illa anna, UPI maadlaa?","I do not have twenty rupees change brother, shall I do UPI?",Example for shop-20,,,,,
-health-01,v1,phrase,ನನಗೆ ತಲೆ ನೋವು ಇದೆ.,Nanage thale novu idhe.,I have a headache.,Pattern: ನನಗೆ {symptom} ಇದೆ. (Nanage {symptom} idhe.),,,,,
+health-01,v1,phrase,ನನಗೆ ತಲೆ ನೋವು ಇದೆ.,Nanage thale novu idhe.,I have a headache.,,,,,,
 health-01:example,v1,phrase_example,ಬೆಳಗ್ಗಿಂದ ತುಂಬಾ ತಲೆ ನೋವು ಇದೆ.,Belaggindha thumba thale novu idhe.,I have severe headache since morning.,Example for health-01,,,,,
 health-02,v1,phrase,ಎರಡು ದಿನದಿಂದ ಜ್ವರ ಬಂದಿದೆ.,Eradu dhinadhinda jvara bandhidhe.,I have had a fever for two days.,,,,,,
 health-02:example,v1,phrase_example,ಚಳಿ ಜೊತೆ ಎರಡು ದಿನದಿಂದ ಜ್ವರ ಬಂದಿದೆ.,Chali jothe eradu dhinadhinda jvara bandhidhe.,I have a fever with chills for two days.,Example for health-02,,,,,
@@ -139,27 +59,7 @@ health-09,v1,phrase,ಬಿಪಿ ಮತ್ತು ಶುಗರ್ ಚೆಕ್ �
 health-09:example,v1,phrase_example,"ಸ್ವಲ್ಪ ತಲೆ ಸುತ್ತು ಬರ್ತಿದೆ, ಬಿಪಿ ಚೆಕ್ ಮಾಡಿ.","Swalpa thale suthu barthidhe, BP check maadi.","Feeling dizzy, please check my blood pressure.",Example for health-09,,,,,
 health-10,v1,phrase,ಟೆಸ್ಟ್ ರಿಪೋರ್ಟ್ ಯಾವಾಗ ಸಿಗುತ್ತೆ?,Test report yaavaaga siguththe?,When will the test report be ready?,,,,,,
 health-10:example,v1,phrase_example,ಬ್ಲಡ್ ಟೆಸ್ಟ್ ರಿಪೋರ್ಟ್ ಇವತ್ತು ಸಂಜೆ ಸಿಗುತ್ತಾ?,Blood test report ivathu saanje siguthaa?,Will the blood test report be ready this evening?,Example for health-10,,,,,
-health-11,v2,phrase,ಮೆಡಿಕಲ್ ಶಾಪ್ ಎಲ್ಲಿ ಇದೆ?,Medical shop elli idhe?,Where is the pharmacy / medical shop?,,,,,,
-health-11:example,v2,phrase_example,ಈ ಮಾತ್ರೆ ತಗೊಳ್ಳೋಕೆ ಹತ್ರ ಮೆಡಿಕಲ್ ಶಾಪ್ ಎಲ್ಲಿ ಇದೆ?,Ee maathre thagolloke hathra medical shop elli idhe?,Where is the nearest pharmacy to buy these tablets?,Example for health-11,,,,,
-health-12,v2,phrase,ಗಾಯಕ್ಕೆ ಬ್ಯಾಂಡೇಜ್ ಹಾಕಿ.,Gaayakke bandage haaki.,Please put a bandage on the wound.,,,,,,
-health-12:example,v2,phrase_example,"ಕೈಗೆ ಸ್ವಲ್ಪ ಗಾಯ ಆಗಿದೆ, ಕ್ಲೀನ್ ಮಾಡಿ ಬ್ಯಾಂಡೇಜ್ ಹಾಕಿ.","Kaige swalpa gaaya aagidhe, clean maadi bandage haaki.","My hand has a small wound, please clean it and put a bandage.",Example for health-12,,,,,
-health-13,v2,phrase,ಮೈ ಕೈ ಎಲ್ಲಾ ನೋವು ಇದೆ.,Mai kai ella novu idhe.,I have body aches all over.,,,,,,
-health-13:example,v2,phrase_example,"ನೆನ್ನೆಯಿಂದ ಸುಸ್ತಾಗ್ತಿದೆ, ಮೈ ಕೈ ಎಲ್ಲಾ ನೋವು ಇದೆ.","Nenneyindha susthaagthidhe, mai kai ella novu idhe.",Since yesterday I feel exhausted and have body aches all over.,Example for health-13,,,,,
-health-14,v2,phrase,ರಾತ್ರಿ ನಿದ್ದೆ ಬರ್ತಿಲ್ಲ.,Raathri niddhe barthilla.,I am not able to sleep at night.,,,,,,
-health-14:example,v2,phrase_example,ಕೆಮ್ಮಿನಿಂದ ರಾತ್ರಿ ಸರಿಯಾಗಿ ನಿದ್ದೆ ಬರ್ತಿಲ್ಲ ಡಾಕ್ಟರ್.,Kemminindha raathri sariyaagi niddhe barthilla doctor.,"Because of the cough, I am not able to sleep properly at night, doctor.",Example for health-14,,,,,
-health-15,v2,phrase,ಈ ಮಾತ್ರೆಯಿಂದ ನಿದ್ದೆ ಬರುತ್ತಾ?,Ee maathreyindha niddhe baruthaa?,Does this tablet cause drowsiness?,,,,,,
-health-15:example,v2,phrase_example,"ನಾನು ಆಫೀಸ್‌ಗೆ ಹೋಗ್ಬೇಕು, ಈ ಮಾತ್ರೆಯಿಂದ ನಿದ್ದೆ ಬರುತ್ತಾ?","Naanu office-ge hogbeku, ee maathreyindha niddhe baruthaa?","I have to go to the office, does this tablet cause drowsiness?",Example for health-15,,,,,
-health-16,v2,phrase,ಬೆಳಗ್ಗೆ ಮತ್ತು ರಾತ್ರಿ ಒಂದೊಂದು ತಗೋಬೇಕಾ?,Belagge mathu raathri ondhondhu thagobekaa?,Should I take one each in the morning and at night?,,,,,,
-health-16:example,v2,phrase_example,ಈ ಕ್ಯಾಪ್ಸೂಲ್ ಬೆಳಗ್ಗೆ ಮತ್ತು ರಾತ್ರಿ ಒಂದೊಂದು ತಗೋಬೇಕಾ?,Ee capsule belagge mathu raathri ondhondhu thagobekaa?,Should I take this capsule one in the morning and one at night?,Example for health-16,,,,,
-health-17,v2,phrase,ಬಿಸಿ ನೀರು ಮಾತ್ರ ಕುಡಿಬೇಕಾ?,Bisi neeru maathra kudibekaa?,Should I drink only warm water?,,,,,,
-health-17:example,v2,phrase_example,ಗಂಟಲು ನೋವಿಗೆ ಬಿಸಿ ನೀರು ಮಾತ್ರ ಕುಡಿಬೇಕಾ ಡಾಕ್ಟರ್?,Gantalu novige bisi neeru maathra kudibekaa doctor?,"For throat pain, should I drink only warm water, doctor?",Example for health-17,,,,,
-health-18,v2,phrase,ಎಕ್ಸ್-ರೇ ರೂಮ್ ಯಾವ ಫ್ಲೋರ್‌ನಲ್ಲಿ ಇದೆ?,X-ray room yaava floor-nalli idhe?,Which floor is the X-ray room on?,,,,,,
-health-18:example,v2,phrase_example,"ಸಿಸ್ಟರ್, ಎಕ್ಸ್-ರೇ ರೂಮ್ ಯಾವ ಫ್ಲೋರ್‌ನಲ್ಲಿ ಇದೆ?","Sister, X-ray room yaava floor-nalli idhe?","Nurse, which floor is the X-ray room on?",Example for health-18,,,,,
-health-19,v2,phrase,ಇನ್ಶೂರೆನ್ಸ್ ಕಾರ್ಡ್ ನಡೆಯುತ್ತಾ?,Insurance card nadeyuthaa?,Is the health insurance card accepted here?,,,,,,
-health-19:example,v2,phrase_example,"ರಿಸೆಪ್ಷನ್‌ನಲ್ಲಿ ಕೇಳಿ, ನಮ್ಮ ಆಫೀಸ್ ಇನ್ಶೂರೆನ್ಸ್ ಕಾರ್ಡ್ ನಡೆಯುತ್ತಾ?","Reception-nalli keli, namma office insurance card nadeyuthaa?",Ask at the reception if our office insurance card is accepted.,Example for health-19,,,,,
-health-20,v2,phrase,ಮತ್ತೆ ಯಾವಾಗ ಚೆಕಪ್‌ಗೆ ಬರಬೇಕು?,Mathe yaavaaga checkup-ge barabeku?,When should I come back for a checkup?,,,,,,
-health-20:example,v2,phrase_example,ಮೂರು ದಿನ ಮಾತ್ರೆ ತಗೊಂಡ ಮೇಲೆ ಮತ್ತೆ ಯಾವಾಗ ಚೆಕಪ್‌ಗೆ ಬರಬೇಕು?,Mooru dhina maathre thagonda mele mathe yaavaaga checkup-ge barabeku?,"After taking the tablets for three days, when should I come back for a checkup?",Example for health-20,,,,,
-work-01,v1,phrase,ಈ ಫೈಲ್ ಕಳಿಸಿ.,Ee file kalisi.,Please send this file.,Pattern: ಈ {item} ಕಳಿಸಿ. (Ee {item} kalisi.),,,,,
+work-01,v1,phrase,ಈ ಫೈಲ್ ಕಳಿಸಿ.,Ee file kalisi.,Please send this file.,,,,,,
 work-01:example,v1,phrase_example,ನನ್ನ ಈಮೇಲ್‌ಗೆ ಆ ಪ್ರಾಜೆಕ್ಟ್ ಫೈಲ್ ಕಳಿಸಿ.,Nanna email-ge aa project file kalisi.,Please send that project file to my email.,Example for work-01,,,,,
 work-02,v1,phrase,ಮೀಟಿಂಗ್ ಯಾವಾಗ ಇದೆ?,Meeting yaavaaga idhe?,When is the meeting?,,,,,,
 work-02:example,v1,phrase_example,ಕ್ಲೈಂಟ್ ಮೀಟಿಂಗ್ ಯಾವಾಗ ಶುರು ಆಗುತ್ತೆ?,Client meeting yaavaaga shuru aaguththe?,When does the client meeting start?,Example for work-02,,,,,
@@ -179,29 +79,9 @@ work-09,v1,phrase,ಮೇಲ್ ಚೆಕ್ ಮಾಡಿ ರಿಪ್ಲೈ ಮ�
 work-09:example,v1,phrase_example,ಈಗಲೇ ಮೇಲ್ ಚೆಕ್ ಮಾಡಿ ಅಪ್‌ಡೇಟ್ ಕೊಡ್ತೀನಿ.,Eegale mail check maadi update kodthini.,I will check the mail right away and give an update.,Example for work-09,,,,,
 work-10,v1,phrase,ತುಂಬಾ ಧನ್ಯವಾದಗಳು.,Thumba dhanyavaadhagalu.,Thank you very much.,,,,,,
 work-10:example,v1,phrase_example,ಸಹಾಯ ಮಾಡಿದ್ದಕ್ಕೆ ತುಂಬಾ ಧನ್ಯವಾದಗಳು.,Sahaaya maadiddhakke thumba dhanyavaadhagalu.,Thank you very much for your help.,Example for work-10,,,,,
-work-11,v2,phrase,ಇವತ್ತು ವರ್ಕ್ ಫ್ರಮ್ ಹೋಮ್ ಮಾಡ್ತಿದ್ದೀನಿ.,Ivathu work from home maadthiddhini.,I am working from home today.,,,,,,
-work-11:example,v2,phrase_example,"ಮಳೆ ಜೋರಾಗಿದೆ, ಇವತ್ತು ವರ್ಕ್ ಫ್ರಮ್ ಹೋಮ್ ಮಾಡ್ತಿದ್ದೀನಿ.","Male joraagidhe, ivathu work from home maadthiddhini.","It is raining heavily, I am working from home today.",Example for work-11,,,,,
-work-12,v2,phrase,"ಸ್ವಲ್ಪ ಟ್ರಾಫಿಕ್ ಇದೆ, ಹತ್ತು ನಿಮಿಷ ಲೇಟ್ ಆಗುತ್ತೆ.","Swalpa traffic idhe, hathu nimisha late aaguththe.","There is some traffic, I will be ten minutes late.",,,,,,
-work-12:example,v2,phrase_example,"ಸಿಲ್ಕ್ ಬೋರ್ಡ್‌ನಲ್ಲಿ ಟ್ರಾಫಿಕ್ ಇದೆ, ಹತ್ತು ನಿಮಿಷ ಲೇಟ್ ಆಗುತ್ತೆ.","Silk Board-nalli traffic idhe, hathu nimisha late aaguththe.","There is traffic at Silk Board, I will be ten minutes late.",Example for work-12,,,,,
-work-13,v2,phrase,"ನಿಮ್ಮ ವಾಯ್ಸ್ ಕೇಳಿಸ್ತಿಲ್ಲ, ಮ್ಯೂಟ್‌ನಲ್ಲಿ ಇದ್ಯಾ ನೋಡಿ.","Nimma voice kelisthilla, mute-nalli idhya nodi.","Your voice is not audible, check if you are on mute.",,,,,,
-work-13:example,v2,phrase_example,"ಸರ್, ನಿಮ್ಮ ವಾಯ್ಸ್ ಕೇಳಿಸ್ತಿಲ್ಲ, ಮೈಕ್ ಮ್ಯೂಟ್‌ನಲ್ಲಿ ಇದ್ಯಾ ನೋಡಿ.","Sir, nimma voice kelisthilla, mic mute-nalli idhya nodi.","Sir, your voice is not audible, please check if your mic is on mute.",Example for work-13,,,,,
-work-14,v2,phrase,ನನ್ನ ಸ್ಕ್ರೀನ್ ಕಾಣಿಸ್ತಿದ್ಯಾ?,Nanna screen kaanisthidhya?,Is my screen visible?,,,,,,
-work-14:example,v2,phrase_example,"ಸ್ಕ್ರೀನ್ ಶೇರ್ ಮಾಡಿದ್ದೀನಿ, ಎಲ್ಲರಿಗೂ ನನ್ನ ಸ್ಕ್ರೀನ್ ಕಾಣಿಸ್ತಿದ್ಯಾ?","Screen share maadiddhini, ellarigu nanna screen kaanisthidhya?","I have shared my screen, is my screen visible to everyone?",Example for work-14,,,,,
-work-15,v2,phrase,ಊಟಕ್ಕೆ ಹೋಗೋಣ್ವಾ?,Ootakke hogonwaa?,Shall we go for lunch?,,,,,,
-work-15:example,v2,phrase_example,"ಒಂದು ಗಂಟೆ ಆಯ್ತು, ಕ್ಯಾಂಟೀನ್‌ಗೆ ಊಟಕ್ಕೆ ಹೋಗೋಣ್ವಾ?","Ondhu gante aaythu, canteen-ge ootakke hogonwaa?","It is one o-clock, shall we go to the canteen for lunch?",Example for work-15,,,,,
-work-16,v2,phrase,ಪ್ರಿಂಟರ್ ವರ್ಕ್ ಆಗ್ತಿಲ್ಲ.,Printer work aagthilla.,The printer is not working.,,,,,,
-work-16:example,v2,phrase_example,"ಪೇಪರ್ ಜಾಮ್ ಆಗಿದೆ ಅನ್ಸುತ್ತೆ, ಪ್ರಿಂಟರ್ ವರ್ಕ್ ಆಗ್ತಿಲ್ಲ.","Paper jam aagidhe ansuththe, printer work aagthilla.","I think the paper is jammed, the printer is not working.",Example for work-16,,,,,
-work-17,v2,phrase,ವೈ-ಫೈ ಪಾಸ್‌ವರ್ಡ್ ಏನು?,Wi-Fi password enu?,What is the Wi-Fi password?,,,,,,
-work-17:example,v2,phrase_example,ಗೆಸ್ಟ್ ನೆಟ್‌ವರ್ಕ್ ವೈ-ಫೈ ಪಾಸ್‌ವರ್ಡ್ ಏನು ಅಂತ ಹೇಳ್ತೀರಾ?,Guest network Wi-Fi password enu antha helthira?,Can you tell me what the guest network Wi-Fi password is?,Example for work-17,,,,,
-work-18,v2,phrase,ಮೀಟಿಂಗ್ ರೂಮ್ ಖಾಲಿ ಇದ್ಯಾ?,Meeting room khaali idhya?,Is the meeting room free?,,,,,,
-work-18:example,v2,phrase_example,"ಹತ್ತು ನಿಮಿಷ ಡಿಸ್ಕಸ್ ಮಾಡ್ಬೇಕು, ಮೀಟಿಂಗ್ ರೂಮ್ ಖಾಲಿ ಇದ್ಯಾ?","Hathu nimisha discuss maadbeku, meeting room khaali idhya?","We need to discuss for ten minutes, is the meeting room free?",Example for work-18,,,,,
-work-19,v2,phrase,ಸಂಜೆ ಒಳಗೆ ಅಪ್‌ಡೇಟ್ ಕೊಡ್ತೀನಿ.,Saanje olage update kodthini.,I will give an update by evening.,,,,,,
-work-19:example,v2,phrase_example,ಟೀಮ್ ಜೊತೆ ಮಾತಾಡಿ ಸಂಜೆ ಒಳಗೆ ಅಪ್‌ಡೇಟ್ ಕೊಡ್ತೀನಿ.,Team jothe maathaadi saanje olage update kodthini.,I will speak with the team and give an update by evening.,Example for work-19,,,,,
-work-20,v2,phrase,"ಹೊರಡ್ತೀನಿ, ನಾಳೆ ಸಿಗೋಣ.","Horadthini, naale sigona.","I am leaving now, see you tomorrow.",,,,,,
-work-20:example,v2,phrase_example,"ಕೆಲಸ ಮುಗೀತು, ನಾನು ಹೊರಡ್ತೀನಿ, ನಾಳೆ ಸಿಗೋಣ.","Kelasa mugeethu, naanu horadthini, naale sigona.","Work is finished, I am leaving now, see you tomorrow.",Example for work-20,,,,,
 rest-01,v1,phrase,ಮೆನು ಕಾರ್ಡ್ ಕೊಡಿ.,Menu card kodi.,Please give the menu card.,,,,,,
 rest-01:example,v1,phrase_example,"ಸರ್, ಒಂದು ನಿಮಿಷ ಮೆನು ಕಾರ್ಡ್ ಕೊಡಿ.","Sir, ondhu nimisha menu card kodi.","Sir, please give the menu card for a minute.",Example for rest-01,,,,,
-rest-02,v1,phrase,ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಕೊಡಿ.,Ondhu masaale dose kodi.,Give one masala dosa.,Pattern: ಒಂದು {dish} ಕೊಡಿ. (Ondhu {dish} kodi.),,,,,
+rest-02,v1,phrase,ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಕೊಡಿ.,Ondhu masaale dose kodi.,Give one masala dosa.,,,,,,
 rest-02:example,v1,phrase_example,ಕ್ರಿಸ್ಪಿಯಾಗಿ ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಕೊಡಿ.,Crispy aagi ondhu masaale dose kodi.,Give one crispy masala dosa.,Example for rest-02,,,,,
 rest-03,v1,phrase,ಕುಡಿಯೋಕೆ ನೀರು ಕೊಡಿ.,Kudiyoke neeru kodi.,Please give drinking water.,,,,,,
 rest-03:example,v1,phrase_example,ಬಿಸಿ ನೀರು ಇದ್ಯಾ? ಕುಡಿಯೋಕೆ ನೀರು ಕೊಡಿ.,Bisi neeru idhya? Kudiyoke neeru kodi.,Do you have warm water? Please bring drinking water.,Example for rest-03,,,,,
@@ -219,26 +99,6 @@ rest-09,v1,phrase,ಆರ್ಡರ್ ಸ್ವಲ್ಪ ಬೇಗ ಕೊಡ್�
 rest-09:example,v1,phrase_example,"ಅರ್ಜೆಂಟ್ ಇದೆ, ಆರ್ಡರ್ ಸ್ವಲ್ಪ ಬೇಗ ಕೊಡ್ತೀರಾ?","Urgent idhe, order swalpa bega kodthira?","I am in a hurry, could you bring the order quickly?",Example for rest-09,,,,,
 rest-10,v1,phrase,ಊಟ ತುಂಬಾ ಚೆನ್ನಾಗಿತ್ತು.,Oota thumba chennaagithu.,The food was very good.,,,,,,
 rest-10:example,v1,phrase_example,ಸಾಂಬಾರ್ ಮತ್ತು ದೋಸೆ ತುಂಬಾ ಚೆನ್ನಾಗಿತ್ತು.,Sambar mathu dose thumba chennaagithu.,The sambar and dosa were very good.,Example for rest-10,,,,,
-rest-11,v2,phrase,ಸಕ್ಕರೆ ಕಮ್ಮಿ ಹಾಕಿ.,Sakkare kammi haaki.,Put less sugar.,,,,,,
-rest-11:example,v2,phrase_example,ಕಾಫಿಗೆ ಸಕ್ಕರೆ ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಹಾಕಿ ಅಣ್ಣಾ.,Coffee-ge sakkare swalpa kammi haaki anna.,"Brother, please put a little less sugar in the coffee.",Example for rest-11,,,,,
-rest-12,v2,phrase,"ಸಕ್ಕರೆ ಬೇಡ, ವಿಥೌಟ್ ಶುಗರ್ ಕೊಡಿ.","Sakkare beda, without sugar kodi.","No sugar, please give it without sugar.",,,,,,
-rest-12:example,v2,phrase_example,"ಒಂದು ಟೀ ಸಕ್ಕರೆ ಬೇಡ, ವಿಥೌಟ್ ಶುಗರ್ ಕೊಡಿ.","Ondhu tea sakkare beda, without sugar kodi.","Give one tea without sugar, please.",Example for rest-12,,,,,
-rest-13,v2,phrase,ಇನ್ನು ಸ್ವಲ್ಪ ಸಾಂಬಾರ್ ಮತ್ತು ಚಟ್ನಿ ಕೊಡಿ.,Innu swalpa sambar mathu chutney kodi.,Please give a little more sambar and chutney.,,,,,,
-rest-13:example,v2,phrase_example,"ಸರ್, ಇಡ್ಲಿಗೆ ಇನ್ನು ಸ್ವಲ್ಪ ಬಿಸಿ ಸಾಂಬಾರ್ ಮತ್ತು ಚಟ್ನಿ ಕೊಡಿ.","Sir, idlige innu swalpa bisi sambar mathu chutney kodi.","Sir, please give a little more hot sambar and chutney for the idli.",Example for rest-13,,,,,
-rest-14,v2,phrase,ಇವತ್ತಿನ ಸ್ಪೆಷಲ್ ಏನು?,Ivaththina special enu?,What is today’s special?,,,,,,
-rest-14:example,v2,phrase_example,ಮಧ್ಯಾಹ್ನ ಊಟಕ್ಕೆ ಇವತ್ತಿನ ಸ್ಪೆಷಲ್ ಏನು ಇದೆ?,Madhyaahna ootakke ivaththina special enu idhe?,What is today’s special for lunch?,Example for rest-14,,,,,
-rest-15,v2,phrase,ಇದು ಪ್ಯೂರ್ ವೆಜ್ ಹೋಟೆಲ್ ಅಲ್ವಾ?,Idhu pure veg hotel alvaa?,"This is a pure vegetarian restaurant, right?",,,,,,
-rest-15:example,v2,phrase_example,"ಅಣ್ಣಾ, ಇದು ಪ್ಯೂರ್ ವೆಜ್ ಹೋಟೆಲ್ ಅಲ್ವಾ?","Anna, idhu pure veg hotel alvaa?","Brother, this is a pure vegetarian restaurant, right?",Example for rest-15,,,,,
-rest-16,v2,phrase,ಕೈ ತೊಳೆಯೋಕೆ ವಾಶ್ ಬೇಸಿನ್ ಎಲ್ಲಿ ಇದೆ?,Kai tholeyoke wash basin elli idhe?,Where is the wash basin to wash hands?,,,,,,
-rest-16:example,v2,phrase_example,"ಸರ್, ಇಲ್ಲಿ ಕೈ ತೊಳೆಯೋಕೆ ವಾಶ್ ಬೇಸಿನ್ ಎಲ್ಲಿ ಇದೆ?","Sir, illi kai tholeyoke wash basin elli idhe?","Sir, where is the wash basin here to wash hands?",Example for rest-16,,,,,
-rest-17,v2,phrase,ಒಂದು ಬೈ-ಟು ಕಾಫಿ ಕೊಡಿ.,Ondhu by-two coffee kodi.,Give one shared (by-two) coffee.,,,,,,
-rest-17:example,v2,phrase_example,"ನಾವಿಬ್ಬರು ಇದ್ದೀವಿ, ಒಂದು ಸ್ಟ್ರಾಂಗ್ ಬೈ-ಟು ಕಾಫಿ ಕೊಡಿ.","Naavibbaru iddhivi, ondhu strong by-two coffee kodi.","There are two of us, please give one strong by-two coffee.",Example for rest-17,,,,,
-rest-18,v2,phrase,ಎಣ್ಣೆ ಕಮ್ಮಿ ಹಾಕಿ ದೋಸೆ ಮಾಡಿ.,Enne kammi haaki dose maadi.,Make the dosa with less oil.,,,,,,
-rest-18:example,v2,phrase_example,ಪ್ಲೈನ್ ದೋಸೆಗೆ ಎಣ್ಣೆ ಕಮ್ಮಿ ಹಾಕಿ ಮಾಡಿ ಕೊಡಿ.,Plain dose-ge enne kammi haaki maadi kodi.,Please make the plain dosa with less oil.,Example for rest-18,,,,,
-rest-19,v2,phrase,ಮೊಸರು ಅಥವಾ ಮಜ್ಜಿಗೆ ಇದ್ಯಾ?,Mosaru athava majjige idhya?,Do you have curd or buttermilk?,,,,,,
-rest-19:example,v2,phrase_example,ಊಟದ ಕೊನೆಗೆ ಒಂದು ಗ್ಲಾಸ್ ಮಜ್ಜಿಗೆ ಇದ್ಯಾ?,Ootadha konege ondhu glass majjige idhya?,Do you have a glass of buttermilk at the end of the meal?,Example for rest-19,,,,,
-rest-20,v2,phrase,ಟೇಬಲ್ ಸ್ವಲ್ಪ ಕ್ಲೀನ್ ಮಾಡಿ ಕೊಡಿ.,Table swalpa clean maadi kodi.,Please wipe and clean the table.,,,,,,
-rest-20:example,v2,phrase_example,"ತಮ್ಮಾ, ಈ ಟೇಬಲ್ ಸ್ವಲ್ಪ ಕ್ಲೀನ್ ಮಾಡಿ ಕೊಡಿ.","Thamma, ee table swalpa clean maadi kodi.","Young brother, please wipe and clean this table.",Example for rest-20,,,,,
 rp:transport:trans_node_1:line,v1,roleplay_line,ಎಲ್ಲಿಗೆ ಹೋಗ್ಬೇಕು ಸಾರ್?,Ellige hogbeku saar?,"Where do you want to go, sir?",Speaker: Auto Driver (Hiring an Auto in Bengaluru),,,,,
 rp:transport:trans_node_1:opt:0,v1,roleplay_option,ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ತೀರಾ? ಮೀಟರ್ ಹಾಕಿ.,Majestic-ge hogthira? Meter haaki.,Will you go to Majestic? Please put the meter.,Perfect! Clear destination and polite meter request.,good,,,,
 rp:transport:trans_node_1:opt:1,v1,roleplay_option,ಮೆಜೆಸ್ಟಿಕ್ ಎಷ್ಟು?,Majestic eshtu?,How much for Majestic?,"Acceptable, but asking for flat fare encourages off-meter quotes.",ok,,,,
@@ -544,7 +404,7 @@ word-beda,v3,word,ಬೇಡ,beda,don't want / no need,"Purpose: Politely refusin
 word-beda:politeness,v3,word_politeness_claim,,,Register: both,"Tip: Say 'Beda, thanks' with a warm smile to refuse politely without sounding harsh. | Common Mistake: Avoid shouting 'beda'; soften it with 'beda, thanks' or 'beda anna'.",both,,,,usage claim - needs native confirmation
 word-beda:turn:1,v3,word_dialogue,ಪ್ಲಾಸ್ಟಿಕ್ ಕವರ್ ಬೇಕಾ ಸರ್?,Plastic cover bekaa sir?,Do you need a plastic cover sir?,Speaker: Vendor,Turn 1,,,,Dialogue turn for word-beda
 word-beda:turn:2,v3,word_dialogue,"ಬೇಡ, ನನ್ನ ಹತ್ರ ಬ್ಯಾಗ್ ಇದೆ.","Beda, nanna hathra bag idhe.","No need, I have a bag with me.",Speaker: Customer,Turn 2,,,,Dialogue turn for word-beda
-word-idhe,v3,word,ಇದೆ,idhe,is there / exists / I have,"Purpose: Confirming the existence or presence of something. | When: When stating that an item is available, present, or in your possession. | Where: shop, clinic, office, home, anywhere",verb,,,,"Register: both | Related: health-01, trans-18"
+word-idhe,v3,word,ಇದೆ,idhe,is there / exists / I have,"Purpose: Confirming the existence or presence of something. | When: When stating that an item is available, present, or in your possession. | Where: shop, clinic, office, home, anywhere",verb,,,,"Register: both | Related: health-01, home-03"
 word-idhe:politeness,v3,word_politeness_claim,,,Register: both,"Tip: Combine with 'nanna hathra' to mean 'with me / I have': 'Nanna hathra change idhe'. | Common Mistake: Remember that 'idhe' is for inanimate objects; for people, use 'idhdhaare' (polite).",both,,,,usage claim - needs native confirmation
 word-idhe:turn:1,v3,word_dialogue,ನಿಮ್ಮ ಹತ್ರ ಪೆನ್ ಇದ್ಯಾ?,Nimma hathra pen idhya?,Do you have a pen with you?,Speaker: Colleague,Turn 1,,,,Dialogue turn for word-idhe
 word-idhe:turn:2,v3,word_dialogue,"ಹೌದು, ನನ್ನ ಹತ್ರ ಇದೆ, ತಗೊಳ್ಳಿ.","Haudu, nanna hathra idhe, thagolli.","Yes, I have one, please take it.",Speaker: You,Turn 2,,,,Dialogue turn for word-idhe
@@ -560,11 +420,11 @@ word-eshtu,v3,word,ಎಷ್ಟು,eshtu,how much / how many,"Purpose: Asking fo
 word-eshtu:politeness,v3,word_politeness_claim,,,Register: both,Tip: Say '[item] eshtu?' to instantly ask the price of any product. | Common Mistake: Do not confuse 'eshtu' (how much) with 'elli' (where).,both,,,,usage claim - needs native confirmation
 word-eshtu:turn:1,v3,word_dialogue,ಈ ಸೇಬು ಒಂದು ಕೆಜಿ ಎಷ್ಟು?,Ee sebu ondhu kg eshtu?,How much for one kg of these apples?,Speaker: Customer,Turn 1,,,,Dialogue turn for word-eshtu
 word-eshtu:turn:2,v3,word_dialogue,ನೂರ ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಸರ್.,Noora ippaththu roopaayi sir.,"One hundred and twenty rupees, sir.",Speaker: Vendor,Turn 2,,,,Dialogue turn for word-eshtu
-word-elli,v3,word,ಎಲ್ಲಿ,elli,where,"Purpose: Asking for locations, directions, or whereabouts. | When: When searching for a metro station, washroom, or doctor's room. | Where: auto, bus-metro, clinic, office, anywhere",particle,,,,"Register: both | Related: dir-03, trans-12"
+word-elli,v3,word,ಎಲ್ಲಿ,elli,where,"Purpose: Asking for locations, directions, or whereabouts. | When: When searching for a metro station, washroom, or doctor's room. | Where: auto, bus-metro, clinic, office, anywhere",particle,,,,"Register: both | Related: dir-03, dir-05"
 word-elli:politeness,v3,word_politeness_claim,,,Register: both,"Tip: Combine with 'idhe': '[Place] elli idhe?' is the golden direction formula. | Common Mistake: Pronounce as 'elli', not 'yelli' (though spelling with 'y' is colloquial, pronunciation is smooth 'e').",both,,,,usage claim - needs native confirmation
 word-elli:turn:1,v3,word_dialogue,ಎಟಿಎಂ ಎಲ್ಲಿ ಇದೆ ಸರ್?,ATM elli idhe sir?,"Where is the ATM, sir?",Speaker: Commuter,Turn 1,,,,Dialogue turn for word-elli
 word-elli:turn:2,v3,word_dialogue,ಮುಂದೆ ಲೆಫ್ಟ್ ಸೈಡ್ ಇದೆ ನೋಡಿ.,Munde left side idhe nodi.,"It is just ahead on the left side, look.",Speaker: Local,Turn 2,,,,Dialogue turn for word-elli
-word-yaake,v3,word,ಯಾಕೆ,yaake,why,"Purpose: Asking for reasons or causes. | When: When asking why an auto is stopping, or why a delivery is late. | Where: auto, office, home, anywhere",particle,,,,Register: both | Related: trans-13
+word-yaake,v3,word,ಯಾಕೆ,yaake,why,"Purpose: Asking for reasons or causes. | When: When asking why an auto is stopping, or why a delivery is late. | Where: auto, office, home, anywhere",particle,,,,Register: both | Related: home-04
 word-yaake:politeness,v3,word_politeness_claim,,,Register: both,Tip: Add 'enu samasye' (what problem) if you want to sound softer than a blunt 'yaake'. | Common Mistake: Saying just 'yaake?!' with sharp intonation sounds accusatory; tone of voice matters.,both,,,,usage claim - needs native confirmation
 word-yaake:turn:1,v3,word_dialogue,ಯಾಕೆ ನಿಲ್ಲಿಸಿದ್ರಿ ಅಣ್ಣಾ?,Yaake nillisidhri anna?,"Why did you stop here, brother?",Speaker: Passenger,Turn 1,,,,Dialogue turn for word-yaake
 word-yaake:turn:2,v3,word_dialogue,ಮುಂದೆ ಸಿಗ್ನಲ್ ರೆಡ್ ಇದೆ ಸರ್.,Munde signal red idhe sir.,"The signal ahead is red, sir.",Speaker: Driver,Turn 2,,,,Dialogue turn for word-yaake
@@ -592,10 +452,10 @@ word-heli,v3,word,ಹೇಳಿ,heli,please tell / say,"Purpose: Inviting someone
 word-heli:politeness,v3,word_politeness_claim,,,Register: polite,"Tip: Greeting someone with 'Namaskara, heli sir' is the standard polite greeting at counters. | Common Mistake: Don't use 'helu' with elders; 'heli' is the respectful imperative.",polite,,,,usage claim - needs native confirmation
 word-heli:turn:1,v3,word_dialogue,"ಹೇಳಿ ಸರ್, ಯಾವ ಮಾತ್ರೆ ಬೇಕು?","Heli sir, yaava maathre beku?","Tell me sir, which medicine do you need?",Speaker: Pharmacist,Turn 1,,,,Dialogue turn for word-heli
 word-heli:turn:2,v3,word_dialogue,ಪ್ಯಾರಾಸಿಟಮಾಲ್ ಒಂದು ಸ್ಟ್ರಿಪ್ ಕೊಡಿ.,Paracetamol ondhu strip kodi.,Please give one strip of paracetamol.,Speaker: Customer,Turn 2,,,,Dialogue turn for word-heli
-word-keli,v3,word,ಕೇಳಿ,keli,ask / listen,"Purpose: Asking someone to inquire or listen. | When: When telling someone to ask security or check with a colleague. | Where: office, auto, shop, anywhere",verb,,,,Register: polite | Related: basic-01
-word-keli:politeness,v3,word_politeness_claim,,,Register: polite,"Tip: 'Swalpa keli' is a polite way to get someone's attention on the street. | Common Mistake: 'Keli' means both 'ask' and 'listen' depending on context ('keli' = listen, 'keli nodi' = ask and see).",polite,,,,usage claim - needs native confirmation
-word-keli:turn:1,v3,word_dialogue,"ಸ್ವಲ್ಪ ಕೇಳಿ, ಈ ಬಸ್ ಕಡೆ ಹೋಗುತ್ತಾ?","Swalpa keli, ee bus kade hoguthaa?","Excuse me, does this bus go in that direction?",Speaker: Newcomer,Turn 1,,,,Dialogue turn for word-keli
-word-keli:turn:2,v3,word_dialogue,"ಕಂಡಕ್ಟರ್ ಹತ್ರ ಕೇಳಿ, ಹೇಳ್ತಾರೆ.","Conductor hathra keli, helthaare.","Please ask the conductor, he will tell you.",Speaker: Commuter,Turn 2,,,,Dialogue turn for word-keli
+word-enu,v3,word,ಏನು,enu,what,"Purpose: Asking what something is, what someone needs, or what is happening. | When: When asking what is available, what someone needs, or asking for clarification. | Where: shop, restaurant, office, anywhere",particle,,,,"Register: both | Related: rest-08, shop-01"
+word-enu:politeness,v3,word_politeness_claim,,,Register: both,Tip: 'Enu beku?' means 'What do you want/need?'; 'Ivaththu special enu?' means 'What is today's special?'. | Common Mistake: Do not confuse 'enu' (what) with 'elli' (where) or 'yaaru' (who).,both,,,,usage claim - needs native confirmation
+word-enu:turn:1,v3,word_dialogue,"ನಮಸ್ಕಾರ, ಏನು ಬೇಕು ಸರ್?","Namaskaara, enu beku sir?","Hello, what do you need, sir?",Speaker: Shopkeeper,Turn 1,,,,Dialogue turn for word-enu
+word-enu:turn:2,v3,word_dialogue,ಒಂದು ಪ್ಯಾಕೆಟ್ ಹಾಲು ಕೊಡಿ.,Ondhu packet haalu kodi.,Please give one packet of milk.,Speaker: Customer,Turn 2,,,,Dialogue turn for word-enu
 word-aaguththe,v3,word,ಆಗುತ್ತೆ,aaguththe,will happen / it is possible / it costs,"Purpose: Expressing that an event will occur, cost a certain amount, or be feasible. | When: When discussing fare amounts, completion times, or feasibility. | Where: auto, shop, office, anywhere",verb,,,,Register: both | Related: num-07
 word-aaguththe:politeness,v3,word_politeness_claim,,,Register: both,Tip: 'Eshtu aaguththe?' is the standard phrase for 'How much will it come to?'. | Common Mistake: Negating 'aaguththe' is 'aagalla' (it won't happen / not possible).,both,,,,usage claim - needs native confirmation
 word-aaguththe:turn:1,v3,word_dialogue,ಈ ಶರ್ಟ್ ಹೊಲಿಯೋಕೆ ಎಷ್ಟು ದಿನ ಆಗುತ್ತೆ?,Ee shirt holiyoke eshtu dhina aaguththe?,How many days will it take to stitch this shirt?,Speaker: Customer,Turn 1,,,,Dialogue turn for word-aaguththe
@@ -608,8 +468,8 @@ word-baruththe,v3,word,ಬರುತ್ತೆ,baruththe,comes / I know (a skill/l
 word-baruththe:politeness,v3,word_politeness_claim,,,Register: both,Tip: 'Nanage Kannada swalpa baruththe' is the most respected sentence a newcomer can say. | Common Mistake: Do not say 'Naanu Kannada gottu'; say 'Nanage Kannada baruththe' or 'Nanage Kannada gottu'.,both,,,,usage claim - needs native confirmation
 word-baruththe:turn:1,v3,word_dialogue,ನಿಮಗೆ ಕನ್ನಡ ಬರುತ್ತಾ?,Nimage Kannada baruthaa?,Do you know Kannada?,Speaker: Local,Turn 1,,,,Dialogue turn for word-baruththe
 word-baruththe:turn:2,v3,word_dialogue,"ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ಬರುತ್ತೆ ಸರ್, ಕಲೀತಾ ಇದ್ದೀನಿ.","Swalpa swalpa baruththe sir, kalithaa iddhini.","I know a little bit sir, I am learning.",Speaker: You,Turn 2,,,,Dialogue turn for word-baruththe
-word-gottu,v3,word,ಗೊತ್ತು,gottu,know / aware,"Purpose: Expressing knowledge of a fact, route, or person. | When: When confirming you know a place, or stating 'Gothilla' (I don't know). | Where: auto, office, home, anywhere",verb,,,,Register: both | Related: basic-07
-word-gottu:politeness,v3,word_politeness_claim,,,Register: both,Tip: Negative is 'gothilla' (I don't know): 'Nanage aa address gothilla'. | Common Mistake: Never say 'Naanu gothu'; always use dative 'Nanage gottu' (to me it is known).,both,,,,usage claim - needs native confirmation
+word-gottu,v3,word,ಗೊತ್ತು,gottu,know / aware,"Purpose: Expressing knowledge of a fact, route, or person. | When: When confirming you know a place, or stating 'Gothilla' (I don't know). | Where: auto, office, home, anywhere",verb,,,,"Register: both | Related: greet-05, dir-10"
+word-gottu:politeness,v3,word_politeness_claim,,,Register: both,Tip: Negative is 'gotthilla' (I don't know): 'Nanage aa address gotthilla'. | Common Mistake: Never say 'Naanu gottu'; always use dative 'Nanage gottu' (to me it is known).,both,,,,usage claim - needs native confirmation
 word-gottu:turn:1,v3,word_dialogue,ಈ ದೇವಸ್ಥಾನದ ರೂಟ್ ಗೊತ್ತಾ ಅಣ್ಣಾ?,Ee dhevasthaanadha route gottaa anna?,"Do you know the route to this temple, brother?",Speaker: Passenger,Turn 1,,,,Dialogue turn for word-gottu
 word-gottu:turn:2,v3,word_dialogue,"ಗೊತ್ತು ಸರ್, ಕೂತ್ಕೊಳ್ಳಿ, ಕರ್ಕೊಂಡು ಹೋಗ್ತೀನಿ.","Gottu sir, koothkolli, karkondu hogtheeni.","I know it sir, please sit, I will take you there.",Speaker: Driver,Turn 2,,,,Dialogue turn for word-gottu
 word-chennaagidhe,v3,word,ಚೆನ್ನಾಗಿದೆ,chennaagidhe,is good / nice,"Purpose: Complimenting food, an item, or answering that you are well. | When: When giving feedback on a meal, checking clothes, or responding to greetings. | Where: restaurant, shop, office, home, anywhere",phrase,,,,Register: polite | Related: rest-09
@@ -628,13 +488,13 @@ word-hathra,v3,word,ಹತ್ರ,hathra,near / close to / with (a person),"Purpo
 word-hathra:politeness,v3,word_politeness_claim,,,Register: both,Tip: 'Metro hathra' = near the metro; 'Nanna hathra' = with me. | Common Mistake: Don't confuse 'hathra' (near) with 'dhoora' (far).,both,,,,usage claim - needs native confirmation
 word-hathra:turn:1,v3,word_dialogue,ಎಲ್ಲಿ ಡ್ರಾಪ್ ಮಾಡ್ಬೇಕು ಸಾರ್?,Elli drop maadbeku saar?,"Where should I drop you, sir?",Speaker: Driver,Turn 1,,,,Dialogue turn for word-hathra
 word-hathra:turn:2,v3,word_dialogue,ಮೆಟ್ರೋ ಪಿಲ್ಲರ್ 120 ಹತ್ರ ಡ್ರಾಪ್ ಮಾಡಿ.,Metro pillar 120 hathra drop maadi.,Please drop me near metro pillar 120.,Speaker: Passenger,Turn 2,,,,Dialogue turn for word-hathra
-word-dhoora,v3,word,ದೂರ,dhoora,far / distance,"Purpose: Asking about or indicating distance. | When: When checking whether a destination is walkable. | Where: auto, bus-metro, anywhere",noun,,,,Register: both | Related: dir-07
-word-dhoora:politeness,v3,word_politeness_claim,,,Register: both,"Tip: 'Thumba dhoora' = very far; 'Eshtu dhoora?' = how far? | Common Mistake: Remember the dental 'dh' sound in 'dhoora', not the English 'd' in door.",both,,,,usage claim - needs native confirmation
-word-dhoora:turn:1,v3,word_dialogue,ರೈಲ್ವೆ ಸ್ಟೇಷನ್ ತುಂಬಾ ದೂರ ಇದ್ಯಾ?,Railway station thumba dhoora idhya?,Is the railway station very far?,Speaker: Pedestrian,Turn 1,,,,Dialogue turn for word-dhoora
-word-dhoora:turn:2,v3,word_dialogue,"ಇಲ್ಲ, ಒಂದು ಕಿಲೋಮೀಟರ್ ಅಷ್ಟೇ.","Illa, ondhu kilometer ashte.","No, just about one kilometer.",Speaker: Local,Turn 2,,,,Dialogue turn for word-dhoora
-word-ivathu,v3,word,ಇವತ್ತು,ivathu,today,"Purpose: Referring to the present day. | When: When talking about today's specials, today's leave, or today's plans. | Where: office, restaurant, home, anywhere",noun,,,,"Register: both | Related: rest-08, work-06"
-word-ivathu:politeness,v3,word_politeness_claim,,,Register: both,Tip: Combine with 'special': 'Ivathu special enu?' (What's special today?). | Common Mistake: Don't confuse 'ivathu' (today) with 'naale' (tomorrow) or 'nenne' (yesterday).,both,,,,usage claim - needs native confirmation
-word-ivathu:turn:1,v3,word_dialogue,ಇವತ್ತು ಊಟಕ್ಕೆ ಸ್ಪೆಷಲ್ ಏನು?,Ivathu ootakke special enu?,What is the special for lunch today?,Speaker: Diner,Turn 1,,,,Dialogue turn for word-ivathu
+word-illi,v3,word,ಇಲ್ಲಿ,illi,here,"Purpose: Indicating the current location or instructing someone to stop/wait here. | When: When telling an auto/cab driver where to drop you or asking if something is available here. | Where: auto, bus-metro, shop, restaurant, anywhere",particle,,,,"Register: both | Related: trans-05, dir-01"
+word-illi:politeness,v3,word_politeness_claim,,,Register: both,Tip: 'Illi nillisi' is the standard polite instruction to an auto driver to stop here. | Common Mistake: Do not mix up 'illi' (here) with 'alli' (there).,both,,,,usage claim - needs native confirmation
+word-illi:turn:1,v3,word_dialogue,"ಅಣ್ಣಾ, ಇಲ್ಲಿ ಲೆಫ್ಟ್‌ನಲ್ಲಿ ನಿಲ್ಲಿಸಿ.","Anna, illi left-nalli nillisi.","Brother, please stop here on the left.",Speaker: Passenger,Turn 1,,,,Dialogue turn for word-illi
+word-illi:turn:2,v3,word_dialogue,"ಸರಿ ಸರ್, ಇಲ್ಲೇ ನಿಲ್ಲಿಸ್ತೀನಿ.","Sari sir, ille nillisthini.","Okay sir, I will stop right here.",Speaker: Auto Driver,Turn 2,,,,Dialogue turn for word-illi
+word-ivathu,v3,word,ಇವತ್ತು,ivaththu,today,"Purpose: Referring to the present day. | When: When talking about today's specials, today's leave, or today's plans. | Where: office, restaurant, home, anywhere",noun,,,,"Register: both | Related: rest-08, work-06"
+word-ivathu:politeness,v3,word_politeness_claim,,,Register: both,Tip: Combine with 'special': 'Ivaththu special enu?' (What's special today?). | Common Mistake: Don't confuse 'ivaththu' (today) with 'naale' (tomorrow) or 'nenne' (yesterday).,both,,,,usage claim - needs native confirmation
+word-ivathu:turn:1,v3,word_dialogue,ಇವತ್ತು ಊಟಕ್ಕೆ ಸ್ಪೆಷಲ್ ಏನು?,Ivaththu ootakke special enu?,What is the special for lunch today?,Speaker: Diner,Turn 1,,,,Dialogue turn for word-ivathu
 word-ivathu:turn:2,v3,word_dialogue,ಬಿಸಿಬೇಳೆಬಾತ್ ಮತ್ತು ಕೇಸರಿಬಾತ್ ಇದೆ ಸರ್.,Bisibelebath mathu kesaribath idhe sir.,"There is bisibelebath and kesaribath, sir.",Speaker: Server,Turn 2,,,,Dialogue turn for word-ivathu
 word-naale,v3,word,ನಾಳೆ,naale,tomorrow,"Purpose: Referring to the next day. | When: When scheduling follow-up visits, leaves, or maid appointments. | Where: office, clinic, home, anywhere",noun,,,,"Register: both | Related: home-02, work-04"
 word-naale:politeness,v3,word_politeness_claim,,,Register: both,"Tip: 'Naale banni' = please come tomorrow; 'Naale sigona' = see you tomorrow. | Common Mistake: In Kannada 'naale' means tomorrow. (Unlike Hindi 'kal' which means both yesterday and tomorrow, Kannada has separate words: 'nenne' for yesterday, 'naale' for tomorrow).",both,,,,usage claim - needs native confirmation
@@ -644,11 +504,11 @@ word-sari,v3,word,ಸರಿ,sari,okay / correct / fine,"Purpose: Agreeing, confi
 word-sari:politeness,v3,word_politeness_claim,,,Register: both,"Tip: 'Sari aaythu' = alright, agreed; 'Idhu sari idhe' = this is correct. | Common Mistake: Remember that 'sari' can mean both 'okay' (acknowledgment) and 'correct' (factual truth).",both,,,,usage claim - needs native confirmation
 word-sari:turn:1,v3,word_dialogue,ಮೂರು ಗಂಟೆಗೆ ಡೆಲಿವರಿ ಮಾಡ್ತೀನಿ.,Mooru gantege delivery maadtheeni.,I will deliver at three o'clock.,Speaker: Vendor,Turn 1,,,,Dialogue turn for word-sari
 word-sari:turn:2,v3,word_dialogue,"ಸರಿ, ಬರೋ ಮುಂಚೆ ಕಾಲ್ ಮಾಡಿ.","Sari, baro munche call maadi.","Okay, please call before coming.",Speaker: Customer,Turn 2,,,,Dialogue turn for word-sari
-word-haudu,v3,word,ಹೌದು,haudu,yes / that is so,"Purpose: Affirming a question or agreeing formally. | When: When answering yes to a question of identity, fact, or intention. | Where: office, clinic, anywhere",particle,,,,Register: both | Related: basic-03
+word-haudu,v3,word,ಹೌದು,haudu,yes / that is so,"Purpose: Affirming a question or agreeing formally. | When: When answering yes to a question of identity, fact, or intention. | Where: office, clinic, anywhere",particle,,,,Register: both | Related: greet-02
 word-haudu:politeness,v3,word_politeness_claim,,,Register: both,"Tip: A warm 'Haudu' is polite and universally understood. | Common Mistake: Casual spoken response often shortens to 'haa', but 'haudu' is clear and polite.",both,,,,usage claim - needs native confirmation
 word-haudu:turn:1,v3,word_dialogue,ನೀವು ಹೊಸದಾಗಿ ಬೆಂಗಳೂರಿಗೆ ಬಂದಿದ್ದೀರಾ?,Neevu hosadhaagi Bengaloorige bandhiddhira?,Have you newly moved to Bengaluru?,Speaker: Colleague,Turn 1,,,,Dialogue turn for word-haudu
 word-haudu:turn:2,v3,word_dialogue,"ಹೌದು, ಎರಡು ವಾರ ಆಯ್ತು.","Haudu, eradu vaara aaythu.","Yes, it has been two weeks.",Speaker: You,Turn 2,,,,Dialogue turn for word-haudu
-word-dhanyavaadha,v3,word,ಧನ್ಯವಾದ,dhanyavaadha,thank you,"Purpose: Expressing gratitude politely. | When: When someone helps with directions, serves your food, or finishes a service. | Where: anywhere",noun,,,,"Register: polite | Related: greet-08, basic-04"
+word-dhanyavaadha,v3,word,ಧನ್ಯವಾದ,dhanyavaadha,thank you,"Purpose: Expressing gratitude politely. | When: When someone helps with directions, serves your food, or finishes a service. | Where: anywhere",noun,,,,Register: polite | Related: greet-08
 word-dhanyavaadha:politeness,v3,word_politeness_claim,,,Register: polite,"Tip: Say 'Thumba dhanyavaadha anna/sir' to build instant warmth. | Common Mistake: In informal street talk, people also say 'Thanks anna'. Use 'dhanyavaadha' when you want to sound sincere and respectful.",polite,,,,usage claim - needs native confirmation
 word-dhanyavaadha:turn:1,v3,word_dialogue,ಇಲ್ಲೇ ಮುಂದೆ ಸಿಂಡಿಕೇಟ್ ಬ್ಯಾಂಕ್ ಇದೆ ನೋಡಿ.,Ille munde Syndicate Bank idhe nodi.,"Just ahead here is the Syndicate Bank, see.",Speaker: Passerby,Turn 1,,,,Dialogue turn for word-dhanyavaadha
 word-dhanyavaadha:turn:2,v3,word_dialogue,ತುಂಬಾ ಧನ್ಯವಾದ ಸರ್!,Thumba dhanyavaadha sir!,Thank you very much sir!,Speaker: You,Turn 2,,,,Dialogue turn for word-dhanyavaadha

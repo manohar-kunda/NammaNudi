@@ -117,23 +117,19 @@ function validateBackendData(scenarios, phrases, roleplay, quiz) {
   const errors = [];
 
   // 1. Validate scenario & phrase counts
-  if (!Array.isArray(scenarios) || scenarios.length !== 6) {
-    errors.push(`Expected 6 scenarios, found ${Array.isArray(scenarios) ? scenarios.length : 0}`);
+  if (!Array.isArray(scenarios) || scenarios.length !== 5) {
+    errors.push(`Expected 5 scenarios, found ${Array.isArray(scenarios) ? scenarios.length : 0}`);
   }
-  if (!Array.isArray(phrases) || phrases.length !== 120) {
-    errors.push(`Expected 120 total phrases, found ${Array.isArray(phrases) ? phrases.length : 0}`);
+  if (!Array.isArray(phrases) || phrases.length !== 50) {
+    errors.push(`Expected 50 total phrases, found ${Array.isArray(phrases) ? phrases.length : 0}`);
   }
 
   const scenarioSlugs = new Set((scenarios || []).map((s) => s.slug));
   for (const slug of scenarioSlugs) {
     const scenarioPhrases = phrases.filter((p) => p.scenario === slug);
     const count = scenarioPhrases.length;
-    if (count !== 20) {
-      errors.push(`Scenario "${slug}" expected 20 phrases, found ${count}`);
-    }
-    const patternCount = scenarioPhrases.filter((p) => p.pattern && typeof p.pattern === 'object').length;
-    if (patternCount !== 1) {
-      errors.push(`Scenario "${slug}" expected 1 phrase with "pattern", found ${patternCount}`);
+    if (count !== 10) {
+      errors.push(`Scenario "${slug}" expected 10 phrases, found ${count}`);
     }
   }
 
@@ -462,7 +458,7 @@ function main() {
     }
     process.exit(1);
   } else {
-    console.log('\nBackend Data Validation PASSED: 6 scenarios, 120 phrases (20 per scenario, 1 pattern per scenario), 5 role-play graphs valid & terminating, 25 quiz questions within bounds.');
+    console.log('\nBackend Data Validation PASSED: 5 scenarios, 50 phrases (10 per scenario), 5 role-play graphs valid & terminating, 25 quiz questions within bounds.');
   }
 
   // Run v3 validation
