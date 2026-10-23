@@ -6,7 +6,13 @@
     "en": "please give",
     "type": "verb",
     "purpose": "Politely asking someone to hand over, serve, or provide something.",
-    "where": ["restaurant", "shop", "market", "office", "clinic"],
+    "where": [
+      "restaurant",
+      "shop",
+      "market",
+      "office",
+      "clinic"
+    ],
     "when": "Whenever you place an order, buy groceries, or ask for a bill.",
     "register": "polite",
     "tip": "Attach 'kodi' directly after the item name to make any request courteous.",
@@ -25,7 +31,10 @@
       }
     ],
     "mistake": "Using 'kodu' with elders, strangers, or service staff sounds blunt and rude; always use 'kodi'.",
-    "related": ["shop-05", "rest-02"],
+    "related": [
+      "shop-05",
+      "rest-02"
+    ],
     "reviewed": false
   },
   {
@@ -35,7 +44,13 @@
     "en": "want / need",
     "type": "verb",
     "purpose": "Expressing that you need or desire something.",
-    "where": ["shop", "market", "restaurant", "auto", "home"],
+    "where": [
+      "shop",
+      "market",
+      "restaurant",
+      "auto",
+      "home"
+    ],
     "when": "When stating what items, services, or destinations you want.",
     "register": "both",
     "tip": "Pair with 'nanage' (to me): 'Nanage idhu beku' (I need this).",
@@ -54,7 +69,10 @@
       }
     ],
     "mistake": "Do not say 'Naanu beku'; in Kannada, need is expressed passively as 'Nanage beku' (to me it is needed).",
-    "related": ["trans-01", "work-03"],
+    "related": [
+      "trans-01",
+      "work-03"
+    ],
     "reviewed": false
   },
   {
@@ -64,7 +82,13 @@
     "en": "don't want / no need",
     "type": "verb",
     "purpose": "Politely refusing an item, extra service, or offer.",
-    "where": ["restaurant", "shop", "market", "auto", "home"],
+    "where": [
+      "restaurant",
+      "shop",
+      "market",
+      "auto",
+      "home"
+    ],
     "when": "When declining extra sugar, a carry bag, or unwanted rides.",
     "register": "both",
     "tip": "Say 'Beda, thanks' with a warm smile to refuse politely without sounding harsh.",
@@ -83,7 +107,9 @@
       }
     ],
     "mistake": "Avoid shouting 'beda'; soften it with 'beda, thanks' or 'beda anna'.",
-    "related": ["rest-07"],
+    "related": [
+      "rest-07"
+    ],
     "reviewed": false
   },
   {
@@ -93,7 +119,13 @@
     "en": "is there / exists / I have",
     "type": "verb",
     "purpose": "Confirming the existence or presence of something.",
-    "where": ["shop", "clinic", "office", "home", "anywhere"],
+    "where": [
+      "shop",
+      "clinic",
+      "office",
+      "home",
+      "anywhere"
+    ],
     "when": "When stating that an item is available, present, or in your possession.",
     "register": "both",
     "tip": "Combine with 'nanna hathra' to mean 'with me / I have': 'Nanna hathra change idhe'.",
@@ -112,7 +144,10 @@
       }
     ],
     "mistake": "Remember that 'idhe' is for inanimate objects; for people, use 'idhdhaare' (polite).",
-    "related": ["health-01", "trans-18"],
+    "related": [
+      "health-01",
+      "home-03"
+    ],
     "reviewed": false
   },
   {
@@ -122,7 +157,13 @@
     "en": "no / not available",
     "type": "particle",
     "purpose": "Negating a statement or indicating non-existence.",
-    "where": ["shop", "restaurant", "auto", "office", "anywhere"],
+    "where": [
+      "shop",
+      "restaurant",
+      "auto",
+      "office",
+      "anywhere"
+    ],
     "when": "When answering 'no' or informing someone an item is out of stock.",
     "register": "both",
     "tip": "A quick 'illa' followed by the reason keeps communication efficient.",
@@ -141,7 +182,9 @@
       }
     ],
     "mistake": "'Illa' means 'no / not there', whereas 'beda' means 'don't want'. Don't use 'illa' when someone offers tea and you mean 'no thank you'.",
-    "related": ["shop-07"],
+    "related": [
+      "shop-07"
+    ],
     "reviewed": false
   },
   {
@@ -151,7 +194,13 @@
     "en": "done / okay / finished",
     "type": "verb",
     "purpose": "Acknowledging an agreement or confirming that an action has completed.",
-    "where": ["auto", "restaurant", "office", "home", "anywhere"],
+    "where": [
+      "auto",
+      "restaurant",
+      "office",
+      "home",
+      "anywhere"
+    ],
     "when": "When agreeing to a fare, confirming an order, or stating dinner is done.",
     "register": "both",
     "tip": "'Aaythu' is the universal agreement word in Bengaluru spoken Kannada.",
@@ -170,7 +219,10 @@
       }
     ],
     "mistake": "Avoid using 'aaythu' for greetings; save it for acknowledging that work, eating, or discussion is completed.",
-    "related": ["greet-03", "num-07"],
+    "related": [
+      "greet-03",
+      "num-07"
+    ],
     "reviewed": false
   },
   {
@@ -180,7 +232,13 @@
     "en": "how much / how many",
     "type": "particle",
     "purpose": "Asking for quantities, prices, or time.",
-    "where": ["market", "shop", "auto", "restaurant", "anywhere"],
+    "where": [
+      "market",
+      "shop",
+      "auto",
+      "restaurant",
+      "anywhere"
+    ],
     "when": "Whenever inquiring about prices or counts.",
     "register": "both",
     "tip": "Say '[item] eshtu?' to instantly ask the price of any product.",
@@ -199,7 +257,10 @@
       }
     ],
     "mistake": "Do not confuse 'eshtu' (how much) with 'elli' (where).",
-    "related": ["num-01", "trans-03"],
+    "related": [
+      "num-01",
+      "trans-03"
+    ],
     "reviewed": false
   },
   {
@@ -209,7 +270,13 @@
     "en": "where",
     "type": "particle",
     "purpose": "Asking for locations, directions, or whereabouts.",
-    "where": ["auto", "bus-metro", "clinic", "office", "anywhere"],
+    "where": [
+      "auto",
+      "bus-metro",
+      "clinic",
+      "office",
+      "anywhere"
+    ],
     "when": "When searching for a metro station, washroom, or doctor's room.",
     "register": "both",
     "tip": "Combine with 'idhe': '[Place] elli idhe?' is the golden direction formula.",
@@ -228,7 +295,10 @@
       }
     ],
     "mistake": "Pronounce as 'elli', not 'yelli' (though spelling with 'y' is colloquial, pronunciation is smooth 'e').",
-    "related": ["dir-03", "trans-12"],
+    "related": [
+      "dir-03",
+      "dir-05"
+    ],
     "reviewed": false
   },
   {
@@ -238,7 +308,12 @@
     "en": "why",
     "type": "particle",
     "purpose": "Asking for reasons or causes.",
-    "where": ["auto", "office", "home", "anywhere"],
+    "where": [
+      "auto",
+      "office",
+      "home",
+      "anywhere"
+    ],
     "when": "When asking why an auto is stopping, or why a delivery is late.",
     "register": "both",
     "tip": "Add 'enu samasye' (what problem) if you want to sound softer than a blunt 'yaake'.",
@@ -257,7 +332,9 @@
       }
     ],
     "mistake": "Saying just 'yaake?!' with sharp intonation sounds accusatory; tone of voice matters.",
-    "related": ["trans-13"],
+    "related": [
+      "home-04"
+    ],
     "reviewed": false
   },
   {
@@ -267,7 +344,13 @@
     "en": "a little / slightly / please",
     "type": "particle",
     "purpose": "Softening any request or specifying a small quantity.",
-    "where": ["auto", "bus-metro", "restaurant", "shop", "anywhere"],
+    "where": [
+      "auto",
+      "bus-metro",
+      "restaurant",
+      "shop",
+      "anywhere"
+    ],
     "when": "When asking someone to move aside, lower the volume, or add less spice.",
     "register": "polite",
     "tip": "Placing 'swalpa' before any verb instantly makes you sound polite and local.",
@@ -286,7 +369,10 @@
       }
     ],
     "mistake": "Never skip 'swalpa' when squeezing past people in buses or metro; it prevents rudeness.",
-    "related": ["trans-02", "rest-04"],
+    "related": [
+      "trans-02",
+      "rest-04"
+    ],
     "reviewed": false
   },
   {
@@ -296,7 +382,12 @@
     "en": "fast / quickly / early",
     "type": "particle",
     "purpose": "Urging speed or requesting an early arrival.",
-    "where": ["auto", "restaurant", "office", "anywhere"],
+    "where": [
+      "auto",
+      "restaurant",
+      "office",
+      "anywhere"
+    ],
     "when": "When catching a train or asking food to be served fast.",
     "register": "both",
     "tip": "Say 'swalpa bega' (a little quickly) to sound polite rather than demanding.",
@@ -315,7 +406,9 @@
       }
     ],
     "mistake": "Barking 'bega bega!' repeatedly can offend drivers; use 'swalpa bega' once respectfully.",
-    "related": ["trans-06"],
+    "related": [
+      "trans-06"
+    ],
     "reviewed": false
   },
   {
@@ -325,7 +418,12 @@
     "en": "look / please see",
     "type": "verb",
     "purpose": "Directing someone's attention or asking them to check something.",
-    "where": ["shop", "clinic", "office", "anywhere"],
+    "where": [
+      "shop",
+      "clinic",
+      "office",
+      "anywhere"
+    ],
     "when": "When asking someone to check an app payment or inspect a spot.",
     "register": "polite",
     "tip": "'Swalpa nodi' is polite for 'please check this'.",
@@ -344,7 +442,9 @@
       }
     ],
     "mistake": "Use 'nodi' (polite plural/honorific), not 'nodu' (casual/singular).",
-    "related": ["work-02"],
+    "related": [
+      "work-02"
+    ],
     "reviewed": false
   },
   {
@@ -354,7 +454,13 @@
     "en": "please come",
     "type": "verb",
     "purpose": "Politely inviting or calling someone over.",
-    "where": ["home", "office", "shop", "auto", "anywhere"],
+    "where": [
+      "home",
+      "office",
+      "shop",
+      "auto",
+      "anywhere"
+    ],
     "when": "Welcoming visitors, asking an auto to come to your gate, or inviting someone in.",
     "register": "polite",
     "tip": "Combine with 'olage' (inside): 'Olage banni' (please come inside).",
@@ -373,7 +479,10 @@
       }
     ],
     "mistake": "'Baa' is only for young children or very close peers; always use 'banni' with adults.",
-    "related": ["greet-06", "trans-07"],
+    "related": [
+      "greet-06",
+      "trans-07"
+    ],
     "reviewed": false
   },
   {
@@ -383,7 +492,11 @@
     "en": "please go",
     "type": "verb",
     "purpose": "Instructing someone to move or go in a direction.",
-    "where": ["auto", "bus-metro", "anywhere"],
+    "where": [
+      "auto",
+      "bus-metro",
+      "anywhere"
+    ],
     "when": "When directing an auto driver or telling someone where to proceed.",
     "register": "polite",
     "tip": "Use with 'munde' (forward): 'Munde hogi' (Go straight).",
@@ -402,7 +515,10 @@
       }
     ],
     "mistake": "Never tell an elder or service person 'hogu'; always say 'hogi'.",
-    "related": ["dir-01", "dir-02"],
+    "related": [
+      "dir-01",
+      "dir-02"
+    ],
     "reviewed": false
   },
   {
@@ -412,7 +528,12 @@
     "en": "please tell / say",
     "type": "verb",
     "purpose": "Inviting someone to speak or asking for information.",
-    "where": ["shop", "office", "clinic", "anywhere"],
+    "where": [
+      "shop",
+      "office",
+      "clinic",
+      "anywhere"
+    ],
     "when": "When answering the phone, attending a counter, or asking for clarification.",
     "register": "polite",
     "tip": "Greeting someone with 'Namaskara, heli sir' is the standard polite greeting at counters.",
@@ -431,36 +552,46 @@
       }
     ],
     "mistake": "Don't use 'helu' with elders; 'heli' is the respectful imperative.",
-    "related": ["health-03"],
+    "related": [
+      "health-03"
+    ],
     "reviewed": false
   },
   {
-    "id": "word-keli",
-    "kn": "ಕೇಳಿ",
-    "translit": "keli",
-    "en": "ask / listen",
-    "type": "verb",
-    "purpose": "Asking someone to inquire or listen.",
-    "where": ["office", "auto", "shop", "anywhere"],
-    "when": "When telling someone to ask security or check with a colleague.",
-    "register": "polite",
-    "tip": "'Swalpa keli' is a polite way to get someone's attention on the street.",
+    "id": "word-enu",
+    "kn": "ಏನು",
+    "translit": "enu",
+    "en": "what",
+    "type": "particle",
+    "purpose": "Asking what something is, what someone needs, or what is happening.",
+    "where": [
+      "shop",
+      "restaurant",
+      "office",
+      "anywhere"
+    ],
+    "when": "When asking what is available, what someone needs, or asking for clarification.",
+    "register": "both",
+    "tip": "'Enu beku?' means 'What do you want/need?'; 'Ivaththu special enu?' means 'What is today's special?'.",
     "dialogue": [
       {
-        "speaker": "Newcomer",
-        "kn": "ಸ್ವಲ್ಪ ಕೇಳಿ, ಈ ಬಸ್ ಕಡೆ ಹೋಗುತ್ತಾ?",
-        "translit": "Swalpa keli, ee bus kade hoguthaa?",
-        "en": "Excuse me, does this bus go in that direction?"
+        "speaker": "Shopkeeper",
+        "kn": "ನಮಸ್ಕಾರ, ಏನು ಬೇಕು ಸರ್?",
+        "translit": "Namaskaara, enu beku sir?",
+        "en": "Hello, what do you need, sir?"
       },
       {
-        "speaker": "Commuter",
-        "kn": "ಕಂಡಕ್ಟರ್ ಹತ್ರ ಕೇಳಿ, ಹೇಳ್ತಾರೆ.",
-        "translit": "Conductor hathra keli, helthaare.",
-        "en": "Please ask the conductor, he will tell you."
+        "speaker": "Customer",
+        "kn": "ಒಂದು ಪ್ಯಾಕೆಟ್ ಹಾಲು ಕೊಡಿ.",
+        "translit": "Ondhu packet haalu kodi.",
+        "en": "Please give one packet of milk."
       }
     ],
-    "mistake": "'Keli' means both 'ask' and 'listen' depending on context ('keli' = listen, 'keli nodi' = ask and see).",
-    "related": ["basic-01"],
+    "mistake": "Do not confuse 'enu' (what) with 'elli' (where) or 'yaaru' (who).",
+    "related": [
+      "rest-08",
+      "shop-01"
+    ],
     "reviewed": false
   },
   {
@@ -470,7 +601,12 @@
     "en": "will happen / it is possible / it costs",
     "type": "verb",
     "purpose": "Expressing that an event will occur, cost a certain amount, or be feasible.",
-    "where": ["auto", "shop", "office", "anywhere"],
+    "where": [
+      "auto",
+      "shop",
+      "office",
+      "anywhere"
+    ],
     "when": "When discussing fare amounts, completion times, or feasibility.",
     "register": "both",
     "tip": "'Eshtu aaguththe?' is the standard phrase for 'How much will it come to?'.",
@@ -489,7 +625,9 @@
       }
     ],
     "mistake": "Negating 'aaguththe' is 'aagalla' (it won't happen / not possible).",
-    "related": ["num-07"],
+    "related": [
+      "num-07"
+    ],
     "reviewed": false
   },
   {
@@ -499,7 +637,12 @@
     "en": "available / can be found",
     "type": "verb",
     "purpose": "Confirming that an item or service is available to obtain.",
-    "where": ["shop", "market", "clinic", "bus-metro"],
+    "where": [
+      "shop",
+      "market",
+      "clinic",
+      "bus-metro"
+    ],
     "when": "When asking if tickets, items, or medicines can be found here.",
     "register": "both",
     "tip": "Turn into question by lengthening ending: 'Illi milk packet siguthaa?'",
@@ -518,7 +661,9 @@
       }
     ],
     "mistake": "Use 'siguththe' for availability to buy/find; use 'idhe' for existing in place.",
-    "related": ["shop-02"],
+    "related": [
+      "shop-02"
+    ],
     "reviewed": false
   },
   {
@@ -528,7 +673,11 @@
     "en": "comes / I know (a skill/language)",
     "type": "verb",
     "purpose": "Indicating arrival, or stating that you know a language.",
-    "where": ["bus-metro", "office", "anywhere"],
+    "where": [
+      "bus-metro",
+      "office",
+      "anywhere"
+    ],
     "when": "When asking about bus arrivals or stating your Kannada language skill.",
     "register": "both",
     "tip": "'Nanage Kannada swalpa baruththe' is the most respected sentence a newcomer can say.",
@@ -547,7 +696,9 @@
       }
     ],
     "mistake": "Do not say 'Naanu Kannada gottu'; say 'Nanage Kannada baruththe' or 'Nanage Kannada gottu'.",
-    "related": ["greet-05"],
+    "related": [
+      "greet-05"
+    ],
     "reviewed": false
   },
   {
@@ -557,10 +708,15 @@
     "en": "know / aware",
     "type": "verb",
     "purpose": "Expressing knowledge of a fact, route, or person.",
-    "where": ["auto", "office", "home", "anywhere"],
+    "where": [
+      "auto",
+      "office",
+      "home",
+      "anywhere"
+    ],
     "when": "When confirming you know a place, or stating 'Gothilla' (I don't know).",
     "register": "both",
-    "tip": "Negative is 'gothilla' (I don't know): 'Nanage aa address gothilla'.",
+    "tip": "Negative is 'gotthilla' (I don't know): 'Nanage aa address gotthilla'.",
     "dialogue": [
       {
         "speaker": "Passenger",
@@ -575,8 +731,11 @@
         "en": "I know it sir, please sit, I will take you there."
       }
     ],
-    "mistake": "Never say 'Naanu gothu'; always use dative 'Nanage gottu' (to me it is known).",
-    "related": ["basic-07"],
+    "mistake": "Never say 'Naanu gottu'; always use dative 'Nanage gottu' (to me it is known).",
+    "related": [
+      "greet-05",
+      "dir-10"
+    ],
     "reviewed": false
   },
   {
@@ -586,7 +745,13 @@
     "en": "is good / nice",
     "type": "phrase",
     "purpose": "Complimenting food, an item, or answering that you are well.",
-    "where": ["restaurant", "shop", "office", "home", "anywhere"],
+    "where": [
+      "restaurant",
+      "shop",
+      "office",
+      "home",
+      "anywhere"
+    ],
     "when": "When giving feedback on a meal, checking clothes, or responding to greetings.",
     "register": "polite",
     "tip": "Say 'Coffee thumba chennaagidhe' to brighten any server's day.",
@@ -605,7 +770,9 @@
       }
     ],
     "mistake": "To ask about a person's health, use 'Chennaagiddhira?' (Are you well?), not 'Chennaagidheya?' (which is for objects).",
-    "related": ["rest-09"],
+    "related": [
+      "rest-09"
+    ],
     "reviewed": false
   },
   {
@@ -615,7 +782,9 @@
     "en": "very / much / lot",
     "type": "particle",
     "purpose": "Intensifying an adjective or expressing gratitude strongly.",
-    "where": ["anywhere"],
+    "where": [
+      "anywhere"
+    ],
     "when": "When expressing high degree (very spicy, very hot, thank you very much).",
     "register": "both",
     "tip": "Combine with 'dhanyavaadha': 'Thumba dhanyavaadha' (Thank you very much).",
@@ -634,7 +803,9 @@
       }
     ],
     "mistake": "Spell as 'thumba', never 'thumpa'. In Kannada script it is always ತುಂಬಾ.",
-    "related": ["greet-08"],
+    "related": [
+      "greet-08"
+    ],
     "reviewed": false
   },
   {
@@ -644,7 +815,11 @@
     "en": "please stop",
     "type": "verb",
     "purpose": "Asking a driver to stop the vehicle.",
-    "where": ["auto", "bus-metro", "anywhere"],
+    "where": [
+      "auto",
+      "bus-metro",
+      "anywhere"
+    ],
     "when": "When you have arrived at your stop or destination.",
     "register": "polite",
     "tip": "Say 'Illi nillisi' (Stop here) or 'Munde nillisi' (Stop ahead).",
@@ -663,7 +838,9 @@
       }
     ],
     "mistake": "Never shout 'nillu' to a driver; 'nillisi' is the respectful request.",
-    "related": ["trans-04"],
+    "related": [
+      "trans-04"
+    ],
     "reviewed": false
   },
   {
@@ -673,7 +850,11 @@
     "en": "near / close to / with (a person)",
     "type": "particle",
     "purpose": "Indicating proximity to a landmark or possession by someone.",
-    "where": ["auto", "shop", "anywhere"],
+    "where": [
+      "auto",
+      "shop",
+      "anywhere"
+    ],
     "when": "When describing where to drop you, or asking who has something.",
     "register": "both",
     "tip": "'Metro hathra' = near the metro; 'Nanna hathra' = with me.",
@@ -692,54 +873,71 @@
       }
     ],
     "mistake": "Don't confuse 'hathra' (near) with 'dhoora' (far).",
-    "related": ["dir-01", "trans-09"],
+    "related": [
+      "dir-01",
+      "trans-09"
+    ],
     "reviewed": false
   },
   {
-    "id": "word-dhoora",
-    "kn": "ದೂರ",
-    "translit": "dhoora",
-    "en": "far / distance",
-    "type": "noun",
-    "purpose": "Asking about or indicating distance.",
-    "where": ["auto", "bus-metro", "anywhere"],
-    "when": "When checking whether a destination is walkable.",
+    "id": "word-illi",
+    "kn": "ಇಲ್ಲಿ",
+    "translit": "illi",
+    "en": "here",
+    "type": "particle",
+    "purpose": "Indicating the current location or instructing someone to stop/wait here.",
+    "where": [
+      "auto",
+      "bus-metro",
+      "shop",
+      "restaurant",
+      "anywhere"
+    ],
+    "when": "When telling an auto/cab driver where to drop you or asking if something is available here.",
     "register": "both",
-    "tip": "'Thumba dhoora' = very far; 'Eshtu dhoora?' = how far?",
+    "tip": "'Illi nillisi' is the standard polite instruction to an auto driver to stop here.",
     "dialogue": [
       {
-        "speaker": "Pedestrian",
-        "kn": "ರೈಲ್ವೆ ಸ್ಟೇಷನ್ ತುಂಬಾ ದೂರ ಇದ್ಯಾ?",
-        "translit": "Railway station thumba dhoora idhya?",
-        "en": "Is the railway station very far?"
+        "speaker": "Passenger",
+        "kn": "ಅಣ್ಣಾ, ಇಲ್ಲಿ ಲೆಫ್ಟ್‌ನಲ್ಲಿ ನಿಲ್ಲಿಸಿ.",
+        "translit": "Anna, illi left-nalli nillisi.",
+        "en": "Brother, please stop here on the left."
       },
       {
-        "speaker": "Local",
-        "kn": "ಇಲ್ಲ, ಒಂದು ಕಿಲೋಮೀಟರ್ ಅಷ್ಟೇ.",
-        "translit": "Illa, ondhu kilometer ashte.",
-        "en": "No, just about one kilometer."
+        "speaker": "Auto Driver",
+        "kn": "ಸರಿ ಸರ್, ಇಲ್ಲೇ ನಿಲ್ಲಿಸ್ತೀನಿ.",
+        "translit": "Sari sir, ille nillisthini.",
+        "en": "Okay sir, I will stop right here."
       }
     ],
-    "mistake": "Remember the dental 'dh' sound in 'dhoora', not the English 'd' in door.",
-    "related": ["dir-07"],
+    "mistake": "Do not mix up 'illi' (here) with 'alli' (there).",
+    "related": [
+      "trans-05",
+      "dir-01"
+    ],
     "reviewed": false
   },
   {
     "id": "word-ivathu",
     "kn": "ಇವತ್ತು",
-    "translit": "ivathu",
+    "translit": "ivaththu",
     "en": "today",
     "type": "noun",
     "purpose": "Referring to the present day.",
-    "where": ["office", "restaurant", "home", "anywhere"],
+    "where": [
+      "office",
+      "restaurant",
+      "home",
+      "anywhere"
+    ],
     "when": "When talking about today's specials, today's leave, or today's plans.",
     "register": "both",
-    "tip": "Combine with 'special': 'Ivathu special enu?' (What's special today?).",
+    "tip": "Combine with 'special': 'Ivaththu special enu?' (What's special today?).",
     "dialogue": [
       {
         "speaker": "Diner",
         "kn": "ಇವತ್ತು ಊಟಕ್ಕೆ ಸ್ಪೆಷಲ್ ಏನು?",
-        "translit": "Ivathu ootakke special enu?",
+        "translit": "Ivaththu ootakke special enu?",
         "en": "What is the special for lunch today?"
       },
       {
@@ -749,8 +947,11 @@
         "en": "There is bisibelebath and kesaribath, sir."
       }
     ],
-    "mistake": "Don't confuse 'ivathu' (today) with 'naale' (tomorrow) or 'nenne' (yesterday).",
-    "related": ["rest-08", "work-06"],
+    "mistake": "Don't confuse 'ivaththu' (today) with 'naale' (tomorrow) or 'nenne' (yesterday).",
+    "related": [
+      "rest-08",
+      "work-06"
+    ],
     "reviewed": false
   },
   {
@@ -760,7 +961,12 @@
     "en": "tomorrow",
     "type": "noun",
     "purpose": "Referring to the next day.",
-    "where": ["office", "clinic", "home", "anywhere"],
+    "where": [
+      "office",
+      "clinic",
+      "home",
+      "anywhere"
+    ],
     "when": "When scheduling follow-up visits, leaves, or maid appointments.",
     "register": "both",
     "tip": "'Naale banni' = please come tomorrow; 'Naale sigona' = see you tomorrow.",
@@ -779,7 +985,10 @@
       }
     ],
     "mistake": "In Kannada 'naale' means tomorrow. (Unlike Hindi 'kal' which means both yesterday and tomorrow, Kannada has separate words: 'nenne' for yesterday, 'naale' for tomorrow).",
-    "related": ["home-02", "work-04"],
+    "related": [
+      "home-02",
+      "work-04"
+    ],
     "reviewed": false
   },
   {
@@ -789,7 +998,9 @@
     "en": "okay / correct / fine",
     "type": "particle",
     "purpose": "Agreeing, confirming accuracy, or saying alright.",
-    "where": ["anywhere"],
+    "where": [
+      "anywhere"
+    ],
     "when": "When confirming a deal, agreeing to a timing, or saying all is correct.",
     "register": "both",
     "tip": "'Sari aaythu' = alright, agreed; 'Idhu sari idhe' = this is correct.",
@@ -808,7 +1019,9 @@
       }
     ],
     "mistake": "Remember that 'sari' can mean both 'okay' (acknowledgment) and 'correct' (factual truth).",
-    "related": ["shop-04"],
+    "related": [
+      "shop-04"
+    ],
     "reviewed": false
   },
   {
@@ -818,7 +1031,11 @@
     "en": "yes / that is so",
     "type": "particle",
     "purpose": "Affirming a question or agreeing formally.",
-    "where": ["office", "clinic", "anywhere"],
+    "where": [
+      "office",
+      "clinic",
+      "anywhere"
+    ],
     "when": "When answering yes to a question of identity, fact, or intention.",
     "register": "both",
     "tip": "A warm 'Haudu' is polite and universally understood.",
@@ -837,7 +1054,9 @@
       }
     ],
     "mistake": "Casual spoken response often shortens to 'haa', but 'haudu' is clear and polite.",
-    "related": ["basic-03"],
+    "related": [
+      "greet-02"
+    ],
     "reviewed": false
   },
   {
@@ -847,7 +1066,9 @@
     "en": "thank you",
     "type": "noun",
     "purpose": "Expressing gratitude politely.",
-    "where": ["anywhere"],
+    "where": [
+      "anywhere"
+    ],
     "when": "When someone helps with directions, serves your food, or finishes a service.",
     "register": "polite",
     "tip": "Say 'Thumba dhanyavaadha anna/sir' to build instant warmth.",
@@ -866,7 +1087,9 @@
       }
     ],
     "mistake": "In informal street talk, people also say 'Thanks anna'. Use 'dhanyavaadha' when you want to sound sincere and respectful.",
-    "related": ["greet-08", "basic-04"],
+    "related": [
+      "greet-08"
+    ],
     "reviewed": false
   }
 ]

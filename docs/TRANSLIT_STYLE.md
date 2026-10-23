@@ -50,3 +50,30 @@ The following subtle variations exist in legacy `data/phrases.json` and are flag
    - `L1153` has `barabeku` while `L1092` has `hogbeku`. Both are common in spoken Kannada (`ಬರಬೇಕು` vs `ಹೋಗ್ಬೇಕು`).
 3. **`ellidhe` (L36) vs `elli idhe` (11 other occurrences)**:
    - `L36` writes compound `ee address ellidhe?`. All other occurrences write `elli idhe?`. v3 standardizes on `elli idhe?`.
+4. **`ivathu` (single `th`) vs `ivaththu` / `Ivaththina` (doubled dental `thth` for `ಇವತ್ತು`)**:
+   - `data/phrases.json` (L179, L387, L617, L621), `data/quiz.json` (L218), `data/roleplay.json` (L73, L86, L137, L150, L558, L609), and `frontend/src/data/phrases-extra.json` (L318, L322) write `ivathu` / `ivathindhaa` / `nooraivathu`.
+   - `docs/review/content_review_pack.csv` (`rest-14`) writes `Ivaththina` (geminate `thth`).
+   - In `words.json`, `word-ivathu` has been standardized to translit `ivaththu` to align with the geminate dental convention (`-uththe`, `Ivaththina`).
+   - *Reviewer Decision*: Standardize all occurrences across the catalog to either `ivaththu` (phonetically accurate geminate) or `ivathu` (simplified informal).
+5. **`hathu` (single `th`) vs `haththu` (doubled `thth` for `ಹತ್ತು` - 10)**:
+   - `data/quiz.json` (L108) and `words.json` (L777) use `haththu`.
+   - Legacy review CSV (`basic-12`, `work-12`, `work-18`) writes `hathu`.
+   - *Reviewer Decision*: Standardize the numeral 10 to `haththu` or `hathu`.
+6. **`ippathu` (single `th`) vs `ippaththu` (doubled `thth` for `ಇಪ್ಪತ್ತು` - 20)**:
+   - `data/roleplay.json` (L41) uses `ippathu`.
+   - `words.json` (L162, L197) uses `ippaththu`.
+   - *Reviewer Decision*: Standardize 20 to `ippaththu` or `ippathu`.
+7. **`mathu` (single `th`) vs `matthu` (doubled `thth` for `ಮತ್ತು` - and)**:
+   - `data/phrases.json` (L344, L370, L647), `data/roleplay.json` (L180, L314, L550), and `words.json` (L748) universally write `mathu` (single `th`).
+   - *Reviewer Decision*: Confirm whether the conjunction `ಮತ್ತು` should remain simplified `mathu` or be geminated to `matthu`.
+8. **`mathe` (single `th`) vs `maththe` (doubled `thth` for `ಮತ್ತೆ` - again)**:
+   - `frontend/src/data/phrases-extra.json` (L500, L504) and legacy `health-20` write `mathe`.
+   - *Reviewer Decision*: Standardize to `mathe` or `maththe`.
+9. **`gottu` (`tt`) vs `gotthu` (`tth`) vs `gothu` (`th`) for `ಗೊತ್ತು` / `ಗೊತ್ತಿಲ್ಲ`**:
+   - `data/roleplay.json` (L362) has `Gotthilla`.
+   - `words.json` (L556, L568, L574) uses `gottu` / `gottaa`.
+   - Legacy review CSV has `gothaaglilla`.
+   - *Reviewer Decision*: Standardize whether `ಗೊತ್ತು` should be transliterated as `gottu` (informal phonetic), `gotthu` (dental geminate), or `gotthilla` / `gothilla`.
+10. **Past tense / past copula `-ithu` vs `-iththu` (`ಇತ್ತು`, `ಬೇಕಿತ್ತು`, `ಬೇಕಾಗಿತ್ತು`, `ಚೆನ್ನಾಗಿತ್ತು`)**:
+    - `data/phrases.json` (L309, L422, L426, L435, L439, L643) use `ithu`, `bekithu`, `bekaagithu`, `chennaagithu` (single `th`).
+    - *Reviewer Decision*: Confirm keeping single `th` or geminating to `iththu`, `bekiththu`, `chennaagiththu`.
