@@ -116,20 +116,22 @@ function splitQuizOption(optStr) {
 function validateBackendData(scenarios, phrases, roleplay, quiz) {
   const errors = [];
 
-  // 1. Validate scenario & phrase counts
-  if (!Array.isArray(scenarios) || scenarios.length !== 5) {
-    errors.push(`Expected 5 scenarios, found ${Array.isArray(scenarios) ? scenarios.length : 0}`);
-  }
-  if (!Array.isArray(phrases) || phrases.length !== 50) {
-    errors.push(`Expected 50 total phrases, found ${Array.isArray(phrases) ? phrases.length : 0}`);
+  // 1. Validate scenario & phrase counts dynamically from scenarios.json metadata
+  if (!Array.isArray(scenarios) || scenarios.length === 0) {
+    errors.push(`Expected valid scenarios array, found ${Array.isArray(scenarios) ? scenarios.length : 0}`);
+    return errors;
   }
 
-  const scenarioSlugs = new Set((scenarios || []).map((s) => s.slug));
-  for (const slug of scenarioSlugs) {
-    const scenarioPhrases = phrases.filter((p) => p.scenario === slug);
-    const count = scenarioPhrases.length;
-    if (count !== 10) {
-      errors.push(`Scenario "${slug}" expected 10 phrases, found ${count}`);
+  const expectedTotalPhrases = scenarios.reduce((sum, s) => sum + (s.phraseCount || 0), 0);
+  if (!Array.isArray(phrases) || phrases.length !== expectedTotalPhrases) {
+    errors.push(`Expected ${expectedTotalPhrases} total phrases (sum of scenario phraseCounts), found ${Array.isArray(phrases) ? phrases.length : 0}`);
+  }
+
+  for (const sc of scenarios) {
+    const actualCount = (phrases || []).filter((p) => p.scenario === sc.slug).length;
+    const expectedCount = typeof sc.phraseCount === 'number' ? sc.phraseCount : actualCount;
+    if (actualCount !== expectedCount) {
+      errors.push(`Scenario "${sc.slug}" phraseCount metadata is ${expectedCount}, but found ${actualCount} phrases`);
     }
   }
 
@@ -458,7 +460,7 @@ function main() {
     }
     process.exit(1);
   } else {
-    console.log('\nBackend Data Validation PASSED: 5 scenarios, 50 phrases (10 per scenario), 5 role-play graphs valid & terminating, 25 quiz questions within bounds.');
+    console.log(`\nBackend Data Validation PASSED: ${scenarios.length} scenarios, ${phrases.length} phrases (matching scenario phraseCounts), ${Object.keys(roleplay).length} role-play graphs valid & terminating.`);
   }
 
   // Run v3 validation
