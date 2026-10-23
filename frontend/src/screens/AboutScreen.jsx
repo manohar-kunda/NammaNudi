@@ -62,7 +62,7 @@ export function AboutScreen({ onBack }) {
   }
 
   return (
-    <div>
+    <div className="reading-column">
       {onBack && (
         <button type="button" className="back-btn" onClick={onBack}>
           <ArrowLeftIcon size={18} />
@@ -180,7 +180,7 @@ export function AboutScreen({ onBack }) {
                   border: '1px solid var(--border-warm)',
                 }}
               >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px', gap: '8px', flexWrap: 'wrap' }}>
                   <span className="kn-text" style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)' }}>
                     {phrase.kn}
                   </span>

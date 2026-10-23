@@ -78,162 +78,197 @@ export function PracticeScreen({
 
   // Step 2: Scenario selected -> Choose Role-play or Quiz
   if (selectedScenario) {
-    const { quiz, roleplay } = getScenarioProgress
-      ? getScenarioProgress(selectedScenario.slug)
-      : { quiz: null, roleplay: null };
+    const progress = getScenarioProgress ? getScenarioProgress(selectedScenario.slug) : null;
+    const quizScore = progress?.quiz?.bestScore;
+    const roleplayCount = progress?.roleplay?.count || 0;
 
     return (
-      <div>
+      <div className="reading-column">
         <button
           type="button"
           className="back-btn"
           onClick={() => setSelectedScenario(null)}
         >
           <ArrowLeftIcon size={18} />
-          <span>All Practice Scenarios</span>
+          <span>All Scenarios</span>
         </button>
 
         <div style={{ marginBottom: '18px' }}>
-          <h2 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--primary-red)' }}>
-            {selectedScenario.title} Practice
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--primary-red)' }}>
+            Practice: {selectedScenario.title}
           </h2>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-            Choose an interactive activity for {selectedScenario.title.toLowerCase()} situations.
+            Choose an interactive practice activity below.
           </p>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          <button
-            type="button"
-            className="card scenario-card"
-            data-testid="choose-roleplay-btn"
-            onClick={() => setActiveMode('roleplay')}
-            style={{ padding: '18px', margin: 0 }}
+        {/* Practice Mode Choice Cards */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          {/* Role-play Card */}
+          <div
+            className="card"
+            style={{
+              padding: '18px',
+              borderLeft: '4px solid #881337',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
           >
-            <div className="scenario-info">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                <span className="scenario-title">Interactive Role-play</span>
-                {roleplay && roleplay.count > 0 && (
-                  <span className="badge" style={{ backgroundColor: '#ecfdf5', color: '#047857' }}>
-                    Completed {roleplay.count}x
-                  </span>
-                )}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+              <div>
+                <span style={{ fontSize: '0.725rem', fontWeight: 800, color: 'var(--accent-gold)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                  Interactive Dialogue
+                </span>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginTop: '2px' }}>
+                  Branching Role-play
+                </h3>
               </div>
-              <p className="scenario-count" style={{ fontSize: '0.85rem' }}>
-                Step into a branching conversation with real-time feedback on your Kannada replies.
-              </p>
+              {roleplayCount > 0 && (
+                <span
+                  style={{
+                    backgroundColor: '#ecfdf5',
+                    color: '#065f46',
+                    fontSize: '0.725rem',
+                    fontWeight: 700,
+                    padding: '2px 8px',
+                    borderRadius: '10px',
+                    border: '1px solid #a7f3d0',
+                  }}
+                >
+                  Completed {roleplayCount}×
+                </span>
+              )}
             </div>
-            <ChevronRightIcon size={20} />
-          </button>
+            <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)' }}>
+              Practice realistic conversations (e.g. negotiating with an auto driver, asking prices, placing an order). Receive instant quality feedback on every response.
+            </p>
+            <button
+              type="button"
+              className="retry-btn"
+              onClick={() => setActiveMode('roleplay')}
+              style={{
+                backgroundColor: 'var(--primary-red)',
+                alignSelf: 'flex-start',
+                marginTop: '4px',
+              }}
+            >
+              Start Role-play &rarr;
+            </button>
+          </div>
 
-          <button
-            type="button"
-            className="card scenario-card"
-            data-testid="choose-quiz-btn"
-            onClick={() => setActiveMode('quiz')}
-            style={{ padding: '18px', margin: 0 }}
+          {/* Quiz Card */}
+          <div
+            className="card"
+            style={{
+              padding: '18px',
+              borderLeft: '4px solid #b45309',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
           >
-            <div className="scenario-info">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                <span className="scenario-title">5-Question Scenario Quiz</span>
-                {quiz && (
-                  <span className="badge" style={{ backgroundColor: '#fef3c7', color: '#92400e' }}>
-                    Best: {quiz.bestScore}/{quiz.total}
-                  </span>
-                )}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+              <div>
+                <span style={{ fontSize: '0.725rem', fontWeight: 800, color: '#b45309', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                  5-Question Assessment
+                </span>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginTop: '2px' }}>
+                  Scenario Quiz
+                </h3>
               </div>
-              <p className="scenario-count" style={{ fontSize: '0.85rem' }}>
-                Test your recall of practical {selectedScenario.title.toLowerCase()} phrases with instant explanations.
-              </p>
+              {quizScore !== undefined && (
+                <span
+                  style={{
+                    backgroundColor: '#fffbeb',
+                    color: '#92400e',
+                    fontSize: '0.725rem',
+                    fontWeight: 700,
+                    padding: '2px 8px',
+                    borderRadius: '10px',
+                    border: '1px solid #fde68a',
+                  }}
+                >
+                  Best: {quizScore}/5
+                </span>
+              )}
             </div>
-            <ChevronRightIcon size={20} />
-          </button>
+            <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)' }}>
+              Test your recall of key vocabulary and polite sentence constructions. Instant explanations show you why each answer is right or wrong.
+            </p>
+            <button
+              type="button"
+              className="retry-btn"
+              onClick={() => setActiveMode('quiz')}
+              style={{
+                backgroundColor: '#b45309',
+                alignSelf: 'flex-start',
+                marginTop: '4px',
+              }}
+            >
+              Start Quiz &rarr;
+            </button>
+          </div>
         </div>
       </div>
     );
   }
 
-  // Step 1: Pick a scenario
+  // Step 1: Scenario selection hub
   return (
     <div>
-      <div style={{ marginBottom: '18px' }}>
+      <div style={{ marginBottom: '16px' }}>
         <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--primary-red)' }}>
-          Practice & Role-play
+          Practice & Test Yourself
         </h2>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-          Pick a scenario to practice branching role-play dialogues or take a 5-question quiz.
+          Pick an everyday scenario to practice interactive role-plays or take a 5-question quiz.
         </p>
       </div>
 
       {error && <ErrorState message={error} onRetry={loadScenarios} />}
 
       {loading && (
-        <LoadingState
-          label="Loading practice scenarios..."
-          onRetry={loadScenarios}
-        />
+        <LoadingState label="Loading practice scenarios..." onRetry={loadScenarios} />
       )}
 
       {!loading && !error && (
-        <div>
+        <div className="scenarios-grid">
           {scenarios.map((sc) => {
-            const IconComponent = ICON_MAP[sc.icon] || BusIcon;
-            const { quiz, roleplay } = getScenarioProgress
-              ? getScenarioProgress(sc.slug)
-              : { quiz: null, roleplay: null };
+            const Icon = ICON_MAP[sc.icon] || BusIcon;
+            const progress = getScenarioProgress ? getScenarioProgress(sc.slug) : null;
+            const quizScore = progress?.quiz?.bestScore;
+            const roleplayCount = progress?.roleplay?.count || 0;
 
             return (
               <button
                 key={sc.id}
                 type="button"
                 className="card scenario-card"
-                data-testid={`practice-scenario-${sc.slug}`}
-                onClick={() => {
-                  setSelectedScenario(sc);
-                  setActiveMode(null);
-                }}
+                onClick={() => setSelectedScenario(sc)}
               >
-                <div className="scenario-icon-box" aria-hidden="true">
-                  <IconComponent size={24} />
+                <div className="scenario-icon-box">
+                  <Icon size={24} />
                 </div>
-
                 <div className="scenario-info">
-                  <div className="scenario-title">{sc.title}</div>
-                  <div
-                    style={{
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      gap: '6px',
-                      marginTop: '6px',
-                    }}
-                  >
-                    <span
-                      className="badge"
-                      style={{
-                        backgroundColor: roleplay?.count > 0 ? '#ecfdf5' : '#f5f5f4',
-                        color: roleplay?.count > 0 ? '#047857' : '#57534e',
-                      }}
-                    >
-                      {roleplay?.count > 0
-                        ? `Role-play: ${roleplay.count}x`
-                        : 'Role-play: not started'}
-                    </span>
-
-                    <span
-                      className="badge"
-                      style={{
-                        backgroundColor: quiz ? '#fef3c7' : '#f5f5f4',
-                        color: quiz ? '#92400e' : '#57534e',
-                      }}
-                    >
-                      {quiz
-                        ? `Best Quiz: ${quiz.bestScore}/${quiz.total}`
-                        : 'Quiz: —/5'}
-                    </span>
+                  <div className="scenario-title">
+                    <span>{sc.title}</span>
+                  </div>
+                  <div className="scenario-count">
+                    {quizScore !== undefined ? (
+                      <span style={{ color: '#047857', fontWeight: 600 }}>Quiz: {quizScore}/5</span>
+                    ) : (
+                      <span>Quiz pending</span>
+                    )}
+                    {' • '}
+                    {roleplayCount > 0 ? (
+                      <span style={{ color: '#047857', fontWeight: 600 }}>Role-play: {roleplayCount}×</span>
+                    ) : (
+                      <span>Role-play pending</span>
+                    )}
                   </div>
                 </div>
-
-                <ChevronRightIcon size={20} className="scenario-chevron" />
+                <ChevronRightIcon size={20} className="empty-icon" style={{ width: 20, height: 20, color: '#a8a29e' }} />
               </button>
             );
           })}
