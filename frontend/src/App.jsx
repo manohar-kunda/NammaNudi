@@ -7,6 +7,7 @@ import { SearchScreen } from './screens/SearchScreen';
 import { SavedScreen } from './screens/SavedScreen';
 import { PracticeScreen } from './screens/PracticeScreen';
 import { AboutScreen } from './screens/AboutScreen';
+import { WordsScreen } from './screens/WordsScreen';
 import { useSavedPhrases } from './hooks/useSavedPhrases';
 import { useSpeech } from './hooks/useSpeech';
 import { useProgress } from './hooks/useProgress';
@@ -74,10 +75,25 @@ export function App() {
           onNavigateSearch={() => handleSelectTab('search')}
           onNavigatePractice={() => handleSelectTab('practice')}
           onNavigateAbout={() => handleSelectTab('about')}
+          onNavigateWords={() => handleSelectTab('words')}
           progress={progress}
           totalRoleplayCompletions={totalRoleplayCompletions}
           scenariosWithQuizDone={scenariosWithQuizDone}
           totalBestQuizPoints={totalBestQuizPoints}
+        />
+      );
+    }
+
+    if (activeTab === 'words') {
+      return (
+        <WordsScreen
+          onBack={() => {
+            setActiveTab('home');
+            setSelectedScenario(null);
+          }}
+          hasVoice={hasVoice}
+          onSpeak={speak}
+          speakingId={speakingId}
         />
       );
     }

@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { fetchScenarios } from '../api';
 import { ScenarioCard } from '../components/ScenarioCard';
 import { ErrorState, LoadingState } from '../components/ErrorState';
+import { ChevronRightIcon } from '../components/Icons';
 
 export function HomeScreen({
   onSelectScenario,
   onNavigateSearch,
   onNavigatePractice,
   onNavigateAbout,
+  onNavigateWords,
   progress,
   totalRoleplayCompletions,
   scenariosWithQuizDone,
@@ -167,12 +169,61 @@ export function HomeScreen({
         )}
       </div>
 
+      {/* Prominent Words Card linking to Words Screen */}
+      <div
+        className="card home-words-card"
+        data-testid="home-words-card"
+        onClick={onNavigateWords}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onNavigateWords && onNavigateWords();
+          }
+        }}
+        style={{
+          cursor: 'pointer',
+          marginBottom: '16px',
+          background: 'linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%)',
+          borderColor: '#fecdd3',
+          padding: '16px 18px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '12px',
+        }}
+      >
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+            <span className="badge" style={{ backgroundColor: '#be123c', color: '#ffffff', fontWeight: 800 }}>
+              New • 30 Words
+            </span>
+            <span style={{ fontSize: '0.825rem', fontWeight: 700, color: '#9f1239' }}>
+              ಪದಗಳು • Spoken Core
+            </span>
+          </div>
+          <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#881337', margin: '4px 0' }}>
+            Essential Everyday Words
+          </h3>
+          <p style={{ fontSize: '0.825rem', color: '#9f1239', margin: 0 }}>
+            Master 30 high-frequency words with usage context, politeness notes, common mistakes, and realistic 2-turn conversations.
+          </p>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#be123c', fontWeight: 700, fontSize: '0.875rem', flexShrink: 0 }}>
+          <span>Explore</span>
+          <ChevronRightIcon size={20} />
+        </div>
+      </div>
+
       {error && <ErrorState message={error} onRetry={loadData} />}
 
       {loading && (
         <LoadingState label="Loading Karnataka scenarios..." onRetry={loadData} />
       )}
 
+      
+      
       {!loading && !error && (
         <div className="scenarios-grid">
           {scenarios.map((sc) => (
