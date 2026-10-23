@@ -1,0 +1,872 @@
+[
+  {
+    "id": "word-kodi",
+    "kn": "ಕೊಡಿ",
+    "translit": "kodi",
+    "en": "please give",
+    "type": "verb",
+    "purpose": "Politely asking someone to hand over, serve, or provide something.",
+    "where": ["restaurant", "shop", "market", "office", "clinic"],
+    "when": "Whenever you place an order, buy groceries, or ask for a bill.",
+    "register": "polite",
+    "tip": "Attach 'kodi' directly after the item name to make any request courteous.",
+    "dialogue": [
+      {
+        "speaker": "Customer",
+        "kn": "ಒಂದು ಕಪ್ ಕಾಫಿ ಕೊಡಿ.",
+        "translit": "Ondhu cup coffee kodi.",
+        "en": "Please give one cup of coffee."
+      },
+      {
+        "speaker": "Server",
+        "kn": "ಆಯ್ತು ಸಾರ್, ಎರಡು ನಿಮಿಷ.",
+        "translit": "Aaythu saar, eradu nimisha.",
+        "en": "Okay sir, two minutes."
+      }
+    ],
+    "mistake": "Using 'kodu' with elders, strangers, or service staff sounds blunt and rude; always use 'kodi'.",
+    "related": ["shop-05", "rest-02"],
+    "reviewed": false
+  },
+  {
+    "id": "word-beku",
+    "kn": "ಬೇಕು",
+    "translit": "beku",
+    "en": "want / need",
+    "type": "verb",
+    "purpose": "Expressing that you need or desire something.",
+    "where": ["shop", "market", "restaurant", "auto", "home"],
+    "when": "When stating what items, services, or destinations you want.",
+    "register": "both",
+    "tip": "Pair with 'nanage' (to me): 'Nanage idhu beku' (I need this).",
+    "dialogue": [
+      {
+        "speaker": "Passenger",
+        "kn": "ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಹೋಗ್ಬೇಕು.",
+        "translit": "Majestic-ge hogbeku.",
+        "en": "I need to go to Majestic."
+      },
+      {
+        "speaker": "Auto Driver",
+        "kn": "ಬನ್ನಿ ಸರ್, ಮೀಟರ್ ಹಾಕ್ತೀನಿ.",
+        "translit": "Banni sir, meter haaktheeni.",
+        "en": "Come sir, I will put the meter."
+      }
+    ],
+    "mistake": "Do not say 'Naanu beku'; in Kannada, need is expressed passively as 'Nanage beku' (to me it is needed).",
+    "related": ["trans-01", "work-03"],
+    "reviewed": false
+  },
+  {
+    "id": "word-beda",
+    "kn": "ಬೇಡ",
+    "translit": "beda",
+    "en": "don't want / no need",
+    "type": "verb",
+    "purpose": "Politely refusing an item, extra service, or offer.",
+    "where": ["restaurant", "shop", "market", "auto", "home"],
+    "when": "When declining extra sugar, a carry bag, or unwanted rides.",
+    "register": "both",
+    "tip": "Say 'Beda, thanks' with a warm smile to refuse politely without sounding harsh.",
+    "dialogue": [
+      {
+        "speaker": "Vendor",
+        "kn": "ಪ್ಲಾಸ್ಟಿಕ್ ಕವರ್ ಬೇಕಾ ಸರ್?",
+        "translit": "Plastic cover bekaa sir?",
+        "en": "Do you need a plastic cover sir?"
+      },
+      {
+        "speaker": "Customer",
+        "kn": "ಬೇಡ, ನನ್ನ ಹತ್ರ ಬ್ಯಾಗ್ ಇದೆ.",
+        "translit": "Beda, nanna hathra bag idhe.",
+        "en": "No need, I have a bag with me."
+      }
+    ],
+    "mistake": "Avoid shouting 'beda'; soften it with 'beda, thanks' or 'beda anna'.",
+    "related": ["rest-07"],
+    "reviewed": false
+  },
+  {
+    "id": "word-idhe",
+    "kn": "ಇದೆ",
+    "translit": "idhe",
+    "en": "is there / exists / I have",
+    "type": "verb",
+    "purpose": "Confirming the existence or presence of something.",
+    "where": ["shop", "clinic", "office", "home", "anywhere"],
+    "when": "When stating that an item is available, present, or in your possession.",
+    "register": "both",
+    "tip": "Combine with 'nanna hathra' to mean 'with me / I have': 'Nanna hathra change idhe'.",
+    "dialogue": [
+      {
+        "speaker": "Colleague",
+        "kn": "ನಿಮ್ಮ ಹತ್ರ ಪೆನ್ ಇದ್ಯಾ?",
+        "translit": "Nimma hathra pen idhya?",
+        "en": "Do you have a pen with you?"
+      },
+      {
+        "speaker": "You",
+        "kn": "ಹೌದು, ನನ್ನ ಹತ್ರ ಇದೆ, ತಗೊಳ್ಳಿ.",
+        "translit": "Haudu, nanna hathra idhe, thagolli.",
+        "en": "Yes, I have one, please take it."
+      }
+    ],
+    "mistake": "Remember that 'idhe' is for inanimate objects; for people, use 'idhdhaare' (polite).",
+    "related": ["health-01", "trans-18"],
+    "reviewed": false
+  },
+  {
+    "id": "word-illa",
+    "kn": "ಇಲ್ಲ",
+    "translit": "illa",
+    "en": "no / not available",
+    "type": "particle",
+    "purpose": "Negating a statement or indicating non-existence.",
+    "where": ["shop", "restaurant", "auto", "office", "anywhere"],
+    "when": "When answering 'no' or informing someone an item is out of stock.",
+    "register": "both",
+    "tip": "A quick 'illa' followed by the reason keeps communication efficient.",
+    "dialogue": [
+      {
+        "speaker": "Customer",
+        "kn": "ಚೇಂಜ್ ಇದ್ಯಾ ಅಣ್ಣಾ?",
+        "translit": "Change idhya anna?",
+        "en": "Do you have change, brother?"
+      },
+      {
+        "speaker": "Shopkeeper",
+        "kn": "ಇಲ್ಲ ಸರ್, UPI ಮಾಡಿ.",
+        "translit": "Illa sir, UPI maadi.",
+        "en": "No sir, please pay by UPI."
+      }
+    ],
+    "mistake": "'Illa' means 'no / not there', whereas 'beda' means 'don't want'. Don't use 'illa' when someone offers tea and you mean 'no thank you'.",
+    "related": ["shop-07"],
+    "reviewed": false
+  },
+  {
+    "id": "word-aaythu",
+    "kn": "ಆಯ್ತು",
+    "translit": "aaythu",
+    "en": "done / okay / finished",
+    "type": "verb",
+    "purpose": "Acknowledging an agreement or confirming that an action has completed.",
+    "where": ["auto", "restaurant", "office", "home", "anywhere"],
+    "when": "When agreeing to a fare, confirming an order, or stating dinner is done.",
+    "register": "both",
+    "tip": "'Aaythu' is the universal agreement word in Bengaluru spoken Kannada.",
+    "dialogue": [
+      {
+        "speaker": "Auto Driver",
+        "kn": "ಮೀಟರ್ ಮೇಲೆ ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಕೊಡಿ.",
+        "translit": "Meter mele ippaththu roopaayi kodi.",
+        "en": "Give twenty rupees over the meter."
+      },
+      {
+        "speaker": "Passenger",
+        "kn": "ಸರಿ ಆಯ್ತು, ಬೇಗ ಹೋಗಿ.",
+        "translit": "Sari aaythu, bega hogi.",
+        "en": "Okay done, please drive quickly."
+      }
+    ],
+    "mistake": "Avoid using 'aaythu' for greetings; save it for acknowledging that work, eating, or discussion is completed.",
+    "related": ["greet-03", "num-07"],
+    "reviewed": false
+  },
+  {
+    "id": "word-eshtu",
+    "kn": "ಎಷ್ಟು",
+    "translit": "eshtu",
+    "en": "how much / how many",
+    "type": "particle",
+    "purpose": "Asking for quantities, prices, or time.",
+    "where": ["market", "shop", "auto", "restaurant", "anywhere"],
+    "when": "Whenever inquiring about prices or counts.",
+    "register": "both",
+    "tip": "Say '[item] eshtu?' to instantly ask the price of any product.",
+    "dialogue": [
+      {
+        "speaker": "Customer",
+        "kn": "ಈ ಸೇಬು ಒಂದು ಕೆಜಿ ಎಷ್ಟು?",
+        "translit": "Ee sebu ondhu kg eshtu?",
+        "en": "How much for one kg of these apples?"
+      },
+      {
+        "speaker": "Vendor",
+        "kn": "ನೂರ ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಸರ್.",
+        "translit": "Noora ippaththu roopaayi sir.",
+        "en": "One hundred and twenty rupees, sir."
+      }
+    ],
+    "mistake": "Do not confuse 'eshtu' (how much) with 'elli' (where).",
+    "related": ["num-01", "trans-03"],
+    "reviewed": false
+  },
+  {
+    "id": "word-elli",
+    "kn": "ಎಲ್ಲಿ",
+    "translit": "elli",
+    "en": "where",
+    "type": "particle",
+    "purpose": "Asking for locations, directions, or whereabouts.",
+    "where": ["auto", "bus-metro", "clinic", "office", "anywhere"],
+    "when": "When searching for a metro station, washroom, or doctor's room.",
+    "register": "both",
+    "tip": "Combine with 'idhe': '[Place] elli idhe?' is the golden direction formula.",
+    "dialogue": [
+      {
+        "speaker": "Commuter",
+        "kn": "ಎಟಿಎಂ ಎಲ್ಲಿ ಇದೆ ಸರ್?",
+        "translit": "ATM elli idhe sir?",
+        "en": "Where is the ATM, sir?"
+      },
+      {
+        "speaker": "Local",
+        "kn": "ಮುಂದೆ ಲೆಫ್ಟ್ ಸೈಡ್ ಇದೆ ನೋಡಿ.",
+        "translit": "Munde left side idhe nodi.",
+        "en": "It is just ahead on the left side, look."
+      }
+    ],
+    "mistake": "Pronounce as 'elli', not 'yelli' (though spelling with 'y' is colloquial, pronunciation is smooth 'e').",
+    "related": ["dir-03", "trans-12"],
+    "reviewed": false
+  },
+  {
+    "id": "word-yaake",
+    "kn": "ಯಾಕೆ",
+    "translit": "yaake",
+    "en": "why",
+    "type": "particle",
+    "purpose": "Asking for reasons or causes.",
+    "where": ["auto", "office", "home", "anywhere"],
+    "when": "When asking why an auto is stopping, or why a delivery is late.",
+    "register": "both",
+    "tip": "Add 'enu samasye' (what problem) if you want to sound softer than a blunt 'yaake'.",
+    "dialogue": [
+      {
+        "speaker": "Passenger",
+        "kn": "ಯಾಕೆ ನಿಲ್ಲಿಸಿದ್ರಿ ಅಣ್ಣಾ?",
+        "translit": "Yaake nillisidhri anna?",
+        "en": "Why did you stop here, brother?"
+      },
+      {
+        "speaker": "Driver",
+        "kn": "ಮುಂದೆ ಸಿಗ್ನಲ್ ರೆಡ್ ಇದೆ ಸರ್.",
+        "translit": "Munde signal red idhe sir.",
+        "en": "The signal ahead is red, sir."
+      }
+    ],
+    "mistake": "Saying just 'yaake?!' with sharp intonation sounds accusatory; tone of voice matters.",
+    "related": ["trans-13"],
+    "reviewed": false
+  },
+  {
+    "id": "word-swalpa",
+    "kn": "ಸ್ವಲ್ಪ",
+    "translit": "swalpa",
+    "en": "a little / slightly / please",
+    "type": "particle",
+    "purpose": "Softening any request or specifying a small quantity.",
+    "where": ["auto", "bus-metro", "restaurant", "shop", "anywhere"],
+    "when": "When asking someone to move aside, lower the volume, or add less spice.",
+    "register": "polite",
+    "tip": "Placing 'swalpa' before any verb instantly makes you sound polite and local.",
+    "dialogue": [
+      {
+        "speaker": "Commuter",
+        "kn": "ಸ್ವಲ್ಪ ಸೈಡ್ ಕೊಡಿ ಅಣ್ಣಾ.",
+        "translit": "Swalpa side kodi anna.",
+        "en": "Please give a little side space, brother."
+      },
+      {
+        "speaker": "Passenger",
+        "kn": "ಹಾ, ಬನ್ನಿ.",
+        "translit": "Haa, banni.",
+        "en": "Yes, please come ahead."
+      }
+    ],
+    "mistake": "Never skip 'swalpa' when squeezing past people in buses or metro; it prevents rudeness.",
+    "related": ["trans-02", "rest-04"],
+    "reviewed": false
+  },
+  {
+    "id": "word-bega",
+    "kn": "ಬೇಗ",
+    "translit": "bega",
+    "en": "fast / quickly / early",
+    "type": "particle",
+    "purpose": "Urging speed or requesting an early arrival.",
+    "where": ["auto", "restaurant", "office", "anywhere"],
+    "when": "When catching a train or asking food to be served fast.",
+    "register": "both",
+    "tip": "Say 'swalpa bega' (a little quickly) to sound polite rather than demanding.",
+    "dialogue": [
+      {
+        "speaker": "Passenger",
+        "kn": "ಟ್ರೈನ್ ಮಿಸ್ ಆಗುತ್ತೆ, ಸ್ವಲ್ಪ ಬೇಗ ಹೋಗಿ.",
+        "translit": "Train miss aaguththe, swalpa bega hogi.",
+        "en": "I will miss the train, please drive a bit faster."
+      },
+      {
+        "speaker": "Cab Driver",
+        "kn": "ಆಯ್ತು ಸರ್, ಶಾರ್ಟ್‌ಕಟ್‌ನಲ್ಲಿ ಹೋಗ್ತೀನಿ.",
+        "translit": "Aaythu sir, shortcut-nalli hogtheeni.",
+        "en": "Okay sir, I will go through the shortcut."
+      }
+    ],
+    "mistake": "Barking 'bega bega!' repeatedly can offend drivers; use 'swalpa bega' once respectfully.",
+    "related": ["trans-06"],
+    "reviewed": false
+  },
+  {
+    "id": "word-nodi",
+    "kn": "ನೋಡಿ",
+    "translit": "nodi",
+    "en": "look / please see",
+    "type": "verb",
+    "purpose": "Directing someone's attention or asking them to check something.",
+    "where": ["shop", "clinic", "office", "anywhere"],
+    "when": "When asking someone to check an app payment or inspect a spot.",
+    "register": "polite",
+    "tip": "'Swalpa nodi' is polite for 'please check this'.",
+    "dialogue": [
+      {
+        "speaker": "Customer",
+        "kn": "ಫೋನ್‌ನಲ್ಲಿ ಪೇಮೆಂಟ್ ಮಾಡಿದ್ದೀನಿ, ನೋಡಿ.",
+        "translit": "Phone-nalli payment maadiddhini, nodi.",
+        "en": "I have completed payment on the phone, please check."
+      },
+      {
+        "speaker": "Shopkeeper",
+        "kn": "ಹಾ ಸರ್, ಬಂತು, ಥ್ಯಾಂಕ್ಸ್.",
+        "translit": "Haa sir, banthu, thanks.",
+        "en": "Yes sir, received, thanks."
+      }
+    ],
+    "mistake": "Use 'nodi' (polite plural/honorific), not 'nodu' (casual/singular).",
+    "related": ["work-02"],
+    "reviewed": false
+  },
+  {
+    "id": "word-banni",
+    "kn": "ಬನ್ನಿ",
+    "translit": "banni",
+    "en": "please come",
+    "type": "verb",
+    "purpose": "Politely inviting or calling someone over.",
+    "where": ["home", "office", "shop", "auto", "anywhere"],
+    "when": "Welcoming visitors, asking an auto to come to your gate, or inviting someone in.",
+    "register": "polite",
+    "tip": "Combine with 'olage' (inside): 'Olage banni' (please come inside).",
+    "dialogue": [
+      {
+        "speaker": "Resident",
+        "kn": "ನಮಸ್ಕಾರ ಸರ್, ಒಳಗೆ ಬನ್ನಿ.",
+        "translit": "Namaskara sir, olage banni.",
+        "en": "Hello sir, please come in."
+      },
+      {
+        "speaker": "Guest",
+        "kn": "ಧನ್ಯವಾದಗಳು, ಚೆನ್ನಾಗಿದ್ದೀರಾ?",
+        "translit": "Dhanyavaadhagalu, chennaagiddhira?",
+        "en": "Thank you, how are you doing?"
+      }
+    ],
+    "mistake": "'Baa' is only for young children or very close peers; always use 'banni' with adults.",
+    "related": ["greet-06", "trans-07"],
+    "reviewed": false
+  },
+  {
+    "id": "word-hogi",
+    "kn": "ಹೋಗಿ",
+    "translit": "hogi",
+    "en": "please go",
+    "type": "verb",
+    "purpose": "Instructing someone to move or go in a direction.",
+    "where": ["auto", "bus-metro", "anywhere"],
+    "when": "When directing an auto driver or telling someone where to proceed.",
+    "register": "polite",
+    "tip": "Use with 'munde' (forward): 'Munde hogi' (Go straight).",
+    "dialogue": [
+      {
+        "speaker": "Passenger",
+        "kn": "ಸಿಗ್ನಲ್ ದಾಟಿ ಮುಂದೆ ಹೋಗಿ.",
+        "translit": "Signal dhaati munde hogi.",
+        "en": "Cross the signal and go straight ahead."
+      },
+      {
+        "speaker": "Driver",
+        "kn": "ಸರಿ ಸಾರ್, ಮುಂದೆ ಯೂ-ಟರ್ನ್ ಮಾಡ್ತೀನಿ.",
+        "translit": "Sari saar, munde U-turn maadtheeni.",
+        "en": "Okay sir, I will make a U-turn ahead."
+      }
+    ],
+    "mistake": "Never tell an elder or service person 'hogu'; always say 'hogi'.",
+    "related": ["dir-01", "dir-02"],
+    "reviewed": false
+  },
+  {
+    "id": "word-heli",
+    "kn": "ಹೇಳಿ",
+    "translit": "heli",
+    "en": "please tell / say",
+    "type": "verb",
+    "purpose": "Inviting someone to speak or asking for information.",
+    "where": ["shop", "office", "clinic", "anywhere"],
+    "when": "When answering the phone, attending a counter, or asking for clarification.",
+    "register": "polite",
+    "tip": "Greeting someone with 'Namaskara, heli sir' is the standard polite greeting at counters.",
+    "dialogue": [
+      {
+        "speaker": "Pharmacist",
+        "kn": "ಹೇಳಿ ಸರ್, ಯಾವ ಮಾತ್ರೆ ಬೇಕು?",
+        "translit": "Heli sir, yaava maathre beku?",
+        "en": "Tell me sir, which medicine do you need?"
+      },
+      {
+        "speaker": "Customer",
+        "kn": "ಪ್ಯಾರಾಸಿಟಮಾಲ್ ಒಂದು ಸ್ಟ್ರಿಪ್ ಕೊಡಿ.",
+        "translit": "Paracetamol ondhu strip kodi.",
+        "en": "Please give one strip of paracetamol."
+      }
+    ],
+    "mistake": "Don't use 'helu' with elders; 'heli' is the respectful imperative.",
+    "related": ["health-03"],
+    "reviewed": false
+  },
+  {
+    "id": "word-keli",
+    "kn": "ಕೇಳಿ",
+    "translit": "keli",
+    "en": "ask / listen",
+    "type": "verb",
+    "purpose": "Asking someone to inquire or listen.",
+    "where": ["office", "auto", "shop", "anywhere"],
+    "when": "When telling someone to ask security or check with a colleague.",
+    "register": "polite",
+    "tip": "'Swalpa keli' is a polite way to get someone's attention on the street.",
+    "dialogue": [
+      {
+        "speaker": "Newcomer",
+        "kn": "ಸ್ವಲ್ಪ ಕೇಳಿ, ಈ ಬಸ್ ಕಡೆ ಹೋಗುತ್ತಾ?",
+        "translit": "Swalpa keli, ee bus kade hoguthaa?",
+        "en": "Excuse me, does this bus go in that direction?"
+      },
+      {
+        "speaker": "Commuter",
+        "kn": "ಕಂಡಕ್ಟರ್ ಹತ್ರ ಕೇಳಿ, ಹೇಳ್ತಾರೆ.",
+        "translit": "Conductor hathra keli, helthaare.",
+        "en": "Please ask the conductor, he will tell you."
+      }
+    ],
+    "mistake": "'Keli' means both 'ask' and 'listen' depending on context ('keli' = listen, 'keli nodi' = ask and see).",
+    "related": ["basic-01"],
+    "reviewed": false
+  },
+  {
+    "id": "word-aaguththe",
+    "kn": "ಆಗುತ್ತೆ",
+    "translit": "aaguththe",
+    "en": "will happen / it is possible / it costs",
+    "type": "verb",
+    "purpose": "Expressing that an event will occur, cost a certain amount, or be feasible.",
+    "where": ["auto", "shop", "office", "anywhere"],
+    "when": "When discussing fare amounts, completion times, or feasibility.",
+    "register": "both",
+    "tip": "'Eshtu aaguththe?' is the standard phrase for 'How much will it come to?'.",
+    "dialogue": [
+      {
+        "speaker": "Customer",
+        "kn": "ಈ ಶರ್ಟ್ ಹೊಲಿಯೋಕೆ ಎಷ್ಟು ದಿನ ಆಗುತ್ತೆ?",
+        "translit": "Ee shirt holiyoke eshtu dhina aaguththe?",
+        "en": "How many days will it take to stitch this shirt?"
+      },
+      {
+        "speaker": "Tailor",
+        "kn": "ಮೂರು ದಿನ ಆಗುತ್ತೆ ಸರ್.",
+        "translit": "Mooru dhina aaguththe sir.",
+        "en": "It will take three days, sir."
+      }
+    ],
+    "mistake": "Negating 'aaguththe' is 'aagalla' (it won't happen / not possible).",
+    "related": ["num-07"],
+    "reviewed": false
+  },
+  {
+    "id": "word-siguththe",
+    "kn": "ಸಿಗುತ್ತೆ",
+    "translit": "siguththe",
+    "en": "available / can be found",
+    "type": "verb",
+    "purpose": "Confirming that an item or service is available to obtain.",
+    "where": ["shop", "market", "clinic", "bus-metro"],
+    "when": "When asking if tickets, items, or medicines can be found here.",
+    "register": "both",
+    "tip": "Turn into question by lengthening ending: 'Illi milk packet siguthaa?'",
+    "dialogue": [
+      {
+        "speaker": "Shopper",
+        "kn": "ಇಲ್ಲಿ ಹತ್ತಿರ ಎಳನೀರು ಸಿಗುತ್ತಾ?",
+        "translit": "Illi hathira elaneeru siguthaa?",
+        "en": "Is tender coconut available nearby?"
+      },
+      {
+        "speaker": "Resident",
+        "kn": "ಮುಂದೆ ಕಾರ್ನರ್‌ನಲ್ಲಿ ಸಿಗುತ್ತೆ ನೋಡಿ.",
+        "translit": "Munde corner-nalli siguththe nodi.",
+        "en": "It is available at the corner ahead, see."
+      }
+    ],
+    "mistake": "Use 'siguththe' for availability to buy/find; use 'idhe' for existing in place.",
+    "related": ["shop-02"],
+    "reviewed": false
+  },
+  {
+    "id": "word-baruththe",
+    "kn": "ಬರುತ್ತೆ",
+    "translit": "baruththe",
+    "en": "comes / I know (a skill/language)",
+    "type": "verb",
+    "purpose": "Indicating arrival, or stating that you know a language.",
+    "where": ["bus-metro", "office", "anywhere"],
+    "when": "When asking about bus arrivals or stating your Kannada language skill.",
+    "register": "both",
+    "tip": "'Nanage Kannada swalpa baruththe' is the most respected sentence a newcomer can say.",
+    "dialogue": [
+      {
+        "speaker": "Local",
+        "kn": "ನಿಮಗೆ ಕನ್ನಡ ಬರುತ್ತಾ?",
+        "translit": "Nimage Kannada baruthaa?",
+        "en": "Do you know Kannada?"
+      },
+      {
+        "speaker": "You",
+        "kn": "ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ಬರುತ್ತೆ ಸರ್, ಕಲೀತಾ ಇದ್ದೀನಿ.",
+        "translit": "Swalpa swalpa baruththe sir, kalithaa iddhini.",
+        "en": "I know a little bit sir, I am learning."
+      }
+    ],
+    "mistake": "Do not say 'Naanu Kannada gottu'; say 'Nanage Kannada baruththe' or 'Nanage Kannada gottu'.",
+    "related": ["greet-05"],
+    "reviewed": false
+  },
+  {
+    "id": "word-gottu",
+    "kn": "ಗೊತ್ತು",
+    "translit": "gottu",
+    "en": "know / aware",
+    "type": "verb",
+    "purpose": "Expressing knowledge of a fact, route, or person.",
+    "where": ["auto", "office", "home", "anywhere"],
+    "when": "When confirming you know a place, or stating 'Gothilla' (I don't know).",
+    "register": "both",
+    "tip": "Negative is 'gothilla' (I don't know): 'Nanage aa address gothilla'.",
+    "dialogue": [
+      {
+        "speaker": "Passenger",
+        "kn": "ಈ ದೇವಸ್ಥಾನದ ರೂಟ್ ಗೊತ್ತಾ ಅಣ್ಣಾ?",
+        "translit": "Ee dhevasthaanadha route gottaa anna?",
+        "en": "Do you know the route to this temple, brother?"
+      },
+      {
+        "speaker": "Driver",
+        "kn": "ಗೊತ್ತು ಸರ್, ಕೂತ್ಕೊಳ್ಳಿ, ಕರ್ಕೊಂಡು ಹೋಗ್ತೀನಿ.",
+        "translit": "Gottu sir, koothkolli, karkondu hogtheeni.",
+        "en": "I know it sir, please sit, I will take you there."
+      }
+    ],
+    "mistake": "Never say 'Naanu gothu'; always use dative 'Nanage gottu' (to me it is known).",
+    "related": ["basic-07"],
+    "reviewed": false
+  },
+  {
+    "id": "word-chennaagidhe",
+    "kn": "ಚೆನ್ನಾಗಿದೆ",
+    "translit": "chennaagidhe",
+    "en": "is good / nice",
+    "type": "phrase",
+    "purpose": "Complimenting food, an item, or answering that you are well.",
+    "where": ["restaurant", "shop", "office", "home", "anywhere"],
+    "when": "When giving feedback on a meal, checking clothes, or responding to greetings.",
+    "register": "polite",
+    "tip": "Say 'Coffee thumba chennaagidhe' to brighten any server's day.",
+    "dialogue": [
+      {
+        "speaker": "Server",
+        "kn": "ದೋಸೆ ಹೇಗಿದೆ ಸರ್?",
+        "translit": "Dose hegidhe sir?",
+        "en": "How is the dosa, sir?"
+      },
+      {
+        "speaker": "Customer",
+        "kn": "ತುಂಬಾ ಚೆನ್ನಾಗಿದೆ, ಚಟ್ನಿ ಸೂಪರ್!",
+        "translit": "Thumba chennaagidhe, chutney super!",
+        "en": "It is very good, the chutney is great!"
+      }
+    ],
+    "mistake": "To ask about a person's health, use 'Chennaagiddhira?' (Are you well?), not 'Chennaagidheya?' (which is for objects).",
+    "related": ["rest-09"],
+    "reviewed": false
+  },
+  {
+    "id": "word-thumba",
+    "kn": "ತುಂಬಾ",
+    "translit": "thumba",
+    "en": "very / much / lot",
+    "type": "particle",
+    "purpose": "Intensifying an adjective or expressing gratitude strongly.",
+    "where": ["anywhere"],
+    "when": "When expressing high degree (very spicy, very hot, thank you very much).",
+    "register": "both",
+    "tip": "Combine with 'dhanyavaadha': 'Thumba dhanyavaadha' (Thank you very much).",
+    "dialogue": [
+      {
+        "speaker": "Diner",
+        "kn": "ಸಾಂಬಾರ್ ತುಂಬಾ ಖಾರ ಇದ್ಯಾ?",
+        "translit": "Sambar thumba khaara idhya?",
+        "en": "Is the sambar very spicy?"
+      },
+      {
+        "speaker": "Server",
+        "kn": "ಇಲ್ಲ ಸರ್, ನಾರ್ಮಲ್ ಆಗಿದೆ.",
+        "translit": "Illa sir, normal aagidhe.",
+        "en": "No sir, it is mild."
+      }
+    ],
+    "mistake": "Spell as 'thumba', never 'thumpa'. In Kannada script it is always ತುಂಬಾ.",
+    "related": ["greet-08"],
+    "reviewed": false
+  },
+  {
+    "id": "word-nillisi",
+    "kn": "ನಿಲ್ಲಿಸಿ",
+    "translit": "nillisi",
+    "en": "please stop",
+    "type": "verb",
+    "purpose": "Asking a driver to stop the vehicle.",
+    "where": ["auto", "bus-metro", "anywhere"],
+    "when": "When you have arrived at your stop or destination.",
+    "register": "polite",
+    "tip": "Say 'Illi nillisi' (Stop here) or 'Munde nillisi' (Stop ahead).",
+    "dialogue": [
+      {
+        "speaker": "Passenger",
+        "kn": "ಆ ಗೇಟ್ ಹತ್ರ ನಿಲ್ಲಿಸಿ ಅಣ್ಣಾ.",
+        "translit": "Aa gate hathra nillisi anna.",
+        "en": "Please stop near that gate, brother."
+      },
+      {
+        "speaker": "Driver",
+        "kn": "ಆಯ್ತು ಸರ್, ಲೆಫ್ಟ್ ತಗೋತೀನಿ.",
+        "translit": "Aaythu sir, left thagotheeni.",
+        "en": "Okay sir, I will pull to the left."
+      }
+    ],
+    "mistake": "Never shout 'nillu' to a driver; 'nillisi' is the respectful request.",
+    "related": ["trans-04"],
+    "reviewed": false
+  },
+  {
+    "id": "word-hathra",
+    "kn": "ಹತ್ರ",
+    "translit": "hathra",
+    "en": "near / close to / with (a person)",
+    "type": "particle",
+    "purpose": "Indicating proximity to a landmark or possession by someone.",
+    "where": ["auto", "shop", "anywhere"],
+    "when": "When describing where to drop you, or asking who has something.",
+    "register": "both",
+    "tip": "'Metro hathra' = near the metro; 'Nanna hathra' = with me.",
+    "dialogue": [
+      {
+        "speaker": "Driver",
+        "kn": "ಎಲ್ಲಿ ಡ್ರಾಪ್ ಮಾಡ್ಬೇಕು ಸಾರ್?",
+        "translit": "Elli drop maadbeku saar?",
+        "en": "Where should I drop you, sir?"
+      },
+      {
+        "speaker": "Passenger",
+        "kn": "ಮೆಟ್ರೋ ಪಿಲ್ಲರ್ 120 ಹತ್ರ ಡ್ರಾಪ್ ಮಾಡಿ.",
+        "translit": "Metro pillar 120 hathra drop maadi.",
+        "en": "Please drop me near metro pillar 120."
+      }
+    ],
+    "mistake": "Don't confuse 'hathra' (near) with 'dhoora' (far).",
+    "related": ["dir-01", "trans-09"],
+    "reviewed": false
+  },
+  {
+    "id": "word-dhoora",
+    "kn": "ದೂರ",
+    "translit": "dhoora",
+    "en": "far / distance",
+    "type": "noun",
+    "purpose": "Asking about or indicating distance.",
+    "where": ["auto", "bus-metro", "anywhere"],
+    "when": "When checking whether a destination is walkable.",
+    "register": "both",
+    "tip": "'Thumba dhoora' = very far; 'Eshtu dhoora?' = how far?",
+    "dialogue": [
+      {
+        "speaker": "Pedestrian",
+        "kn": "ರೈಲ್ವೆ ಸ್ಟೇಷನ್ ತುಂಬಾ ದೂರ ಇದ್ಯಾ?",
+        "translit": "Railway station thumba dhoora idhya?",
+        "en": "Is the railway station very far?"
+      },
+      {
+        "speaker": "Local",
+        "kn": "ಇಲ್ಲ, ಒಂದು ಕಿಲೋಮೀಟರ್ ಅಷ್ಟೇ.",
+        "translit": "Illa, ondhu kilometer ashte.",
+        "en": "No, just about one kilometer."
+      }
+    ],
+    "mistake": "Remember the dental 'dh' sound in 'dhoora', not the English 'd' in door.",
+    "related": ["dir-07"],
+    "reviewed": false
+  },
+  {
+    "id": "word-ivathu",
+    "kn": "ಇವತ್ತು",
+    "translit": "ivathu",
+    "en": "today",
+    "type": "noun",
+    "purpose": "Referring to the present day.",
+    "where": ["office", "restaurant", "home", "anywhere"],
+    "when": "When talking about today's specials, today's leave, or today's plans.",
+    "register": "both",
+    "tip": "Combine with 'special': 'Ivathu special enu?' (What's special today?).",
+    "dialogue": [
+      {
+        "speaker": "Diner",
+        "kn": "ಇವತ್ತು ಊಟಕ್ಕೆ ಸ್ಪೆಷಲ್ ಏನು?",
+        "translit": "Ivathu ootakke special enu?",
+        "en": "What is the special for lunch today?"
+      },
+      {
+        "speaker": "Server",
+        "kn": "ಬಿಸಿಬೇಳೆಬಾತ್ ಮತ್ತು ಕೇಸರಿಬಾತ್ ಇದೆ ಸರ್.",
+        "translit": "Bisibelebath mathu kesaribath idhe sir.",
+        "en": "There is bisibelebath and kesaribath, sir."
+      }
+    ],
+    "mistake": "Don't confuse 'ivathu' (today) with 'naale' (tomorrow) or 'nenne' (yesterday).",
+    "related": ["rest-08", "work-06"],
+    "reviewed": false
+  },
+  {
+    "id": "word-naale",
+    "kn": "ನಾಳೆ",
+    "translit": "naale",
+    "en": "tomorrow",
+    "type": "noun",
+    "purpose": "Referring to the next day.",
+    "where": ["office", "clinic", "home", "anywhere"],
+    "when": "When scheduling follow-up visits, leaves, or maid appointments.",
+    "register": "both",
+    "tip": "'Naale banni' = please come tomorrow; 'Naale sigona' = see you tomorrow.",
+    "dialogue": [
+      {
+        "speaker": "Patient",
+        "kn": "ಡಾಕ್ಟರ್ ನಾಳೆ ಇರ್ತಾರಾ?",
+        "translit": "Doctor naale irthaaraa?",
+        "en": "Will the doctor be available tomorrow?"
+      },
+      {
+        "speaker": "Receptionist",
+        "kn": "ಹೌದು ಸರ್, ಬೆಳಿಗ್ಗೆ ಹತ್ತು ಗಂಟೆಗೆ ಬನ್ನಿ.",
+        "translit": "Haudu sir, belagge haththu gantege banni.",
+        "en": "Yes sir, please come at ten in the morning."
+      }
+    ],
+    "mistake": "In Kannada 'naale' means tomorrow. (Unlike Hindi 'kal' which means both yesterday and tomorrow, Kannada has separate words: 'nenne' for yesterday, 'naale' for tomorrow).",
+    "related": ["home-02", "work-04"],
+    "reviewed": false
+  },
+  {
+    "id": "word-sari",
+    "kn": "ಸರಿ",
+    "translit": "sari",
+    "en": "okay / correct / fine",
+    "type": "particle",
+    "purpose": "Agreeing, confirming accuracy, or saying alright.",
+    "where": ["anywhere"],
+    "when": "When confirming a deal, agreeing to a timing, or saying all is correct.",
+    "register": "both",
+    "tip": "'Sari aaythu' = alright, agreed; 'Idhu sari idhe' = this is correct.",
+    "dialogue": [
+      {
+        "speaker": "Vendor",
+        "kn": "ಮೂರು ಗಂಟೆಗೆ ಡೆಲಿವರಿ ಮಾಡ್ತೀನಿ.",
+        "translit": "Mooru gantege delivery maadtheeni.",
+        "en": "I will deliver at three o'clock."
+      },
+      {
+        "speaker": "Customer",
+        "kn": "ಸರಿ, ಬರೋ ಮುಂಚೆ ಕಾಲ್ ಮಾಡಿ.",
+        "translit": "Sari, baro munche call maadi.",
+        "en": "Okay, please call before coming."
+      }
+    ],
+    "mistake": "Remember that 'sari' can mean both 'okay' (acknowledgment) and 'correct' (factual truth).",
+    "related": ["shop-04"],
+    "reviewed": false
+  },
+  {
+    "id": "word-haudu",
+    "kn": "ಹೌದು",
+    "translit": "haudu",
+    "en": "yes / that is so",
+    "type": "particle",
+    "purpose": "Affirming a question or agreeing formally.",
+    "where": ["office", "clinic", "anywhere"],
+    "when": "When answering yes to a question of identity, fact, or intention.",
+    "register": "both",
+    "tip": "A warm 'Haudu' is polite and universally understood.",
+    "dialogue": [
+      {
+        "speaker": "Colleague",
+        "kn": "ನೀವು ಹೊಸದಾಗಿ ಬೆಂಗಳೂರಿಗೆ ಬಂದಿದ್ದೀರಾ?",
+        "translit": "Neevu hosadhaagi Bengaloorige bandhiddhira?",
+        "en": "Have you newly moved to Bengaluru?"
+      },
+      {
+        "speaker": "You",
+        "kn": "ಹೌದು, ಎರಡು ವಾರ ಆಯ್ತು.",
+        "translit": "Haudu, eradu vaara aaythu.",
+        "en": "Yes, it has been two weeks."
+      }
+    ],
+    "mistake": "Casual spoken response often shortens to 'haa', but 'haudu' is clear and polite.",
+    "related": ["basic-03"],
+    "reviewed": false
+  },
+  {
+    "id": "word-dhanyavaadha",
+    "kn": "ಧನ್ಯವಾದ",
+    "translit": "dhanyavaadha",
+    "en": "thank you",
+    "type": "noun",
+    "purpose": "Expressing gratitude politely.",
+    "where": ["anywhere"],
+    "when": "When someone helps with directions, serves your food, or finishes a service.",
+    "register": "polite",
+    "tip": "Say 'Thumba dhanyavaadha anna/sir' to build instant warmth.",
+    "dialogue": [
+      {
+        "speaker": "Passerby",
+        "kn": "ಇಲ್ಲೇ ಮುಂದೆ ಸಿಂಡಿಕೇಟ್ ಬ್ಯಾಂಕ್ ಇದೆ ನೋಡಿ.",
+        "translit": "Ille munde Syndicate Bank idhe nodi.",
+        "en": "Just ahead here is the Syndicate Bank, see."
+      },
+      {
+        "speaker": "You",
+        "kn": "ತುಂಬಾ ಧನ್ಯವಾದ ಸರ್!",
+        "translit": "Thumba dhanyavaadha sir!",
+        "en": "Thank you very much sir!"
+      }
+    ],
+    "mistake": "In informal street talk, people also say 'Thanks anna'. Use 'dhanyavaadha' when you want to sound sincere and respectful.",
+    "related": ["greet-08", "basic-04"],
+    "reviewed": false
+  }
+]

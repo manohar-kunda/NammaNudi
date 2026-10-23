@@ -1,0 +1,522 @@
+[
+  {
+    "id": "dir-01",
+    "scenario": "directions",
+    "kn": "ಮುಂದೆ ಹೋಗಿ, ಸಿಗ್ನಲ್ ಹತ್ರ ರೈಟ್ ತಗೊಳ್ಳಿ.",
+    "translit": "Munde hogi, signal hathra right thagolli.",
+    "en": "Go straight ahead, take a right near the signal.",
+    "example": {
+      "kn": "ಸರ್, ಮುಂದೆ ಹೋಗಿ, ಮೊದಲನೇ ಸಿಗ್ನಲ್ ಹತ್ರ ರೈಟ್ ತಗೊಳ್ಳಿ.",
+      "translit": "Sir, munde hogi, modhalane signal hathra right thagolli.",
+      "en": "Sir, go straight and take a right at the first signal."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dir-02",
+    "scenario": "directions",
+    "kn": "ಲೆಫ್ಟ್ ತಗೊಂಡು ಸ್ವಲ್ಪ ಮುಂದೆ ಹೋಗಿ.",
+    "translit": "Left thagondu swalpa munde hogi.",
+    "en": "Take a left and go a little further ahead.",
+    "example": {
+      "kn": "ರೌಂಡಾನಾ ಹತ್ರ ಲೆಫ್ಟ್ ತಗೊಂಡು ಸ್ವಲ್ಪ ಮುಂದೆ ಹೋಗಿ.",
+      "translit": "Roundabout hathra left thagondu swalpa munde hogi.",
+      "en": "Take a left near the circle and go a little forward."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dir-03",
+    "scenario": "directions",
+    "kn": "ಇಲ್ಲಿ ಹತ್ರ ಯಾವುದೇ ಲ್ಯಾಂಡ್‌ಮಾರ್ಕ್ ಇದ್ಯಾ?",
+    "translit": "Illi hathra yaavudhe landmark idhya?",
+    "en": "Is there any landmark nearby?",
+    "example": {
+      "kn": "ಅಣ್ಣಾ, ಈ ಏರಿಯಾದಲ್ಲಿ ಯಾವುದೇ ದೊಡ್ಡ ದೇವಸ್ಥಾನ ಅಥವಾ ಲ್ಯಾಂಡ್‌ಮಾರ್ಕ್ ಇದ್ಯಾ?",
+      "translit": "Anna, ee area-nalli yaavudhe dodda dhevasthaana athava landmark idhya?",
+      "en": "Brother, is there any big temple or landmark in this area?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dir-04",
+    "scenario": "directions",
+    "kn": "ಫ್ಲೈಓವರ್ ಮೇಲೆ ಹೋಗ್ಬೇಕಾ, ಕೆಳಗೆ ಹೋಗ್ಬೇಕಾ?",
+    "translit": "Flyover mele hogbekaa, kelage hogbekaa?",
+    "en": "Should we go over the flyover or below?",
+    "example": {
+      "kn": "ಡ್ರೈವರ್ ಅಣ್ಣಾ, Silk Board flyover ಮೇಲೆ ಹೋಗ್ಬೇಕಾ, ಕೆಳಗೆ ಹೋಗ್ಬೇಕಾ?",
+      "translit": "Driver anna, Silk Board flyover mele hogbekaa, kelage hogbekaa?",
+      "en": "Driver brother, should we take the Silk Board flyover or go below?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dir-05",
+    "scenario": "directions",
+    "kn": "ಯು-ಟರ್ನ್ ಎಲ್ಲಿ ತಗೋಬಹುದು?",
+    "translit": "U-turn elli thagobahudhu?",
+    "en": "Where can we take a U-turn?",
+    "example": {
+      "kn": "ಮುಂದೆ ಡಿವೈಡರ್ ಕಟ್ ಇದ್ಯಾ? ಯು-ಟರ್ನ್ ಎಲ್ಲಿ ತಗೋಬಹುದು?",
+      "translit": "Munde divider cut idhya? U-turn elli thagobahudhu?",
+      "en": "Is there a median opening ahead? Where can we take a U-turn?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dir-06",
+    "scenario": "directions",
+    "kn": "ಈ ದಾರಿ ರಿಂಗ್ ರೋಡ್‌ಗೆ ಹೋಗುತ್ತಾ?",
+    "translit": "Ee dhaari Ring Road-ge hoguthaa?",
+    "en": "Does this road lead to the Ring Road?",
+    "example": {
+      "kn": "ಸರ್, ಈ ಗಲ್ಲಿ ದಾರಿ Outer Ring Road-ge ಹೋಗುತ್ತಾ?",
+      "translit": "Sir, ee galli dhaari Outer Ring Road-ge hoguthaa?",
+      "en": "Sir, does this lane lead out to Outer Ring Road?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dir-07",
+    "scenario": "directions",
+    "kn": "ನನ್ನ ಡೆಸ್ಟಿನೇಷನ್ ಇನ್ನು ಎಷ್ಟು ದೂರ ಇದೆ?",
+    "translit": "Nanna destination innu eshtu dhoora idhe?",
+    "en": "How much further is my destination?",
+    "example": {
+      "kn": "ಅಣ್ಣಾ, ಮೆಜೆಸ್ಟಿಕ್ ಇನ್ನು ಎಷ್ಟು ದೂರ ಇದೆ?",
+      "translit": "Anna, Majestic innu eshtu dhoora idhe?",
+      "en": "Brother, how much further is Majestic from here?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dir-08",
+    "scenario": "directions",
+    "kn": "ನಡೆದುಕೊಂಡು ಹೋಗಬಹುದಾ, ಅಥವಾ ಆಟೋ ಬೇಕಾ?",
+    "translit": "Nadedhukondu hogbahudhaa, athava auto bekaa?",
+    "en": "Can I walk there, or is an auto needed?",
+    "example": {
+      "kn": "ಇಲ್ಲಿಂದ ಮೆಟ್ರೋ ಸ್ಟೇಷನ್‌ಗೆ ನಡೆದುಕೊಂಡು ಹೋಗಬಹುದಾ?",
+      "translit": "Illindha metro station-ge nadedhukondu hogbahudhaa?",
+      "en": "Can I walk to the metro station from here?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dir-09",
+    "scenario": "directions",
+    "kn": "ಆ ಕಡೆ ಆಪೋಸಿಟ್ ರೋಡ್‌ಗೆ ಹೋಗಿ.",
+    "translit": "Aa kade opposite road-ge hogi.",
+    "en": "Go to the opposite side of that road.",
+    "example": {
+      "kn": "ಮೆಡಿಕಲ್ ಶಾಪ್ ಆ ಕಡೆ ಆಪೋಸಿಟ್ ರೋಡ್‌ನಲ್ಲಿದೆ, ರೋಡ್ ಕ್ರಾಸ್ ಮಾಡಿ.",
+      "translit": "Medical shop aa kade opposite road-nallidhe, road cross maadi.",
+      "en": "The medical shop is on the opposite road, please cross the road."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dir-10",
+    "scenario": "directions",
+    "kn": "ನಾನು ದಾರಿ ತಪ್ಪಿಸಿಕೊಂಡಿದ್ದೀನಿ, ಸ್ವಲ್ಪ ಹೆಲ್ಪ್ ಮಾಡಿ.",
+    "translit": "Naanu dhaari thappisikondiddhini, swalpa help maadi.",
+    "en": "I have lost my way, please help me out.",
+    "example": {
+      "kn": "ನಮಸ್ಕಾರ ಸರ್, ನಾನು ಹೊಸಬ, ದಾರಿ ತಪ್ಪಿಸಿಕೊಂಡಿದ್ದೀನಿ, ಸ್ವಲ್ಪ ಹೆಲ್ಪ್ ಮಾಡಿ.",
+      "translit": "Namaskara sir, naanu hosaba, dhaari thappisikondiddhini, swalpa help maadi.",
+      "en": "Hello sir, I am new here and lost my way, please help me."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-01",
+    "scenario": "numbers-time",
+    "kn": "ಇದು ಎಷ್ಟು ರೂಪಾಯಿ?",
+    "translit": "Idhu eshtu roopaayi?",
+    "en": "How many rupees is this?",
+    "example": {
+      "kn": "ಅಣ್ಣಾ, ಈ ಒಂದು ಕೆಜಿ ಈರುಳ್ಳಿ ಎಷ್ಟು ರೂಪಾಯಿ?",
+      "translit": "Anna, ee ondhu kg eerulli eshtu roopaayi?",
+      "en": "Brother, how many rupees for this one kg onion?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-02",
+    "scenario": "numbers-time",
+    "kn": "ಐನೂರು ರೂಪಾಯಿಗೆ ಚಿಲ್ಲರೆ ಇದ್ಯಾ?",
+    "translit": "Ainooru roopaayige chillare idhya?",
+    "en": "Do you have change for five hundred rupees?",
+    "example": {
+      "kn": "ನನ್ನ ಹತ್ರ ಕ್ಯಾಶ್ ಐನೂರು ನೋಟ್ ಇದೆ, ಚಿಲ್ಲರೆ ಇದ್ಯಾ?",
+      "translit": "Nanna hathra cash ainooru note idhe, chillare idhya?",
+      "en": "I have a five hundred cash note, do you have change?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-03",
+    "scenario": "numbers-time",
+    "kn": "ಈಗ ಸಮಯ ಎಷ್ಟು?",
+    "translit": "Eega samaya eshtu?",
+    "en": "What is the time right now?",
+    "example": {
+      "kn": "ಸರ್, ನಿಮ್ಮ ವಾಚ್‌ನಲ್ಲಿ ಈಗ ಸಮಯ ಎಷ್ಟು?",
+      "translit": "Sir, nimma watch-nalli eega samaya eshtu?",
+      "en": "Sir, what time is it on your watch?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-04",
+    "scenario": "numbers-time",
+    "kn": "ಹತ್ತೂವರೆ ಗಂಟೆಗೆ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಇದೆ.",
+    "translit": "Haththoo-vare gantege appointment idhe.",
+    "en": "The appointment is at ten thirty.",
+    "example": {
+      "kn": "ಡಾಕ್ಟರ್ ಹತ್ರ ಹತ್ತೂವರೆ ಗಂಟೆಗೆ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಇದೆ, ಬೇಗ ಹೋಗ್ಬೇಕು.",
+      "translit": "Doctor hathra haththoo-vare gantege appointment idhe, bega hogbeku.",
+      "en": "I have a doctor's appointment at 10:30, I need to leave soon."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-05",
+    "scenario": "numbers-time",
+    "kn": "ಇನ್ನು ಕಾಲು ಗಂಟೆಯಲ್ಲಿ ಬರ್ತೀನಿ.",
+    "translit": "Innu kaalu ganteyalli bartheeni.",
+    "en": "I will arrive in fifteen minutes (quarter of an hour).",
+    "example": {
+      "kn": "ಟ್ರಾಫಿಕ್‌ನಲ್ಲಿ ಇದ್ದೀನಿ, ಇನ್ನು ಕಾಲು ಗಂಟೆಯಲ್ಲಿ ಆಫೀಸ್‌ಗೆ ಬರ್ತೀನಿ.",
+      "translit": "Traffic-nalli iddhini, innu kaalu ganteyalli office-ge bartheeni.",
+      "en": "I am in traffic, I will reach the office in fifteen minutes."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-06",
+    "scenario": "numbers-time",
+    "kn": "ಒಂದೂವರೆಯಿಂದ ಎರಡೂವರೆ ವರೆಗೆ ಊಟದ ಸಮಯ.",
+    "translit": "Ondhoo-vareyindha eradoo-vare varege ootadha samaya.",
+    "en": "Lunch time is from 1:30 to 2:30.",
+    "example": {
+      "kn": "ಬ್ಯಾಂಕ್ ಒಂದೂವರೆಯಿಂದ ಎರಡೂವರೆ ವರೆಗೆ ಲಂಚ್ ಬ್ರೇಕ್ ಇರುತ್ತೆ.",
+      "translit": "Bank ondhoo-vareyindha eradoo-vare varege lunch break iruththe.",
+      "en": "The bank lunch break is from 1:30 to 2:30."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-07",
+    "scenario": "numbers-time",
+    "kn": "ಟೋಟಲ್ ಎಷ್ಟು ಆಯ್ತು?",
+    "translit": "Total eshtu aaythu?",
+    "en": "How much did the total come to?",
+    "example": {
+      "kn": "ಎಲ್ಲ ತರಕಾರಿ ಸೇರಿಸಿ ಟೋಟಲ್ ಎಷ್ಟು ಆಯ್ತು ಅಣ್ಣಾ?",
+      "translit": "Ella tharakaari serisi total eshtu aaythu anna?",
+      "en": "Adding all the vegetables, what is the total amount, brother?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-08",
+    "scenario": "numbers-time",
+    "kn": "ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಬ್ಯಾಲೆನ್ಸ್ ಕೊಡಿ.",
+    "translit": "Ippaththu roopaayi balance kodi.",
+    "en": "Please give the twenty rupees balance.",
+    "example": {
+      "kn": "ನಾನು ನೂರು ಕೊಟ್ಟೆ, ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಬ್ಯಾಲೆನ್ಸ್ ಕೊಡಿ ಸರ್.",
+      "translit": "Naanu nooru kotte, ippaththu roopaayi balance kodi sir.",
+      "en": "I gave a hundred, please give back twenty rupees balance, sir."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-09",
+    "scenario": "numbers-time",
+    "kn": "ಪ್ರತಿ ತಿಂಗಳು ಐದನೇ ತಾರೀಖು ಬಾಡಿಗೆ ಕೊಡ್ತೀನಿ.",
+    "translit": "Prathi thingalu aidhane thaareekhu baadige kodtheeni.",
+    "en": "I pay rent on the 5th of every month.",
+    "example": {
+      "kn": "ಓನರ್ ಸರ್, ಪ್ರತಿ ತಿಂಗಳು ಐದನೇ ತಾರೀಖು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಬಾಡಿಗೆ ಹಾಕ್ತೀನಿ.",
+      "translit": "Owner sir, prathi thingalu aidhane thaareekhu online-nalli baadige haaktheeni.",
+      "en": "Owner sir, I will transfer the rent online on the 5th of each month."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "num-10",
+    "scenario": "numbers-time",
+    "kn": "ಎರಡು ನಿಮಿಷ ವೇಟ್ ಮಾಡಿ, ಬರ್ತೀನಿ.",
+    "translit": "Eradu nimisha wait maadi, bartheeni.",
+    "en": "Please wait two minutes, I am coming.",
+    "example": {
+      "kn": "ಡೆಲಿವರಿ ಬಾಯ್ ಬಂದ್ರು, ಎರಡು ನಿಮಿಷ ವೇಟ್ ಮಾಡಿ ಕೆಳಗೆ ಬರ್ತೀನಿ.",
+      "translit": "Delivery boy bandhru, eradu nimisha wait maadi kelage bartheeni.",
+      "en": "The delivery partner is here, please wait two minutes, I will come down."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-01",
+    "scenario": "home-neighbours",
+    "kn": "ಪಾರ್ಸೆಲ್ ಸೆಕ್ಯುರಿಟಿ ಹತ್ರ ಇಟ್ಟು ಹೋಗಿ.",
+    "translit": "Parcel security hathra ittu hogi.",
+    "en": "Please leave the parcel with security.",
+    "example": {
+      "kn": "ನಾನು ಮನೆಯಲ್ಲಿ ಇಲ್ಲ, ಪಾರ್ಸೆಲ್ ಗೇಟ್ ಸೆಕ್ಯುರಿಟಿ ಹತ್ರ ಇಟ್ಟು ಹೋಗಿ.",
+      "translit": "Naanu maneyalli illa, parcel gate security hathra ittu hogi.",
+      "en": "I am not at home, please leave the parcel with the gate security."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-02",
+    "scenario": "home-neighbours",
+    "kn": "ನಾಳೆ ಕಸ ಗಾಡಿ ಯಾವಾಗ ಬರುತ್ತೆ?",
+    "translit": "Naale kasa gaadi yaavaaga baruththe?",
+    "en": "What time does the waste collection van come tomorrow?",
+    "example": {
+      "kn": "ಅಕ್ಕ, ನಾಳೆ ಬೆಳಿಗ್ಗೆ ಕಸ ಗಾಡಿ ಎಷ್ಟು ಗಂಟೆಗೆ ಬರುತ್ತೆ?",
+      "translit": "Akka, naale belagge kasa gaadi eshtu gantege baruththe?",
+      "en": "Sister, what time does the garbage van arrive tomorrow morning?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-03",
+    "scenario": "home-neighbours",
+    "kn": "ಮನೆಯಲ್ಲಿ ಕರೆಂಟ್ ಹೋಗಿದೆ, ನಿಮ್ಮ ಮನೇಲೂ ಹೋಗಿದ್ಯಾ?",
+    "translit": "Maneyalli current hogidhe, nimma maneloo hogidhya?",
+    "en": "The power is out in our house, is it out in yours too?",
+    "example": {
+      "kn": "ನಮಸ್ಕಾರ ಸರ್, ನಮ್ಮ ಫ್ಲ್ಯಾಟ್‌ನಲ್ಲಿ ಕರೆಂಟ್ ಹೋಗಿದೆ, ನಿಮ್ಮ ಮನೇಲೂ ಹೋಗಿದ್ಯಾ?",
+      "translit": "Namaskara sir, namma flat-nalli current hogidhe, nimma maneloo hogidhya?",
+      "en": "Hello sir, power is out in our flat, is it gone in your home as well?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-04",
+    "scenario": "home-neighbours",
+    "kn": "ಟ್ಯಾಪ್‌ನಲ್ಲಿ ನೀರು ಬರ್ತಿಲ್ಲ.",
+    "translit": "Tap-nalli neeru barthilla.",
+    "en": "Water is not coming from the tap.",
+    "example": {
+      "kn": "ಪ್ಲಂಬರ್ ಅಣ್ಣಾ, ಬಾತ್‌ರೂಮ್ ಟ್ಯಾಪ್‌ನಲ್ಲಿ ನೀರು ಬರ್ತಿಲ್ಲ, ಸ್ವಲ್ಪ ನೋಡಿ.",
+      "translit": "Plumber anna, bathroom tap-nalli neeru barthilla, swalpa nodi.",
+      "en": "Plumber brother, water isn't running in the bathroom tap, please take a look."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-05",
+    "scenario": "home-neighbours",
+    "kn": "ಇವತ್ತು ಮನೆ ಕ್ಲೀನ್ ಮಾಡೋಕೆ ಬರ್ತೀರಾ?",
+    "translit": "Ivathu mane clean maadoke barthira?",
+    "en": "Are you coming to clean the house today?",
+    "example": {
+      "kn": "ಅಕ್ಕ, ಇವತ್ತು ಮನೆ ಕ್ಲೀನ್ ಮಾಡೋಕೆ ಎಷ್ಟು ಗಂಟೆಗೆ ಬರ್ತೀರಾ?",
+      "translit": "Akka, ivathu mane clean maadoke eshtu gantege barthira?",
+      "en": "Sister, what time will you be coming to clean the house today?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-06",
+    "scenario": "home-neighbours",
+    "kn": "ನನ್ನ ಪಾರ್ಕಿಂಗ್ ಜಾಗದಲ್ಲಿ ಬೇರೆ ಗಾಡಿ ನಿಲ್ಲಿಸಿದ್ದಾರೆ.",
+    "translit": "Nanna parking jaagadhalli bere gaadi nillisidhdhaare.",
+    "en": "Someone else has parked in my parking spot.",
+    "example": {
+      "kn": "ಸೆಕ್ಯುರಿಟಿ ಸರ್, Flat 204 parking ಜಾಗದಲ್ಲಿ ಬೇರೆ ಗಾಡಿ ನಿಲ್ಲಿಸಿದ್ದಾರೆ, ಸ್ವಲ್ಪ ಹೇಳಿ.",
+      "translit": "Security sir, Flat 204 parking jaagadhalli bere gaadi nillisidhdhaare, swalpa heli.",
+      "en": "Security sir, another car is parked in Flat 204 spot, please inform them."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-07",
+    "scenario": "home-neighbours",
+    "kn": "ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಸೌಂಡ್ ಕಮ್ಮಿ ಮಾಡಿ.",
+    "translit": "Dhayavittu swalpa sound kammi maadi.",
+    "en": "Please turn down the volume slightly.",
+    "example": {
+      "kn": "ರಾತ್ರಿ ತುಂಬಾ ಲೇಟ್ ಆಗಿದೆ, ದಯವಿಟ್ಟು ಟಿವಿ ಸೌಂಡ್ ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ.",
+      "translit": "Raathri thumba late aagidhe, dhayavittu TV sound swalpa kammi maadi.",
+      "en": "It is quite late at night, please turn down the TV volume slightly."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-08",
+    "scenario": "home-neighbours",
+    "kn": "ನಾವು ಊರಿಗೆ ಹೋಗ್ತಾ ಇದ್ದೀವಿ, ಮೂರು ದಿನ ಇರಲ್ಲ.",
+    "translit": "Naavu oorige hogthaa iddhivi, mooru dhina iralla.",
+    "en": "We are traveling to our hometown, we won't be here for three days.",
+    "example": {
+      "kn": "ಆಂಟಿ, ನಾವು ಊರಿಗೆ ಹೋಗ್ತಾ ಇದ್ದೀವಿ, ಹಾಲು ಪೇಪರ್ ಹಾಕಬೇಡಿ ಅಂತ ಹೇಳಿದ್ದೀನಿ.",
+      "translit": "Aunty, naavu oorige hogthaa iddhivi, haalu paper haakbedi antha heliddhini.",
+      "en": "Aunty, we are heading to our hometown, I have told them not to deliver milk and paper."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-09",
+    "scenario": "home-neighbours",
+    "kn": "ಬೆಲ್ ಹೊಡೆದರೆ ಕೇಳಿಸಲ್ಲ, ಫೋನ್ ಮಾಡಿ.",
+    "translit": "Bell hodedhare kelisalla, phone maadi.",
+    "en": "The doorbell isn't audible, please call my phone.",
+    "example": {
+      "kn": "ಮನೆಯಲ್ಲಿ ಬೆಲ್ ಕೆಲಸ ಮಾಡ್ತಿಲ್ಲ, ಬಂದ್ರೆ ಫೋನ್ ಮಾಡಿ.",
+      "translit": "Maneyalli bell kelasa maadthilla, bandhre phone maadi.",
+      "en": "The doorbell isn't working at home, please call when you arrive."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "home-10",
+    "scenario": "home-neighbours",
+    "kn": "ವೈ-ಫೈ ಪಾಸ್‌ವರ್ಡ್ ಏನು?",
+    "translit": "Wi-Fi password enu?",
+    "en": "What is the Wi-Fi password?",
+    "example": {
+      "kn": "ಬ್ರದರ್, ನಿಮ್ಮ ಮನೆಯಲ್ಲಿ Wi-Fi password ಏನು?",
+      "translit": "Brother, nimma maneyalli Wi-Fi password enu?",
+      "en": "Brother, what is the Wi-Fi password in your home?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-01",
+    "scenario": "greetings-social",
+    "kn": "ನಮಸ್ಕಾರ, ಹೇಗಿದ್ದೀರಾ?",
+    "translit": "Namaskara, hegiddhira?",
+    "en": "Hello, how are you?",
+    "example": {
+      "kn": "ನಮಸ್ಕಾರ ಸರ್, ಆರಾಮಾಗಿದ್ದೀರಾ? ಮನೆಯಲ್ಲಿ ಎಲ್ಲ ಚೆನ್ನಾಗಿದ್ದಾರಾ?",
+      "translit": "Namaskara sir, aaraamaagiddhira? Maneyalli ella chennaagidhdhaaraa?",
+      "en": "Hello sir, are you doing well? Is everyone fine at home?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-02",
+    "scenario": "greetings-social",
+    "kn": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೀನಿ, ನೀವು ಹೇಗಿದ್ದೀರಾ?",
+    "translit": "Naanu chennaagiddhini, neevu hegiddhira?",
+    "en": "I am fine, how about you?",
+    "example": {
+      "kn": "ನಾನು ಆರಾಮಾಗಿದ್ದೀನಿ ಅಣ್ಣಾ, ನೀವು ಹೇಗಿದ್ದೀರಾ?",
+      "translit": "Naanu aaraamaagiddhini anna, neevu hegiddhira?",
+      "en": "I am doing well brother, how about you?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-03",
+    "scenario": "greetings-social",
+    "kn": "ಊಟ ಆಯ್ತಾ?",
+    "translit": "Oota aaythaa?",
+    "en": "Had your meal? (Common warm Kannada greeting)",
+    "example": {
+      "kn": "ನಮಸ್ಕಾರ ಅಕ್ಕ, ಮಧ್ಯಾಹ್ನದ ಊಟ ಆಯ್ತಾ?",
+      "translit": "Namaskara akka, madhyaahnadha oota aaythaa?",
+      "en": "Hello sister, have you had your lunch?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-04",
+    "scenario": "greetings-social",
+    "kn": "ನಿಮ್ಮ ಹೆಸರು ಏನು?",
+    "translit": "Nimma hesaru enu?",
+    "en": "What is your name?",
+    "example": {
+      "kn": "ನನ್ನ ಹೆಸರು ರಾಹುಲ್, ನಿಮ್ಮ ಹೆಸರು ಏನು ಸರ್?",
+      "translit": "Nanna hesaru Rahul, nimma hesaru enu sir?",
+      "en": "My name is Rahul, what is your name, sir?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-05",
+    "scenario": "greetings-social",
+    "kn": "ನನಗೆ ಕನ್ನಡ ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ಬರುತ್ತೆ.",
+    "translit": "Nanage Kannada swalpa swalpa baruththe.",
+    "en": "I know a little bit of Kannada.",
+    "example": {
+      "kn": "ನಾನು ಹೊಸಬ, ನನಗೆ ಕನ್ನಡ ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ಬರುತ್ತೆ, ಕಲೀತಾ ಇದ್ದೀನಿ.",
+      "translit": "Naanu hosaba, nanage Kannada swalpa swalpa baruththe, kalithaa iddhini.",
+      "en": "I am new here, I speak a little Kannada, I am still learning."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-06",
+    "scenario": "greetings-social",
+    "kn": "ದಯವಿಟ್ಟು ಒಳಗೆ ಬನ್ನಿ, ಕೂತ್ಕೊಳ್ಳಿ.",
+    "translit": "Dhayavittu olage banni, koothkolli.",
+    "en": "Please come inside and have a seat.",
+    "example": {
+      "kn": "ನಮಸ್ಕಾರ ಸರ್, ದಯವಿಟ್ಟು ಒಳಗೆ ಬನ್ನಿ, ಸೋಫಾ ಮೇಲೆ ಕೂತ್ಕೊಳ್ಳಿ.",
+      "translit": "Namaskara sir, dhayavittu olage banni, sofa mele koothkolli.",
+      "en": "Hello sir, please come inside and take a seat on the sofa."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-07",
+    "scenario": "greetings-social",
+    "kn": "ಕಾಫಿ ಅಥವಾ ಟೀ ತಗೋತೀರಾ?",
+    "translit": "Coffee athava tea thagothira?",
+    "en": "Would you like some coffee or tea?",
+    "example": {
+      "kn": "ಏನು ತಗೋತೀರಾ? ಬಿಸಿ ಫಿಲ್ಟರ್ ಕಾಫಿ ಅಥವಾ ಟೀ ತಗೋತೀರಾ?",
+      "translit": "Enu thagothira? Bisi filter coffee athava tea thagothira?",
+      "en": "What will you have? Would you like hot filter coffee or tea?"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-08",
+    "scenario": "greetings-social",
+    "kn": "ತುಂಬಾ ಧನ್ಯವಾದಗಳು, ನಿಮ್ಮ ಸಹಾಯಕ್ಕೆ.",
+    "translit": "Thumba dhanyavaadhagalu, nimma sahaayakke.",
+    "en": "Thank you very much for your help.",
+    "example": {
+      "kn": "ಸರಿಯಾದ ಸಮಯಕ್ಕೆ ಹೆಲ್ಪ್ ಮಾಡಿದ್ರಿ, ತುಂಬಾ ಧನ್ಯವಾದಗಳು.",
+      "translit": "Sariyaadha samayakke help maadidhri, thumba dhanyavaadhagalu.",
+      "en": "You helped me just in time, thank you very much."
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-09",
+    "scenario": "greetings-social",
+    "kn": "ಮತ್ತೆ ಸಿಗೋಣ, ಬರ್ತೀನಿ!",
+    "translit": "Mathe sigona, bartheeni!",
+    "en": "See you again, I'll take leave! (Standard polite parting)",
+    "example": {
+      "kn": "ಆಯ್ತು ಅಣ್ಣಾ, ಕೆಲಸ ಇದೆ, ಮತ್ತೆ ಸಿಗೋಣ, ಬರ್ತೀನಿ!",
+      "translit": "Aaythu anna, kelasa idhe, mathe sigona, bartheeni!",
+      "en": "Alright brother, I have some work, see you again, I will take leave!"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "greet-10",
+    "scenario": "greetings-social",
+    "kn": "ಕ್ಷಮಿಸಿ, ತೊಂದರೆ ಕೊಟ್ಟಿದ್ದಕ್ಕೆ.",
+    "translit": "Kshamisi, thondhare kottiddhakke.",
+    "en": "Pardon me for the inconvenience.",
+    "example": {
+      "kn": "ನನ್ನಿಂದ ತಡ ಆಯ್ತು, ಕ್ಷಮಿಸಿ ಸರ್, ತೊಂದರೆ ಕೊಟ್ಟಿದ್ದಕ್ಕೆ.",
+      "translit": "Nannindha thada aaythu, kshamisi sir, thondhare kottiddhakke.",
+      "en": "I got delayed, sorry sir for causing the trouble."
+    },
+    "reviewed": false
+  }
+]
