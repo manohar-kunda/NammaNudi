@@ -78,42 +78,35 @@ export function SearchScreen({
           Search Phrases
         </h2>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-          Search across Kannada, Roman transliteration, or English translation.
+          Search across all scenarios in Kannada script, transliteration, or English.
         </p>
       </div>
 
       <div className="search-container">
         <div className="search-input-wrap">
-          <span className="search-icon-left">
-            <SearchIcon size={20} />
-          </span>
+          <SearchIcon className="search-icon-left" size={20} />
           <input
             type="text"
             className="search-input"
-            placeholder="e.g. meter, ದೋಸೆ, headache, tea..."
+            placeholder="Search e.g. 'meter', 'headache', 'ದೋಸೆ'..."
             value={query}
-            maxLength={100}
             onChange={handleInputChange}
-            aria-label="Search Kannada phrases"
+            maxLength={100}
             autoFocus
           />
           {query && (
             <button
               type="button"
               className="search-clear-btn"
-              onClick={() => {
-                setQuery('');
-                setDebouncedQuery('');
-                setResults([]);
-              }}
-              aria-label="Clear search query"
+              onClick={() => setQuery('')}
+              aria-label="Clear search"
             >
               <CloseIcon size={18} />
             </button>
           )}
         </div>
         <div className="search-counter">
-          {query.length} / 100 characters
+          {query.length}/100 characters
         </div>
       </div>
 
@@ -150,18 +143,20 @@ export function SearchScreen({
           <div style={{ fontSize: '0.825rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: '10px' }}>
             Found {results.length} phrase{results.length > 1 ? 's' : ''}
           </div>
-          {results.map((phrase) => (
-            <PhraseCard
-              key={phrase.id}
-              phrase={phrase}
-              isSaved={isSaved(phrase.id)}
-              onToggleSave={onToggleSave}
-              hasVoice={hasVoice}
-              onSpeak={onSpeak}
-              speakingId={speakingId}
-              showScenarioBadge={true}
-            />
-          ))}
+          <div className="phrases-grid">
+            {results.map((phrase) => (
+              <PhraseCard
+                key={phrase.id}
+                phrase={phrase}
+                isSaved={isSaved(phrase.id)}
+                onToggleSave={onToggleSave}
+                hasVoice={hasVoice}
+                onSpeak={onSpeak}
+                speakingId={speakingId}
+                showScenarioBadge={true}
+              />
+            ))}
+          </div>
         </div>
       )}
     </div>

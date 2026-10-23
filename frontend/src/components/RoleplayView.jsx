@@ -80,137 +80,121 @@ export function RoleplayView({
   };
 
   const handleSelectOption = (index) => {
-    if (selectedOptionIndex !== null) return;
+    if (selectedOptionIndex !== null) return; // already picked this turn
     setSelectedOptionIndex(index);
   };
 
   const handleContinue = () => {
-    if (!roleplay || !roleplay.nodes || selectedOptionIndex === null) return;
-    const currentNode = roleplay.nodes[currentNodeId];
-    if (!currentNode || !Array.isArray(currentNode.options)) return;
+    if (selectedOptionIndex === null) return;
+    const currentNode = roleplay?.nodes?.[currentNodeId];
+    if (!currentNode) return;
 
-    const chosen = currentNode.options[selectedOptionIndex];
-    if (!chosen) return;
+    const chosenOption = currentNode.options?.[selectedOptionIndex];
+    if (!chosenOption) return;
 
-    const updatedHistory = [
+    const newHistory = [
       ...history,
       {
         nodeId: currentNodeId,
-        speaker: currentNode.speaker,
-        promptKn: currentNode.kn,
-        replyKn: chosen.kn,
-        replyTranslit: chosen.translit,
-        replyEn: chosen.en,
-        quality: chosen.quality || 'ok',
-        feedback: chosen.feedback || '',
+        node: currentNode,
+        chosenOption,
+        turnNumber: history.length + 1,
       },
     ];
-
-    setHistory(updatedHistory);
+    setHistory(newHistory);
     setSelectedOptionIndex(null);
 
-    if (chosen.next === null || chosen.next === undefined) {
-      const counts = updatedHistory.reduce(
-        (acc, turn) => {
-          const q = turn.quality;
-          if (q === 'good' || q === 'ok' || q === 'poor') {
-            acc[q] += 1;
-          }
-          return acc;
-        },
-        { good: 0, ok: 0, poor: 0 }
-      );
+    if (chosenOption.next === null || !roleplay.nodes[chosenOption.next]) {
       setIsFinished(true);
       if (onComplete) {
+        const counts = newHistory.reduce(
+          (acc, h) => {
+            const q = h.chosenOption.quality || 'ok';
+            acc[q] = (acc[q] || 0) + 1;
+            return acc;
+          },
+          { good: 0, ok: 0, poor: 0 }
+        );
         onComplete(scenario.slug, counts);
       }
     } else {
-      setCurrentNodeId(chosen.next);
+      setCurrentNodeId(chosenOption.next);
     }
   };
 
   if (loading) {
     return (
-      <div>
+      <div className="reading-column">
         <button type="button" className="back-btn" onClick={onBack}>
           <ArrowLeftIcon size={18} />
           <span>Back to {scenario.title} Practice</span>
         </button>
         <div className="loading-spinner">
           <div className="spinner-circle" />
-          <span>Loading role-play dialogue...</span>
+          <span>Loading {scenario.title.toLowerCase()} role-play...</span>
         </div>
       </div>
     );
   }
 
-  if (error) {
+  if (error || !roleplay || !roleplay.nodes) {
     return (
-      <div>
-        <button type="button" className="back-btn" onClick={onBack}>
-          <ArrowLeftIcon size={18} />
-          <span>Back to {scenario.title} Practice</span>
-        </button>
-        <ErrorState message={error} onRetry={loadRoleplay} />
-      </div>
-    );
-  }
-
-  // Guard against missing roleplay structure or missing node
-  const currentNode =
-    roleplay && roleplay.nodes && currentNodeId
-      ? roleplay.nodes[currentNodeId]
-      : null;
-
-  if (!isFinished && !currentNode) {
-    console.error(`[NammaNudi Roleplay] Missing dialogue node "${currentNodeId}" in scenario "${scenario.slug}"`);
-    return (
-      <div>
+      <div className="reading-column">
         <button type="button" className="back-btn" onClick={onBack}>
           <ArrowLeftIcon size={18} />
           <span>Back to {scenario.title} Practice</span>
         </button>
         <ErrorState
-          message="This part of the conversation could not be loaded. Please try starting the role-play again."
-          onRetry={handleReset}
+          message={error || 'Role-play scenario data is missing or incomplete.'}
+          onRetry={loadRoleplay}
         />
       </div>
     );
   }
 
+  // Summary screen at end of dialogue
   if (isFinished) {
-    const counts = history.reduce(
-      (acc, turn) => {
-        const q = turn.quality;
-        if (q === 'good' || q === 'ok' || q === 'poor') {
-          acc[q] += 1;
-        }
+    const summary = history.reduce(
+      (acc, h) => {
+        const q = h.chosenOption.quality || 'ok';
+        acc[q] = (acc[q] || 0) + 1;
         return acc;
       },
       { good: 0, ok: 0, poor: 0 }
     );
 
     return (
-      <div>
+      <div className="reading-column">
         <button type="button" className="back-btn" onClick={onBack}>
           <ArrowLeftIcon size={18} />
-          <span>Back to {scenario.title} Practice</span>
+          <span>Practice Hub</span>
         </button>
 
-        <div className="card" style={{ padding: '22px 18px' }}>
-          <span
-            className="badge"
-            style={{ backgroundColor: '#fef3c7', color: '#92400e', marginBottom: '8px' }}
+        <div className="card" style={{ padding: '24px 20px', textAlign: 'center' }}>
+          <div
+            style={{
+              width: '56px',
+              height: '56px',
+              borderRadius: '50%',
+              backgroundColor: '#ecfdf5',
+              color: '#059669',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              margin: '0 auto 14px auto',
+              fontSize: '1.75rem',
+            }}
           >
-            Role-play Complete
-          </span>
-          <h2 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--primary-red)', marginBottom: '4px' }}>
-            {roleplay.title}
+            ✓
+          </div>
+          <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--primary-red)', marginBottom: '6px' }}>
+            Dialogue Complete!
           </h2>
-          <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '18px' }}>
-            You completed {history.length} conversation {history.length === 1 ? 'turn' : 'turns'}. Here is your reply breakdown:
+          <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '20px' }}>
+            You completed the <strong>{roleplay.title}</strong> role-play.
           </p>
 
+          {/* Breakdown cards */}
           <div
             style={{
               display: 'grid',
@@ -219,136 +203,186 @@ export function RoleplayView({
               marginBottom: '20px',
             }}
           >
-            <div
-              style={{
-                backgroundColor: '#ecfdf5',
-                border: '1px solid #a7f3d0',
-                borderRadius: '12px',
-                padding: '12px 8px',
-                textAlign: 'center',
-              }}
-              data-testid="summary-good-count"
-            >
+            <div style={{ backgroundColor: '#ecfdf5', border: '1px solid #a7f3d0', borderRadius: '12px', padding: '12px 8px' }}>
               <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#047857' }}>
-                {counts.good}
+                {summary.good}
               </div>
               <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#065f46' }}>
-                Good
+                Good Replies
               </div>
             </div>
-
-            <div
-              style={{
-                backgroundColor: '#fffbeb',
-                border: '1px solid #fde68a',
-                borderRadius: '12px',
-                padding: '12px 8px',
-                textAlign: 'center',
-              }}
-              data-testid="summary-ok-count"
-            >
+            <div style={{ backgroundColor: '#fffbeb', border: '1px solid #fde68a', borderRadius: '12px', padding: '12px 8px' }}>
               <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#b45309' }}>
-                {counts.ok}
+                {summary.ok}
               </div>
               <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#92400e' }}>
-                Okay
+                Okay Replies
               </div>
             </div>
-
-            <div
-              style={{
-                backgroundColor: '#fef2f2',
-                border: '1px solid #fecaca',
-                borderRadius: '12px',
-                padding: '12px 8px',
-                textAlign: 'center',
-              }}
-              data-testid="summary-poor-count"
-            >
+            <div style={{ backgroundColor: '#fef2f2', border: '1px solid #fecaca', borderRadius: '12px', padding: '12px 8px' }}>
               <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#b91c1c' }}>
-                {counts.poor}
+                {summary.poor}
               </div>
               <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#991b1b' }}>
-                Poor
+                Needs Work
               </div>
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button
               type="button"
               className="retry-btn"
-              style={{ backgroundColor: 'var(--primary-red)', padding: '10px 18px', fontSize: '0.875rem' }}
               onClick={handleReset}
+              style={{ backgroundColor: 'var(--primary-red)' }}
             >
-              Try again
+              Try Again
             </button>
             <button
               type="button"
               className="retry-btn"
-              style={{
-                backgroundColor: '#ffffff',
-                color: 'var(--text-main)',
-                border: '1px solid var(--border-warm)',
-                padding: '10px 18px',
-                fontSize: '0.875rem',
-              }}
               onClick={onBack}
+              style={{ backgroundColor: '#ffffff', color: 'var(--text-main)', border: '1px solid var(--border-warm)' }}
             >
-              Choose another activity
+              Back to Practice Hub
             </button>
+          </div>
+        </div>
+
+        {/* Conversation Review */}
+        <div style={{ marginTop: '20px' }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '10px' }}>
+            Conversation Review
+          </h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            {history.map((turn) => {
+              const qStyle = QUALITY_STYLES[turn.chosenOption.quality] || QUALITY_STYLES.ok;
+              return (
+                <div key={turn.turnNumber} className="card" style={{ padding: '14px' }}>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-subtle)', marginBottom: '6px' }}>
+                    Turn {turn.turnNumber} • {turn.node.speaker}
+                  </div>
+                  <div className="kn-text" style={{ fontSize: '1.05rem', fontWeight: 700, color: '#70102d', marginBottom: '4px' }}>
+                    {turn.node.kn}
+                  </div>
+                  <div style={{ fontSize: '0.8rem', color: '#b45309', marginBottom: '10px' }}>
+                    {turn.node.translit} ({turn.node.en})
+                  </div>
+
+                  <div
+                    style={{
+                      backgroundColor: qStyle.bg,
+                      border: `1px solid ${qStyle.border}`,
+                      borderRadius: '10px',
+                      padding: '10px 12px',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+                      <span style={{ fontSize: '0.725rem', fontWeight: 700, textTransform: 'uppercase', color: qStyle.text }}>
+                        Your Choice
+                      </span>
+                      <span
+                        style={{
+                          fontSize: '0.7rem',
+                          fontWeight: 700,
+                          backgroundColor: qStyle.badgeBg,
+                          color: qStyle.badgeText,
+                          padding: '2px 8px',
+                          borderRadius: '10px',
+                        }}
+                      >
+                        {qStyle.label}
+                      </span>
+                    </div>
+                    <div className="kn-text" style={{ fontSize: '1rem', fontWeight: 700, color: qStyle.text }}>
+                      {turn.chosenOption.kn}
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: qStyle.text, opacity: 0.9 }}>
+                      {turn.chosenOption.translit}
+                    </div>
+                    {turn.chosenOption.feedback && (
+                      <div style={{ fontSize: '0.775rem', marginTop: '6px', fontStyle: 'italic', color: qStyle.text }}>
+                        💡 {turn.chosenOption.feedback}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
     );
   }
 
-  const selectedOption =
-    selectedOptionIndex !== null && Array.isArray(currentNode.options)
-      ? currentNode.options[selectedOptionIndex]
-      : null;
+  // Active dialogue node
+  const currentNode = roleplay.nodes[currentNodeId];
+  if (!currentNode) {
+    return (
+      <div className="reading-column">
+        <button type="button" className="back-btn" onClick={onBack}>
+          <ArrowLeftIcon size={18} />
+          <span>Back to Practice Hub</span>
+        </button>
+        <ErrorState
+          message={`Conversational node "${currentNodeId}" could not be loaded.`}
+          onRetry={handleReset}
+        />
+      </div>
+    );
+  }
 
-  const qualityStyle = selectedOption
-    ? QUALITY_STYLES[selectedOption.quality] || QUALITY_STYLES.ok
-    : null;
+  const selectedOption =
+    selectedOptionIndex !== null ? currentNode.options?.[selectedOptionIndex] : null;
+  const qualityStyle = selectedOption ? QUALITY_STYLES[selectedOption.quality] || QUALITY_STYLES.ok : null;
 
   return (
-    <div>
+    <div className="reading-column">
       <button type="button" className="back-btn" onClick={onBack}>
         <ArrowLeftIcon size={18} />
-        <span>Back to {scenario.title} Practice</span>
+        <span>Practice Hub</span>
       </button>
 
       <div style={{ marginBottom: '14px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
-          <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--primary-red)' }}>
-            {roleplay.title}
-          </h2>
-          <span className="badge" style={{ backgroundColor: '#f5f5f4', color: '#44403c' }}>
-            Turn {history.length + 1}
-          </span>
-        </div>
-        <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)' }}>
-          Read the speaker&apos;s line and choose the best Kannada response.
-        </p>
+        <span
+          style={{
+            fontSize: '0.75rem',
+            fontWeight: 700,
+            color: 'var(--primary-red)',
+            textTransform: 'uppercase',
+            letterSpacing: '0.04em',
+          }}
+        >
+          {scenario.title} Role-play
+        </span>
+        <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-main)', marginTop: '2px' }}>
+          {roleplay.title}
+        </h2>
       </div>
 
-      {/* Other Speaker's Line */}
+      {/* Speaker Bubble */}
       <div
         className="card"
         style={{
           backgroundColor: '#fffbeb',
           borderColor: '#fde68a',
-          padding: '16px',
+          padding: '18px',
           marginBottom: '16px',
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
           <span
-            className="badge"
-            style={{ backgroundColor: '#fef3c7', color: '#92400e', fontWeight: 700 }}
+            style={{
+              fontSize: '0.775rem',
+              fontWeight: 800,
+              color: '#92400e',
+              backgroundColor: '#fef3c7',
+              padding: '3px 10px',
+              borderRadius: '12px',
+              display: 'inline-block',
+            }}
           >
-            {currentNode.speaker || 'Speaker'}
+            {currentNode.speaker}
           </span>
 
           {hasVoice && (
@@ -356,107 +390,140 @@ export function RoleplayView({
               type="button"
               className={`icon-btn ${speakingId === currentNodeId ? 'playing' : ''}`}
               onClick={() => onSpeak(currentNode.kn, currentNodeId)}
+              title="Listen to dialogue"
               aria-label="Listen to speaker line"
-              title="Play synthesized Kannada audio (kn-IN)"
             >
-              <SpeakerIcon size={18} />
+              <SpeakerIcon size={20} />
             </button>
           )}
         </div>
 
-        <p className="phrase-kn" style={{ fontSize: '1.35rem', marginBottom: '6px' }}>
+        <div className="kn-text" style={{ fontSize: '1.4rem', fontWeight: 700, color: '#70102d', marginBottom: '6px' }}>
           {currentNode.kn}
-        </p>
-        <p className="phrase-translit" style={{ marginBottom: '4px' }}>
+        </div>
+        <div style={{ fontSize: '0.925rem', fontWeight: 600, color: '#b45309', marginBottom: '4px' }}>
           {currentNode.translit}
-        </p>
-        <p className="phrase-en">{currentNode.en}</p>
+        </div>
+        <div style={{ fontSize: '0.875rem', color: 'var(--text-main)' }}>
+          {currentNode.en}
+        </div>
       </div>
 
-      {/* Feedback Banner & Continue Button */}
+      {/* Options Prompt */}
+      <div style={{ marginBottom: '8px', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-muted)' }}>
+        {selectedOptionIndex === null
+          ? 'Choose your reply (pick one):'
+          : 'Your response feedback:'}
+      </div>
+
+      {/* Reply Options List */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
+        {currentNode.options?.map((option, idx) => {
+          const isSelected = selectedOptionIndex === idx;
+          const isDimmed = selectedOptionIndex !== null && !isSelected;
+          const optStyle = isSelected ? QUALITY_STYLES[option.quality] || QUALITY_STYLES.ok : null;
+
+          return (
+            <button
+              key={idx}
+              type="button"
+              className="card"
+              disabled={selectedOptionIndex !== null}
+              onClick={() => handleSelectOption(idx)}
+              style={{
+                textAlign: 'left',
+                padding: '14px 16px',
+                cursor: selectedOptionIndex === null ? 'pointer' : 'default',
+                opacity: isDimmed ? 0.45 : 1,
+                borderColor: isSelected ? optStyle.border : 'var(--border-warm)',
+                backgroundColor: isSelected ? optStyle.bg : '#ffffff',
+                transform: 'none',
+                boxShadow: isSelected ? `0 0 0 2px ${optStyle.border}` : '0 1px 3px rgba(0,0,0,0.04)',
+                marginBottom: 0,
+                width: '100%',
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '4px' }}>
+                <span className="kn-text" style={{ fontSize: '1.1rem', fontWeight: 700, color: isSelected ? optStyle.text : '#70102d' }}>
+                  {option.kn}
+                </span>
+                {isSelected && (
+                  <span
+                    style={{
+                      fontSize: '0.7rem',
+                      fontWeight: 700,
+                      backgroundColor: optStyle.badgeBg,
+                      color: optStyle.badgeText,
+                      padding: '2px 8px',
+                      borderRadius: '10px',
+                      whiteSpace: 'nowrap',
+                      marginLeft: '8px',
+                    }}
+                  >
+                    {optStyle.label}
+                  </span>
+                )}
+              </div>
+              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: isSelected ? optStyle.text : '#b45309', marginBottom: '2px' }}>
+                {option.translit}
+              </div>
+              <div style={{ fontSize: '0.8rem', color: isSelected ? optStyle.text : 'var(--text-muted)' }}>
+                {option.en}
+              </div>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Feedback Banner after picking */}
       {selectedOption && qualityStyle && (
         <div
           className="card"
-          data-testid="roleplay-feedback"
           style={{
             backgroundColor: qualityStyle.bg,
             borderColor: qualityStyle.border,
-            borderWidth: '1.5px',
-            padding: '16px',
+            padding: '14px 16px',
             marginBottom: '16px',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
             <span
-              className="badge"
               style={{
+                fontSize: '0.725rem',
+                fontWeight: 800,
+                textTransform: 'uppercase',
                 backgroundColor: qualityStyle.badgeBg,
                 color: qualityStyle.badgeText,
-                fontWeight: 700,
-                textTransform: 'uppercase',
+                padding: '2px 8px',
+                borderRadius: '8px',
               }}
             >
-              {selectedOption.quality} — {qualityStyle.label}
+              {qualityStyle.label}
             </span>
           </div>
-          <p style={{ fontSize: '0.9rem', color: qualityStyle.text, fontWeight: 500, marginBottom: '12px' }}>
-            {selectedOption.feedback}
+          <p style={{ fontSize: '0.85rem', color: qualityStyle.text, lineHeight: 1.45 }}>
+            {selectedOption.feedback || 'Good attempt! Let us continue the conversation.'}
           </p>
+
           <button
             type="button"
             className="retry-btn"
-            style={{ backgroundColor: 'var(--primary-red)', padding: '9px 18px', fontSize: '0.875rem' }}
             onClick={handleContinue}
+            style={{
+              marginTop: '12px',
+              backgroundColor: qualityStyle.text,
+              color: '#ffffff',
+              padding: '8px 18px',
+              width: '100%',
+              maxWidth: '320px',
+            }}
           >
-            {selectedOption.next ? 'Continue Conversation' : 'Finish Role-play'}
+            {selectedOption.next === null || !roleplay.nodes[selectedOption.next]
+              ? 'Finish Dialogue & See Summary'
+              : 'Continue to Next Step →'}
           </button>
         </div>
       )}
-
-      {/* User Reply Options */}
-      <div style={{ marginBottom: '14px' }}>
-        <h3 style={{ fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.03em', color: 'var(--text-muted)', marginBottom: '10px' }}>
-          Choose your reply:
-        </h3>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          {(currentNode.options || []).map((opt, idx) => {
-            const isSelected = selectedOptionIndex === idx;
-            const isLocked = selectedOptionIndex !== null;
-            const optQuality = QUALITY_STYLES[opt.quality] || QUALITY_STYLES.ok;
-
-            return (
-              <button
-                key={idx}
-                type="button"
-                disabled={isLocked}
-                onClick={() => handleSelectOption(idx)}
-                className="card option-reply-btn"
-                data-quality={opt.quality}
-                style={{
-                  margin: 0,
-                  textAlign: 'left',
-                  cursor: isLocked ? 'default' : 'pointer',
-                  borderColor: isSelected ? optQuality.border : 'var(--border-warm)',
-                  backgroundColor: isSelected ? optQuality.bg : '#ffffff',
-                  borderWidth: isSelected ? '2px' : '1px',
-                  opacity: isLocked && !isSelected ? 0.65 : 1,
-                }}
-              >
-                <div className="kn-text" style={{ fontSize: '1.15rem', fontWeight: 700, color: '#70102d', marginBottom: '4px' }}>
-                  {opt.kn}
-                </div>
-                <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#b45309', marginBottom: '2px' }}>
-                  {opt.translit}
-                </div>
-                <div style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>
-                  {opt.en}
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      </div>
     </div>
   );
 }

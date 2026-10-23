@@ -65,7 +65,7 @@ export function QuizView({ scenario, onBack, onComplete }) {
 
   if (loading) {
     return (
-      <div>
+      <div className="reading-column">
         <button type="button" className="back-btn" onClick={onBack}>
           <ArrowLeftIcon size={18} />
           <span>Back to {scenario.title} Practice</span>
@@ -78,94 +78,93 @@ export function QuizView({ scenario, onBack, onComplete }) {
     );
   }
 
-  if (error) {
+  if (error || questions.length === 0) {
     return (
-      <div>
-        <button type="button" className="back-btn" onClick={onBack}>
-          <ArrowLeftIcon size={18} />
-          <span>Back to {scenario.title} Practice</span>
-        </button>
-        <ErrorState message={error} onRetry={loadQuiz} />
-      </div>
-    );
-  }
-
-  if (!questions.length) {
-    return (
-      <div>
+      <div className="reading-column">
         <button type="button" className="back-btn" onClick={onBack}>
           <ArrowLeftIcon size={18} />
           <span>Back to {scenario.title} Practice</span>
         </button>
         <ErrorState
-          message="No quiz questions found for this scenario."
+          message={error || 'No quiz questions available for this scenario.'}
           onRetry={loadQuiz}
         />
       </div>
     );
   }
 
+  // Quiz summary screen
   if (isFinished) {
+    const percentage = Math.round((score / questions.length) * 100);
+    const passed = percentage >= 60;
+
     return (
-      <div>
+      <div className="reading-column">
         <button type="button" className="back-btn" onClick={onBack}>
           <ArrowLeftIcon size={18} />
-          <span>Back to {scenario.title} Practice</span>
+          <span>Practice Hub</span>
         </button>
 
-        <div className="card" style={{ padding: '24px 18px', textAlign: 'center' }} data-testid="quiz-summary">
-          <span
-            className="badge"
-            style={{ backgroundColor: '#fef3c7', color: '#92400e', marginBottom: '10px' }}
+        <div className="card" style={{ padding: '28px 20px', textAlign: 'center' }}>
+          <div
+            style={{
+              width: '64px',
+              height: '64px',
+              borderRadius: '50%',
+              backgroundColor: passed ? '#ecfdf5' : '#fef2f2',
+              color: passed ? '#047857' : '#b91c1c',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              margin: '0 auto 16px auto',
+              fontSize: '1.75rem',
+              fontWeight: 800,
+            }}
           >
-            Quiz Completed
-          </span>
+            {passed ? '✓' : '!'}
+          </div>
+
           <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--primary-red)', marginBottom: '6px' }}>
-            {scenario.title} Quiz Result
+            {passed ? 'Great Job!' : 'Keep Practicing!'}
           </h2>
+          <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '20px' }}>
+            You completed the <strong>{scenario.title}</strong> quiz.
+          </p>
 
           <div
             style={{
-              fontSize: '2.5rem',
-              fontWeight: 800,
-              color: '#047857',
-              margin: '14px 0',
+              backgroundColor: passed ? '#ecfdf5' : '#fffbeb',
+              border: `1px solid ${passed ? '#a7f3d0' : '#fde68a'}`,
+              borderRadius: '16px',
+              padding: '18px 24px',
+              display: 'inline-block',
+              marginBottom: '24px',
             }}
-            data-testid="quiz-final-score"
           >
-            {score} / {questions.length}
+            <div style={{ fontSize: '2.5rem', fontWeight: 800, color: passed ? '#047857' : '#b45309', lineHeight: 1 }}>
+              {score} / {questions.length}
+            </div>
+            <div style={{ fontSize: '0.8rem', fontWeight: 700, color: passed ? '#065f46' : '#92400e', marginTop: '6px' }}>
+              {percentage}% Correct
+            </div>
           </div>
 
-          <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '20px' }}>
-            {score === questions.length
-              ? 'Outstanding! You got every question right.'
-              : score >= 3
-              ? 'Great effort! Keep practicing to master all phrases.'
-              : 'Good start! Review the scenario phrases and try again.'}
-          </p>
-
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button
               type="button"
               className="retry-btn"
-              style={{ backgroundColor: 'var(--primary-red)', padding: '10px 18px', fontSize: '0.875rem' }}
               onClick={handleRetry}
+              style={{ backgroundColor: 'var(--primary-red)' }}
             >
-              Try again
+              Try Again
             </button>
             <button
               type="button"
               className="retry-btn"
-              style={{
-                backgroundColor: '#ffffff',
-                color: 'var(--text-main)',
-                border: '1px solid var(--border-warm)',
-                padding: '10px 18px',
-                fontSize: '0.875rem',
-              }}
               onClick={onBack}
+              style={{ backgroundColor: '#ffffff', color: 'var(--text-main)', border: '1px solid var(--border-warm)' }}
             >
-              Choose another activity
+              Practice Hub
             </button>
           </div>
         </div>
@@ -173,139 +172,172 @@ export function QuizView({ scenario, onBack, onComplete }) {
     );
   }
 
-  const currentQuestion = questions[currentIndex];
+  // Active question view
+  const currentQ = questions[currentIndex];
   const isAnswered = selectedOption !== null;
-  const isCorrect = isAnswered && selectedOption === currentQuestion.answerIndex;
+  const isCorrect = isAnswered && selectedOption === currentQ.answerIndex;
 
   return (
-    <div>
+    <div className="reading-column">
       <button type="button" className="back-btn" onClick={onBack}>
         <ArrowLeftIcon size={18} />
-        <span>Back to {scenario.title} Practice</span>
+        <span>Practice Hub</span>
       </button>
 
-      <div style={{ marginBottom: '14px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
-          <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--primary-red)' }}>
-            {scenario.title} Quiz
-          </h2>
-          <span className="badge" style={{ backgroundColor: '#fef3c7', color: '#92400e', fontWeight: 700 }}>
-            Question {currentIndex + 1} of {questions.length}
-          </span>
-        </div>
-
-        {/* Progress Bar */}
-        <div
+      {/* Progress Counter */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+        <span
           style={{
-            height: '6px',
-            width: '100%',
-            backgroundColor: '#e7e5e4',
-            borderRadius: '999px',
-            overflow: 'hidden',
+            fontSize: '0.75rem',
+            fontWeight: 700,
+            color: 'var(--primary-red)',
+            textTransform: 'uppercase',
+            letterSpacing: '0.04em',
           }}
         >
-          <div
-            style={{
-              height: '100%',
-              width: `${((currentIndex + 1) / questions.length) * 100}%`,
-              backgroundColor: 'var(--primary-red)',
-              transition: 'width 0.25s ease',
-            }}
-          />
-        </div>
+          {scenario.title} Quiz
+        </span>
+        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-muted)' }}>
+          Question {currentIndex + 1} of {questions.length}
+        </span>
       </div>
 
-      <div className="card" style={{ padding: '18px', marginBottom: '14px' }}>
-        <p style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '16px' }}>
-          {currentQuestion.prompt}
-        </p>
+      {/* Progress Bar */}
+      <div
+        style={{
+          width: '100%',
+          height: '6px',
+          backgroundColor: '#e7e5e4',
+          borderRadius: '4px',
+          overflow: 'hidden',
+          marginBottom: '16px',
+        }}
+      >
+        <div
+          style={{
+            height: '100%',
+            width: `${((currentIndex + (isAnswered ? 1 : 0)) / questions.length) * 100}%`,
+            backgroundColor: '#881337',
+            transition: 'width 0.25s ease',
+          }}
+        />
+      </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          {(currentQuestion.options || []).map((optionText, idx) => {
-            let borderColor = 'var(--border-warm)';
-            let bgColor = '#ffffff';
-            let textColor = 'var(--text-main)';
+      {/* Question Card */}
+      <div
+        className="card"
+        style={{
+          padding: '20px',
+          marginBottom: '16px',
+          backgroundColor: '#ffffff',
+          borderColor: 'var(--border-warm)',
+        }}
+      >
+        <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)', lineHeight: 1.5 }}>
+          {currentQ.prompt}
+        </h3>
+      </div>
 
-            if (isAnswered) {
-              if (idx === currentQuestion.answerIndex) {
-                borderColor = '#10b981';
-                bgColor = '#ecfdf5';
-                textColor = '#065f46';
-              } else if (idx === selectedOption) {
-                borderColor = '#f87171';
-                bgColor = '#fef2f2';
-                textColor = '#991b1b';
-              }
+      {/* Options List */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
+        {currentQ.options?.map((opt, idx) => {
+          let bg = '#ffffff';
+          let border = 'var(--border-warm)';
+          let text = 'var(--text-main)';
+
+          if (isAnswered) {
+            if (idx === currentQ.answerIndex) {
+              bg = '#ecfdf5';
+              border = '#10b981';
+              text = '#065f46';
+            } else if (idx === selectedOption) {
+              bg = '#fef2f2';
+              border = '#ef4444';
+              text = '#991b1b';
             }
+          }
 
-            return (
-              <button
-                key={idx}
-                type="button"
-                disabled={isAnswered}
-                onClick={() => handleSelectOption(idx)}
-                className="card kn-text"
-                style={{
-                  margin: 0,
-                  padding: '12px 14px',
-                  textAlign: 'left',
-                  fontSize: '0.95rem',
-                  fontWeight: 600,
-                  cursor: isAnswered ? 'default' : 'pointer',
-                  borderColor,
-                  backgroundColor: bgColor,
-                  color: textColor,
-                  borderWidth: isAnswered && (idx === currentQuestion.answerIndex || idx === selectedOption) ? '2px' : '1px',
-                }}
-              >
-                {optionText}
-              </button>
-            );
-          })}
-        </div>
+          return (
+            <button
+              key={idx}
+              type="button"
+              className="card"
+              disabled={isAnswered}
+              onClick={() => handleSelectOption(idx)}
+              style={{
+                textAlign: 'left',
+                padding: '14px 16px',
+                cursor: isAnswered ? 'default' : 'pointer',
+                backgroundColor: bg,
+                borderColor: border,
+                color: text,
+                transform: 'none',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+                marginBottom: 0,
+                width: '100%',
+                fontWeight: 600,
+                fontSize: '0.925rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
+            >
+              <span className="kn-text">{opt}</span>
+              {isAnswered && idx === currentQ.answerIndex && (
+                <span style={{ color: '#059669', fontSize: '1.1rem', fontWeight: 800 }}>✓</span>
+              )}
+              {isAnswered && idx === selectedOption && idx !== currentQ.answerIndex && (
+                <span style={{ color: '#dc2626', fontSize: '1.1rem', fontWeight: 800 }}>✕</span>
+              )}
+            </button>
+          );
+        })}
       </div>
 
+      {/* Instant Feedback & Explanation */}
       {isAnswered && (
         <div
           className="card"
-          data-testid="quiz-feedback"
           style={{
-            backgroundColor: isCorrect ? '#ecfdf5' : '#fef2f2',
-            borderColor: isCorrect ? '#34d399' : '#f87171',
-            borderWidth: '1.5px',
+            backgroundColor: isCorrect ? '#ecfdf5' : '#fffbeb',
+            borderColor: isCorrect ? '#a7f3d0' : '#fde68a',
             padding: '16px',
+            marginBottom: '16px',
           }}
         >
-          <div style={{ marginBottom: '6px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
             <span
-              className="badge"
               style={{
+                fontSize: '0.75rem',
+                fontWeight: 800,
+                textTransform: 'uppercase',
                 backgroundColor: isCorrect ? '#d1fae5' : '#fee2e2',
                 color: isCorrect ? '#047857' : '#b91c1c',
-                fontWeight: 700,
+                padding: '3px 8px',
+                borderRadius: '8px',
               }}
             >
-              {isCorrect ? 'Correct!' : 'Not quite right'}
+              {isCorrect ? 'Correct! ✓' : 'Incorrect'}
             </span>
           </div>
-          <p
-            className="kn-text"
-            style={{
-              fontSize: '0.9rem',
-              color: isCorrect ? '#065f46' : '#991b1b',
-              fontWeight: 500,
-              marginBottom: '12px',
-            }}
-          >
-            {currentQuestion.explanation}
+          <p style={{ fontSize: '0.85rem', color: isCorrect ? '#065f46' : '#92400e', lineHeight: 1.5 }}>
+            {currentQ.explanation}
           </p>
+
           <button
             type="button"
             className="retry-btn"
-            style={{ backgroundColor: 'var(--primary-red)', padding: '9px 18px', fontSize: '0.875rem' }}
             onClick={handleNext}
+            style={{
+              marginTop: '12px',
+              backgroundColor: isCorrect ? '#047857' : '#b45309',
+              color: '#ffffff',
+              padding: '8px 18px',
+              width: '100%',
+              maxWidth: '240px',
+            }}
           >
-            {currentIndex + 1 < questions.length ? 'Next Question' : 'See Final Score'}
+            {currentIndex + 1 === questions.length ? 'See Final Score →' : 'Next Question →'}
           </button>
         </div>
       )}

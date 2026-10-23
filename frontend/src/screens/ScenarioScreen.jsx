@@ -83,19 +83,21 @@ export function ScenarioScreen({
         </div>
       )}
 
-      {!loading &&
-        !error &&
-        phrases.map((phrase) => (
-          <PhraseCard
-            key={phrase.id}
-            phrase={phrase}
-            isSaved={isSaved(phrase.id)}
-            onToggleSave={onToggleSave}
-            hasVoice={hasVoice}
-            onSpeak={onSpeak}
-            speakingId={speakingId}
-          />
-        ))}
+      {!loading && !error && (
+        <div className="phrases-grid">
+          {phrases.map((phrase) => (
+            <PhraseCard
+              key={phrase.id}
+              phrase={phrase}
+              isSaved={isSaved(phrase.id)}
+              onToggleSave={onToggleSave}
+              hasVoice={hasVoice}
+              onSpeak={onSpeak}
+              speakingId={speakingId}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
