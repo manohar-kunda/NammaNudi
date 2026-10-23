@@ -1,0 +1,38 @@
+[
+  {
+    "id": "directions",
+    "slug": "directions",
+    "title": "Directions & Landmarks",
+    "knTitle": "ದಿಕ್ಕುಗಳು ಮತ್ತು ಗುರುತುಗಳು",
+    "tagline": "Dhaari, landmarks & navigating streets",
+    "icon": "bus",
+    "phraseCount": 10
+  },
+  {
+    "id": "numbers-time",
+    "slug": "numbers-time",
+    "title": "Numbers, Money & Time",
+    "knTitle": "ಸಂಖ್ಯೆ, ಹಣ ಮತ್ತು ಸಮಯ",
+    "tagline": "Prices, change, timings & appointments",
+    "icon": "shopping-bag",
+    "phraseCount": 10
+  },
+  {
+    "id": "home-neighbours",
+    "slug": "home-neighbours",
+    "title": "Home & Neighbours",
+    "knTitle": "ಮನೆ ಮತ್ತು ಅಕ್ಕಪಕ್ಕದವರು",
+    "tagline": "Apartment life, deliveries, maids & repairs",
+    "icon": "briefcase",
+    "phraseCount": 10
+  },
+  {
+    "id": "greetings-social",
+    "slug": "greetings-social",
+    "title": "Greetings & Social",
+    "knTitle": "ಮಾತುಕತೆ ಮತ್ತು ಸೌಜನ್ಯ",
+    "tagline": "Polite conversations, small talk & respect",
+    "icon": "heart-pulse",
+    "phraseCount": 10
+  }
+]

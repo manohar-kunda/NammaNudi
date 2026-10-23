@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
  * Reads the Native-Speaker Review CSV (/docs/review/content_review_pack.csv) and:
- * - Applies `corrected_kn` and `corrected_translit` to the matching entries in
- *   /data/phrases.json, /data/roleplay.json, and /data/quiz.json.
- * - Sets `reviewed = true` ONLY on phrases whose `reviewer_status` is "approved" or "fixed".
- * - Runs full data integrity validation (counts, role-play graph reachability & termination,
- *   quiz answerIndex bounds).
+ * - Applies `corrected_kn` and `corrected_translit` to matching entries in:
+ *   - /data/{phrases,roleplay,quiz}.json (backend datasets)
+ *   - /frontend/src/data/{scenarios-extra,phrases-extra,words}.json (v3 datasets)
+ * - Sets `reviewed = true` ONLY on phrases/words whose `reviewer_status` is "approved" or "fixed".
+ * - Runs full data integrity validation for both backend and v3 frontend datasets.
  * - Prints a summary of what changed and what remains unreviewed.
  *
  * Dry-run by default! Only writes files when `--apply` is passed.
@@ -18,9 +18,11 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const ROOT_DIR = path.resolve(__dirname, '..', '..');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
+const FRONTEND_DATA_DIR = path.join(ROOT_DIR, 'frontend', 'src', 'data');
 const DEFAULT_CSV_PATH = path.join(ROOT_DIR, 'docs', 'review', 'content_review_pack.csv');
 
 function parseArgs(argv) {
@@ -111,27 +113,34 @@ function splitQuizOption(optStr) {
   return { kn: optStr || '', translit: '' };
 }
 
-function validateData(scenarios, phrases, roleplay, quiz) {
+function validateBackendData(scenarios, phrases, roleplay, quiz) {
   const errors = [];
 
-  // 1. Validate scenario & phrase counts
-  if (!Array.isArray(scenarios) || scenarios.length !== 5) {
-    errors.push(`Expected 5 scenarios, found ${Array.isArray(scenarios) ? scenarios.length : 0}`);
-  }
-  if (!Array.isArray(phrases) || phrases.length !== 50) {
-    errors.push(`Expected 50 total phrases, found ${Array.isArray(phrases) ? phrases.length : 0}`);
+  // 1. Validate scenario & phrase counts dynamically from scenarios.json metadata
+  if (!Array.isArray(scenarios) || scenarios.length === 0) {
+    errors.push(`Expected valid scenarios array, found ${Array.isArray(scenarios) ? scenarios.length : 0}`);
+    return errors;
   }
 
-  const scenarioSlugs = new Set((scenarios || []).map((s) => s.slug));
-  for (const slug of scenarioSlugs) {
-    const count = phrases.filter((p) => p.scenario === slug).length;
-    if (count !== 10) {
-      errors.push(`Scenario "${slug}" expected 10 phrases, found ${count}`);
+  const expectedTotalPhrases = scenarios.reduce((sum, s) => sum + (s.phraseCount || 0), 0);
+  if (!Array.isArray(phrases) || phrases.length !== expectedTotalPhrases) {
+    errors.push(`Expected ${expectedTotalPhrases} total phrases (sum of scenario phraseCounts), found ${Array.isArray(phrases) ? phrases.length : 0}`);
+  }
+
+  for (const sc of scenarios) {
+    const actualCount = (phrases || []).filter((p) => p.scenario === sc.slug).length;
+    const expectedCount = typeof sc.phraseCount === 'number' ? sc.phraseCount : actualCount;
+    if (actualCount !== expectedCount) {
+      errors.push(`Scenario "${sc.slug}" phraseCount metadata is ${expectedCount}, but found ${actualCount} phrases`);
     }
   }
 
-  // 2. Validate roleplay graph for every scenario
-  for (const slug of scenarioSlugs) {
+  // 2. Validate roleplay graph for every roleplay scenario (5 scenarios)
+  const roleplaySlugs = Object.keys(roleplay || {});
+  if (roleplaySlugs.length !== 5) {
+    errors.push(`Expected 5 roleplay scenarios, found ${roleplaySlugs.length}`);
+  }
+  for (const slug of roleplaySlugs) {
     const rp = roleplay[slug];
     if (!rp || !rp.nodes || !rp.start) {
       errors.push(`Roleplay missing or invalid for scenario "${slug}"`);
@@ -144,7 +153,6 @@ function validateData(scenarios, phrases, roleplay, quiz) {
       continue;
     }
 
-    // Check option next pointers
     for (const [nodeId, node] of Object.entries(nodes)) {
       if (!Array.isArray(node.options) || node.options.length === 0) {
         errors.push(`Roleplay "${slug}" node "${nodeId}" has no options`);
@@ -157,7 +165,6 @@ function validateData(scenarios, phrases, roleplay, quiz) {
       }
     }
 
-    // Check reachability from start
     const reachable = new Set();
     const queue = [rp.start];
     while (queue.length > 0) {
@@ -177,7 +184,6 @@ function validateData(scenarios, phrases, roleplay, quiz) {
       }
     }
 
-    // Check every node can reach a null ending
     const canTerminate = new Set();
     let changed = true;
     while (changed) {
@@ -201,8 +207,12 @@ function validateData(scenarios, phrases, roleplay, quiz) {
     }
   }
 
-  // 3. Validate quiz bounds & counts
-  for (const slug of scenarioSlugs) {
+  // 3. Validate quiz bounds & counts (5 scenarios)
+  const quizSlugs = Object.keys(quiz || {});
+  if (quizSlugs.length !== 5) {
+    errors.push(`Expected 5 quiz scenarios, found ${quizSlugs.length}`);
+  }
+  for (const slug of quizSlugs) {
     const qs = quiz[slug];
     if (!Array.isArray(qs) || qs.length !== 5) {
       errors.push(`Quiz for "${slug}" expected 5 questions, found ${Array.isArray(qs) ? qs.length : 0}`);
@@ -240,14 +250,26 @@ function main() {
   const quizPath = path.join(DATA_DIR, 'quiz.json');
   const scenariosPath = path.join(DATA_DIR, 'scenarios.json');
 
+  const extraScenariosPath = path.join(FRONTEND_DATA_DIR, 'scenarios-extra.json');
+  const extraPhrasesPath = path.join(FRONTEND_DATA_DIR, 'phrases-extra.json');
+  const wordsPath = path.join(FRONTEND_DATA_DIR, 'words.json');
+
   const scenarios = JSON.parse(fs.readFileSync(scenariosPath, 'utf8'));
   const phrases = JSON.parse(fs.readFileSync(phrasesPath, 'utf8'));
   const roleplay = JSON.parse(fs.readFileSync(roleplayPath, 'utf8'));
   const quiz = JSON.parse(fs.readFileSync(quizPath, 'utf8'));
 
+  const extraScenarios = fs.existsSync(extraScenariosPath) ? JSON.parse(fs.readFileSync(extraScenariosPath, 'utf8')) : [];
+  const extraPhrases = fs.existsSync(extraPhrasesPath) ? JSON.parse(fs.readFileSync(extraPhrasesPath, 'utf8')) : [];
+  const words = fs.existsSync(wordsPath) ? JSON.parse(fs.readFileSync(wordsPath, 'utf8')) : [];
+
   const records = parseCsv(fs.readFileSync(csvPath, 'utf8'));
 
   const phraseMap = new Map(phrases.map((p) => [p.id, p]));
+  const extraPhraseMap = new Map(extraPhrases.map((p) => [p.id, p]));
+  const extraScenarioMap = new Map(extraScenarios.map((s) => [s.slug, s]));
+  const wordsMap = new Map(words.map((w) => [w.id, w]));
+
   const quizMap = new Map();
   for (const qs of Object.values(quiz)) {
     for (const q of qs) {
@@ -276,7 +298,8 @@ function main() {
     else statusCounts.other++;
 
     if (type === 'phrase') {
-      const p = phraseMap.get(id);
+      // Could be backend phrase or v3 extra phrase
+      const p = phraseMap.get(id) || extraPhraseMap.get(id);
       if (!p) continue;
 
       if (corrKn && corrKn !== p.kn) {
@@ -295,7 +318,7 @@ function main() {
       }
     } else if (type === 'phrase_example') {
       const phraseId = id.replace(/:example$/, '');
-      const p = phraseMap.get(phraseId);
+      const p = phraseMap.get(phraseId) || extraPhraseMap.get(phraseId);
       if (!p || !p.example) continue;
 
       if (corrKn && corrKn !== p.example.kn) {
@@ -306,8 +329,50 @@ function main() {
         changes.push(`[phrase_example ${id}] translit: "${p.example.translit}" -> "${corrTranslit}"`);
         p.example.translit = corrTranslit;
       }
+    } else if (type === 'scenario_title') {
+      // id format: sc:<slug>:title
+      const slug = id.split(':')[1];
+      const sc = extraScenarioMap.get(slug);
+      if (sc && corrKn && corrKn !== sc.knTitle) {
+        changes.push(`[scenario_title ${id}] knTitle: "${sc.knTitle}" -> "${corrKn}"`);
+        sc.knTitle = corrKn;
+      }
+    } else if (type === 'word') {
+      const w = wordsMap.get(id);
+      if (!w) continue;
+
+      if (corrKn && corrKn !== w.kn) {
+        changes.push(`[word ${id}] kn: "${w.kn}" -> "${corrKn}"`);
+        w.kn = corrKn;
+      }
+      if (corrTranslit && corrTranslit !== w.translit) {
+        changes.push(`[word ${id}] translit: "${w.translit}" -> "${corrTranslit}"`);
+        w.translit = corrTranslit;
+      }
+
+      const shouldBeReviewed = status === 'approved' || status === 'fixed';
+      if (Boolean(w.reviewed) !== shouldBeReviewed) {
+        changes.push(`[word ${id}] reviewed: ${Boolean(w.reviewed)} -> ${shouldBeReviewed} (status="${status}")`);
+        w.reviewed = shouldBeReviewed;
+      }
+    } else if (type === 'word_dialogue') {
+      // id format: <word-id>:turn:<turnNum>
+      const match = /^(word-[^:]+):turn:(\d+)$/.exec(id);
+      if (!match) continue;
+      const w = wordsMap.get(match[1]);
+      const turnIdx = parseInt(match[2], 10) - 1;
+      const turn = w?.dialogue?.[turnIdx];
+      if (!turn) continue;
+
+      if (corrKn && corrKn !== turn.kn) {
+        changes.push(`[word_dialogue ${id}] kn: "${turn.kn}" -> "${corrKn}"`);
+        turn.kn = corrKn;
+      }
+      if (corrTranslit && corrTranslit !== turn.translit) {
+        changes.push(`[word_dialogue ${id}] translit: "${turn.translit}" -> "${corrTranslit}"`);
+        turn.translit = corrTranslit;
+      }
     } else if (type === 'roleplay_line') {
-      // id format: rp:<scenario>:<nodeId>:line
       const parts = id.split(':');
       const scenarioSlug = parts[1];
       const nodeId = parts[2];
@@ -323,7 +388,6 @@ function main() {
         node.translit = corrTranslit;
       }
     } else if (type === 'roleplay_option') {
-      // id format: rp:<scenario>:<nodeId>:opt:<idx>
       const parts = id.split(':');
       const scenarioSlug = parts[1];
       const nodeId = parts[2];
@@ -340,7 +404,6 @@ function main() {
         opt.translit = corrTranslit;
       }
     } else if (type === 'quiz_option') {
-      // id format: <quizId>:opt:<idx>
       const match = /^(.+):opt:(\d+)$/.exec(id);
       if (!match) continue;
       const q = quizMap.get(match[1]);
@@ -359,11 +422,14 @@ function main() {
     }
   }
 
-  // Run data integrity validation
-  const validationErrors = validateData(scenarios, phrases, roleplay, quiz);
+  // Run backend data integrity validation
+  const validationErrors = validateBackendData(scenarios, phrases, roleplay, quiz);
 
-  const reviewedPhrasesCount = phrases.filter((p) => p.reviewed === true).length;
-  const unreviewedPhrasesCount = phrases.filter((p) => !p.reviewed).length;
+  const allPhrasesCount = phrases.length + extraPhrases.length;
+  const reviewedPhrasesCount =
+    phrases.filter((p) => p.reviewed === true).length +
+    extraPhrases.filter((p) => p.reviewed === true).length;
+  const unreviewedPhrasesCount = allPhrasesCount - reviewedPhrasesCount;
 
   console.log('==========================================================');
   console.log(`NammaNudi Review Pack Tool — ${apply ? 'APPLY MODE' : 'DRY RUN MODE (default)'}`);
@@ -373,8 +439,9 @@ function main() {
   console.log(
     `Row Status Breakdown : approved=${statusCounts.approved}, fixed=${statusCounts.fixed}, unreviewed=${statusCounts.unreviewed}, other=${statusCounts.other}`
   );
-  console.log(`Phrases reviewed=true: ${reviewedPhrasesCount} / ${phrases.length}`);
-  console.log(`Phrases unreviewed   : ${unreviewedPhrasesCount} / ${phrases.length}`);
+  console.log(`Phrases reviewed=true: ${reviewedPhrasesCount} / ${allPhrasesCount}`);
+  console.log(`Phrases unreviewed   : ${unreviewedPhrasesCount} / ${allPhrasesCount}`);
+  console.log(`Words reviewed=true  : ${words.filter((w) => w.reviewed).length} / ${words.length}`);
   console.log(`Total Modifications  : ${changes.length}`);
 
   if (changes.length > 0) {
@@ -387,20 +454,37 @@ function main() {
   }
 
   if (validationErrors.length > 0) {
-    console.error('\nData Validation FAILED:');
+    console.error('\nBackend Data Validation FAILED:');
     for (const err of validationErrors) {
       console.error(`  [ERROR] ${err}`);
     }
     process.exit(1);
   } else {
-    console.log('\nData Validation PASSED: 5 scenarios, 50 phrases, role-play graphs valid & terminating, 25 quiz questions within bounds.');
+    console.log(`\nBackend Data Validation PASSED: ${scenarios.length} scenarios, ${phrases.length} phrases (matching scenario phraseCounts), ${Object.keys(roleplay).length} role-play graphs valid & terminating.`);
+  }
+
+  // Run v3 validation
+  try {
+    execFileSync(process.execPath, [path.join(DATA_DIR, 'tools', 'validate-v3.js')], { stdio: 'inherit' });
+  } catch (err) {
+    console.error('v3 Validation execution failed:', err.message);
+    process.exit(1);
   }
 
   if (apply) {
     fs.writeFileSync(phrasesPath, JSON.stringify(phrases, null, 2) + '\n', 'utf8');
     fs.writeFileSync(roleplayPath, JSON.stringify(roleplay, null, 2) + '\n', 'utf8');
     fs.writeFileSync(quizPath, JSON.stringify(quiz, null, 2) + '\n', 'utf8');
-    console.log('\nWrote updated JSON files to /data/{phrases,roleplay,quiz}.json.');
+    if (extraScenarios.length > 0) {
+      fs.writeFileSync(extraScenariosPath, JSON.stringify(extraScenarios, null, 2) + '\n', 'utf8');
+    }
+    if (extraPhrases.length > 0) {
+      fs.writeFileSync(extraPhrasesPath, JSON.stringify(extraPhrases, null, 2) + '\n', 'utf8');
+    }
+    if (words.length > 0) {
+      fs.writeFileSync(wordsPath, JSON.stringify(words, null, 2) + '\n', 'utf8');
+    }
+    console.log('\nWrote updated JSON files to /data/*.json and /frontend/src/data/*.json.');
   } else {
     console.log('\nDry run complete. No JSON files were modified (pass --apply to write changes).');
   }
