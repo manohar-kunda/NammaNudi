@@ -208,7 +208,7 @@
       {
         "speaker": "Auto Driver",
         "kn": "ಮೀಟರ್ ಮೇಲೆ ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಕೊಡಿ.",
-        "translit": "Meter mele ippaththu roopaayi kodi.",
+        "translit": "Meter mele ippathu roopaayi kodi.",
         "en": "Give twenty rupees over the meter."
       },
       {
@@ -252,7 +252,7 @@
       {
         "speaker": "Vendor",
         "kn": "ನೂರ ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಸರ್.",
-        "translit": "Noora ippaththu roopaayi sir.",
+        "translit": "Noora ippathu roopaayi sir.",
         "en": "One hundred and twenty rupees, sir."
       }
     ],
@@ -572,7 +572,7 @@
     ],
     "when": "When asking what is available, what someone needs, or asking for clarification.",
     "register": "both",
-    "tip": "'Enu beku?' means 'What do you want/need?'; 'Ivaththu special enu?' means 'What is today's special?'.",
+    "tip": "'Enu beku?' means 'What do you want/need?'; 'Ivathu special enu?' means 'What is today's special?'.",
     "dialogue": [
       {
         "speaker": "Shopkeeper",
@@ -920,7 +920,7 @@
   {
     "id": "word-ivathu",
     "kn": "ಇವತ್ತು",
-    "translit": "ivaththu",
+    "translit": "ivathu",
     "en": "today",
     "type": "noun",
     "purpose": "Referring to the present day.",
@@ -932,12 +932,12 @@
     ],
     "when": "When talking about today's specials, today's leave, or today's plans.",
     "register": "both",
-    "tip": "Combine with 'special': 'Ivaththu special enu?' (What's special today?).",
+    "tip": "Combine with 'special': 'Ivathu special enu?' (What's special today?).",
     "dialogue": [
       {
         "speaker": "Diner",
         "kn": "ಇವತ್ತು ಊಟಕ್ಕೆ ಸ್ಪೆಷಲ್ ಏನು?",
-        "translit": "Ivaththu ootakke special enu?",
+        "translit": "Ivathu ootakke special enu?",
         "en": "What is the special for lunch today?"
       },
       {
@@ -947,7 +947,7 @@
         "en": "There is bisibelebath and kesaribath, sir."
       }
     ],
-    "mistake": "Don't confuse 'ivaththu' (today) with 'naale' (tomorrow) or 'nenne' (yesterday).",
+    "mistake": "Don't confuse 'ivathu' (today) with 'naale' (tomorrow) or 'nenne' (yesterday).",
     "related": [
       "rest-08",
       "work-06"
@@ -980,7 +980,7 @@
       {
         "speaker": "Receptionist",
         "kn": "ಹೌದು ಸರ್, ಬೆಳಿಗ್ಗೆ ಹತ್ತು ಗಂಟೆಗೆ ಬನ್ನಿ.",
-        "translit": "Haudu sir, belagge haththu gantege banni.",
+        "translit": "Haudu sir, belagge hathu gantege banni.",
         "en": "Yes sir, please come at ten in the morning."
       }
     ],

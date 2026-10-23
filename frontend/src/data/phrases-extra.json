@@ -172,11 +172,11 @@
     "id": "num-04",
     "scenario": "numbers-time",
     "kn": "ಹತ್ತೂವರೆ ಗಂಟೆಗೆ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಇದೆ.",
-    "translit": "Haththoo-vare gantege appointment idhe.",
+    "translit": "Hathoo-vare gantege appointment idhe.",
     "en": "The appointment is at ten thirty.",
     "example": {
       "kn": "ಡಾಕ್ಟರ್ ಹತ್ರ ಹತ್ತೂವರೆ ಗಂಟೆಗೆ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಇದೆ, ಬೇಗ ಹೋಗ್ಬೇಕು.",
-      "translit": "Doctor hathra haththoo-vare gantege appointment idhe, bega hogbeku.",
+      "translit": "Doctor hathra hathoo-vare gantege appointment idhe, bega hogbeku.",
       "en": "I have a doctor's appointment at 10:30, I need to leave soon."
     },
     "reviewed": false
@@ -224,11 +224,11 @@
     "id": "num-08",
     "scenario": "numbers-time",
     "kn": "ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಬ್ಯಾಲೆನ್ಸ್ ಕೊಡಿ.",
-    "translit": "Ippaththu roopaayi balance kodi.",
+    "translit": "Ippathu roopaayi balance kodi.",
     "en": "Please give the twenty rupees balance.",
     "example": {
       "kn": "ನಾನು ನೂರು ಕೊಟ್ಟೆ, ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಬ್ಯಾಲೆನ್ಸ್ ಕೊಡಿ ಸರ್.",
-      "translit": "Naanu nooru kotte, ippaththu roopaayi balance kodi sir.",
+      "translit": "Naanu nooru kotte, ippathu roopaayi balance kodi sir.",
       "en": "I gave a hundred, please give back twenty rupees balance, sir."
     },
     "reviewed": false
