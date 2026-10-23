@@ -132,6 +132,9 @@ export function App() {
       <Header
         onOpenAbout={() => handleSelectTab(activeTab === 'about' ? 'home' : 'about')}
         isAboutActive={activeTab === 'about'}
+        activeTab={activeTab}
+        onSelectTab={handleSelectTab}
+        savedCount={savedPhrases.length}
       />
       <main className="main-content">{renderContent()}</main>
       <BottomNav

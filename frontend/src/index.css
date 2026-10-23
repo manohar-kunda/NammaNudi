@@ -25,6 +25,11 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-sand);
@@ -44,26 +49,30 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   outline-offset: 2px;
 }
 
-/* Kannada font styling */
+/* Kannada font styling with word break safeguards */
 .kn-text {
   font-family: var(--font-kannada);
   line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* App layout */
 .app-viewport {
-  max-width: 640px;
+  width: 100%;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: var(--bg-sand);
   position: relative;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
 }
 
 .main-content {
   flex: 1;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 16px 16px 88px 16px;
 }
 
@@ -76,6 +85,13 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   top: 0;
   z-index: 30;
   box-shadow: 0 4px 14px rgba(112, 16, 45, 0.18);
+  width: 100%;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-top {
@@ -138,19 +154,40 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   font-weight: 500;
 }
 
-/* Bottom Nav */
+/* Mobile About Button in Header */
+.mobile-about-btn {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  border: 1px solid rgba(254, 215, 170, 0.45);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Desktop Nav inside Header (Hidden by default on mobile/tablet) */
+.desktop-nav {
+  display: none;
+}
+
+/* Bottom Nav (Mobile/Tablet default) */
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   width: 100%;
-  max-width: 640px;
   background-color: #ffffff;
   border-top: 1px solid var(--border-warm);
   display: flex;
   justify-content: space-around;
-  padding: 6px 12px 10px 12px;
+  padding: 6px 12px calc(6px + env(safe-area-inset-bottom, 0px)) 12px;
   z-index: 40;
   box-shadow: 0 -4px 16px rgba(0,0,0,0.06);
 }
@@ -168,6 +205,9 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   padding: 6px 14px;
   border-radius: 8px;
   cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  justify-content: center;
   transition: all 0.15s ease-in-out;
 }
 
@@ -190,6 +230,8 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   margin-bottom: 12px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .scenario-card {
@@ -202,12 +244,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   width: 100%;
   text-align: left;
   background: #ffffff;
-}
-
-.scenario-card:hover {
-  transform: translateY(-2px);
-  border-color: #f59e0b;
-  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.12);
+  min-height: 52px;
 }
 
 .scenario-icon-box {
@@ -263,30 +300,30 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   font-weight: 700;
   color: #70102d;
   line-height: 1.4;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .phrase-actions {
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-shrink: 0;
 }
 
 .icon-btn {
   background: none;
   border: 1px solid transparent;
   border-radius: 8px;
-  padding: 6px;
+  padding: 8px;
+  min-width: 44px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text-subtle);
   cursor: pointer;
   transition: all 0.15s ease;
-}
-
-.icon-btn:hover {
-  background-color: #f5f5f4;
-  color: var(--text-main);
 }
 
 .icon-btn.active {
@@ -310,12 +347,14 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   font-size: 0.95rem;
   font-weight: 600;
   color: #b45309;
+  word-break: break-word;
 }
 
 .phrase-en {
   font-size: 0.925rem;
   color: var(--text-main);
   font-weight: 500;
+  word-break: break-word;
 }
 
 .phrase-footer {
@@ -337,6 +376,9 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   display: flex;
   align-items: center;
   gap: 4px;
+  min-height: 36px;
+  padding: 4px 6px;
+  border-radius: 6px;
 }
 
 .example-box {
@@ -349,6 +391,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  word-break: break-word;
 }
 
 .example-box .ex-label {
@@ -409,6 +452,9 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 .search-container {
   position: relative;
   margin-bottom: 16px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search-input-wrap {
@@ -426,6 +472,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   font-size: 0.95rem;
   color: var(--text-main);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  min-height: 48px;
 }
 
 .search-input:focus {
@@ -448,7 +495,12 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   border: none;
   color: var(--text-subtle);
   cursor: pointer;
-  padding: 4px;
+  padding: 8px;
+  min-width: 36px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-counter {
@@ -485,15 +537,15 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   color: #ffffff;
   border: none;
   border-radius: 8px;
-  padding: 6px 14px;
-  font-size: 0.8rem;
+  padding: 8px 16px;
+  font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: background 0.15s;
-}
-
-.retry-btn:hover {
-  background-color: #7f1d1d;
 }
 
 .empty-state {
@@ -520,7 +572,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 .empty-sub {
   font-size: 0.85rem;
-  max-width: 280px;
+  max-width: 360px;
 }
 
 .loading-spinner {
@@ -560,22 +612,201 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   font-weight: 700;
   cursor: pointer;
   margin-bottom: 14px;
-  padding: 4px 8px;
-  border-radius: 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  min-height: 44px;
 }
 
-.back-btn:hover {
-  background-color: #fdf2f8;
+/* Grids default on mobile: 1 column */
+.scenarios-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
 }
 
-/* Responsive desktop adjustments */
-@media (min-width: 641px) {
-  .app-viewport {
-    margin-top: 16px;
-    margin-bottom: 24px;
-    border-radius: 20px;
-    overflow: hidden;
-    min-height: calc(100vh - 40px);
-    border: 1px solid #e7e5e4;
+.phrases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-items: start; /* Prevents card expansion in one cell from stretching neighbor heights */
+}
+
+/* Reading container for Practice, Roleplay, Quiz, and About */
+.reading-column {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Hover styles only on devices with pointer hover support */
+@media (hover: hover) {
+  .scenario-card:hover {
+    transform: translateY(-2px);
+    border-color: #f59e0b;
+    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.12);
+  }
+
+  .icon-btn:hover {
+    background-color: #f5f5f4;
+    color: var(--text-main);
+  }
+
+  .back-btn:hover {
+    background-color: #fdf2f8;
+  }
+
+  .retry-btn:hover {
+    background-color: #7f1d1d;
+  }
+
+  .mobile-about-btn:hover {
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  .desktop-nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+  }
+}
+
+/* ==========================================================
+   BREAKPOINTS: Tablet & Desktop Responsive Scaling
+   ========================================================== */
+
+/* Tablet (>= 640px) */
+@media (min-width: 640px) {
+  .main-content {
+    padding: 24px 24px 96px 24px;
+    max-width: 1200px;
+  }
+
+  .app-header {
+    padding: 18px 24px 22px 24px;
+  }
+
+  /* Home scenario cards: 2 columns */
+  .scenarios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  /* Phrases: 2 columns */
+  .phrases-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    align-items: start;
+  }
+
+  .home-cta-card {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Desktop & Laptop (>= 1024px) */
+@media (min-width: 1024px) {
+  .main-content {
+    padding: 28px 32px 48px 32px; /* Bottom padding reduced since bottom nav is hidden */
+  }
+
+  .app-header {
+    padding: 18px 32px 20px 32px;
+  }
+
+  /* Hide bottom nav on desktop */
+  .bottom-nav {
+    display: none;
+  }
+
+  /* Hide mobile about pill in header */
+  .mobile-about-btn {
+    display: none;
+  }
+
+  /* Show desktop nav in top header */
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .desktop-nav-item {
+    background: none;
+    border: 1px solid transparent;
+    color: #fed7aa;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .desktop-nav-item.active {
+    color: #70102d;
+    background-color: #fde68a;
+    border-color: #facc15;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  }
+
+  .desktop-badge {
+    background-color: #881337;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 1px 6px;
+    border-radius: 999px;
+  }
+
+  .desktop-nav-item.active .desktop-badge {
+    background-color: #70102d;
+    color: #fde68a;
+  }
+
+  /* Home scenario cards: 3 columns */
+  .scenarios-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  /* Phrases: 3 columns */
+  .phrases-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    align-items: start;
+  }
+
+  /* Kannada text readability on desktop */
+  .phrase-kn {
+    font-size: 1.55rem;
+  }
+}
+
+/* Large Desktop (>= 1440px) */
+@media (min-width: 1440px) {
+  .main-content {
+    max-width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .header-inner {
+    max-width: 1280px;
+  }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
