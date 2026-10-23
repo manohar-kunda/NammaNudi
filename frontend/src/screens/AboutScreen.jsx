@@ -23,13 +23,12 @@ export function AboutScreen({ onBack }) {
       const combined = lists.flat();
       setPhrases(combined);
 
-      // If basics scenario exists in the API, load its phrases for the starter list
+      // Only load survival starter phrases if the basics scenario is present in the API
       if (hasBasics) {
         const basicsList = lists[scenarioSlugs.indexOf('basics')] || [];
         setBasicsPhrases(basicsList);
       } else {
-        // Fallback: pick representative starter phrases from the first available scenario
-        setBasicsPhrases((lists[0] || []).slice(0, 5));
+        setBasicsPhrases([]);
       }
     } catch (err) {
       setError(err.message);
